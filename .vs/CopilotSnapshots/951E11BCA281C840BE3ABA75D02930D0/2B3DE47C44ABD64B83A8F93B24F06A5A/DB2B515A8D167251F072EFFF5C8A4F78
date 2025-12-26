@@ -1,0 +1,217 @@
+﻿namespace QuanLyCuaHangTienLoi
+{
+    partial class UCChatBox
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblTieuDe = new System.Windows.Forms.Label();
+            this.panelMessages = new Guna.UI2.WinForms.Guna2Panel();
+            this.flowPanelMessages = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelInput = new Guna.UI2.WinForms.Guna2Panel();
+            this.txt_nhapTinNhan = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_guiTinNhan = new Guna.UI2.WinForms.Guna2Button();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.panelMain.SuspendLayout();
+            this.panelHeader.SuspendLayout();
+            this.panelMessages.SuspendLayout();
+            this.panelInput.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelMain
+            // 
+            this.panelMain.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelMain.BackColor = System.Drawing.Color.Transparent;
+            this.panelMain.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.panelMain.BorderRadius = 20;
+            this.panelMain.BorderThickness = 2;
+            this.panelMain.Controls.Add(this.panelMessages);
+            this.panelMain.Controls.Add(this.panelInput);
+            this.panelMain.Controls.Add(this.panelHeader);
+            this.panelMain.FillColor = System.Drawing.Color.White;
+            this.panelMain.Location = new System.Drawing.Point(275, 20);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.ShadowDecoration.BorderRadius = 20;
+            this.panelMain.ShadowDecoration.Color = System.Drawing.Color.Silver;
+            this.panelMain.ShadowDecoration.Depth = 10;
+            this.panelMain.ShadowDecoration.Enabled = true;
+            this.panelMain.Size = new System.Drawing.Size(600, 560);
+            this.panelMain.TabIndex = 0;
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.panelHeader.BorderRadius = 20;
+            this.panelHeader.Controls.Add(this.lblTieuDe);
+            this.panelHeader.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(600, 60);
+            this.panelHeader.TabIndex = 0;
+            // 
+            // lblTieuDe
+            // 
+            this.lblTieuDe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTieuDe.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTieuDe.ForeColor = System.Drawing.Color.White;
+            this.lblTieuDe.Location = new System.Drawing.Point(0, 0);
+            this.lblTieuDe.Name = "lblTieuDe";
+            this.lblTieuDe.Size = new System.Drawing.Size(600, 60);
+            this.lblTieuDe.TabIndex = 0;
+            this.lblTieuDe.Text = "?? H? tr? khách hàng";
+            this.lblTieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelMessages
+            // 
+            this.panelMessages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.panelMessages.Controls.Add(this.flowPanelMessages);
+            this.panelMessages.Controls.Add(this.lblWelcome);
+            this.panelMessages.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMessages.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.panelMessages.Location = new System.Drawing.Point(0, 60);
+            this.panelMessages.Name = "panelMessages";
+            this.panelMessages.Padding = new System.Windows.Forms.Padding(10);
+            this.panelMessages.Size = new System.Drawing.Size(600, 430);
+            this.panelMessages.TabIndex = 1;
+            // 
+            // flowPanelMessages
+            // 
+            this.flowPanelMessages.AutoScroll = true;
+            this.flowPanelMessages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.flowPanelMessages.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowPanelMessages.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowPanelMessages.Location = new System.Drawing.Point(10, 10);
+            this.flowPanelMessages.Name = "flowPanelMessages";
+            this.flowPanelMessages.Padding = new System.Windows.Forms.Padding(5);
+            this.flowPanelMessages.Size = new System.Drawing.Size(580, 410);
+            this.flowPanelMessages.TabIndex = 0;
+            this.flowPanelMessages.WrapContents = false;
+            // 
+            // lblWelcome
+            // 
+            this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
+            this.lblWelcome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
+            this.lblWelcome.ForeColor = System.Drawing.Color.Gray;
+            this.lblWelcome.Location = new System.Drawing.Point(10, 10);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(580, 410);
+            this.lblWelcome.TabIndex = 1;
+            this.lblWelcome.Text = "Chào m?ng b?n ??n v?i h? th?ng h? tr?!\r\n\r\nB?n có th? h?i v?:\r\n• S?n ph?m và giá c" +
+    "?\r\n• Hóa ??n bán hàng, nh?p hàng\r\n• Th?ng kê doanh thu\r\n• Ca làm vi?c\r\n\r\nHãy nh?" +
+    "p tin nh?n bên d??i ?? b?t ??u...";
+            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelInput
+            // 
+            this.panelInput.BackColor = System.Drawing.Color.White;
+            this.panelInput.Controls.Add(this.btn_guiTinNhan);
+            this.panelInput.Controls.Add(this.txt_nhapTinNhan);
+            this.panelInput.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelInput.FillColor = System.Drawing.Color.White;
+            this.panelInput.Location = new System.Drawing.Point(0, 490);
+            this.panelInput.Name = "panelInput";
+            this.panelInput.Padding = new System.Windows.Forms.Padding(15, 10, 15, 15);
+            this.panelInput.Size = new System.Drawing.Size(600, 70);
+            this.panelInput.TabIndex = 2;
+            // 
+            // txt_nhapTinNhan
+            // 
+            this.txt_nhapTinNhan.Animated = true;
+            this.txt_nhapTinNhan.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.txt_nhapTinNhan.BorderRadius = 20;
+            this.txt_nhapTinNhan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_nhapTinNhan.DefaultText = "";
+            this.txt_nhapTinNhan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_nhapTinNhan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_nhapTinNhan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_nhapTinNhan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_nhapTinNhan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(180)))));
+            this.txt_nhapTinNhan.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txt_nhapTinNhan.ForeColor = System.Drawing.Color.Black;
+            this.txt_nhapTinNhan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(180)))));
+            this.txt_nhapTinNhan.Location = new System.Drawing.Point(15, 10);
+            this.txt_nhapTinNhan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_nhapTinNhan.Name = "txt_nhapTinNhan";
+            this.txt_nhapTinNhan.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txt_nhapTinNhan.PlaceholderText = "Nh?p tin nh?n...";
+            this.txt_nhapTinNhan.SelectedText = "";
+            this.txt_nhapTinNhan.Size = new System.Drawing.Size(470, 45);
+            this.txt_nhapTinNhan.TabIndex = 0;
+            this.txt_nhapTinNhan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_nhapTinNhan_KeyDown);
+            // 
+            // btn_guiTinNhan
+            // 
+            this.btn_guiTinNhan.Animated = true;
+            this.btn_guiTinNhan.BorderRadius = 20;
+            this.btn_guiTinNhan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_guiTinNhan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_guiTinNhan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_guiTinNhan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_guiTinNhan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.btn_guiTinNhan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_guiTinNhan.ForeColor = System.Drawing.Color.White;
+            this.btn_guiTinNhan.Location = new System.Drawing.Point(495, 10);
+            this.btn_guiTinNhan.Name = "btn_guiTinNhan";
+            this.btn_guiTinNhan.Size = new System.Drawing.Size(90, 45);
+            this.btn_guiTinNhan.TabIndex = 1;
+            this.btn_guiTinNhan.Text = "G?i";
+            this.btn_guiTinNhan.Click += new System.EventHandler(this.btn_guiTinNhan_Click);
+            // 
+            // UCChatBox
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.panelMain);
+            this.Name = "UCChatBox";
+            this.Size = new System.Drawing.Size(1150, 600);
+            this.Load += new System.EventHandler(this.UCChatBox_Load);
+            this.panelMain.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
+            this.panelMessages.ResumeLayout(false);
+            this.panelInput.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Guna.UI2.WinForms.Guna2Panel panelMain;
+        private Guna.UI2.WinForms.Guna2Panel panelHeader;
+        private System.Windows.Forms.Label lblTieuDe;
+        private Guna.UI2.WinForms.Guna2Panel panelMessages;
+        private System.Windows.Forms.FlowLayoutPanel flowPanelMessages;
+        private System.Windows.Forms.Label lblWelcome;
+        private Guna.UI2.WinForms.Guna2Panel panelInput;
+        private Guna.UI2.WinForms.Guna2TextBox txt_nhapTinNhan;
+        private Guna.UI2.WinForms.Guna2Button btn_guiTinNhan;
+    }
+}

@@ -1,0 +1,230 @@
+﻿namespace QuanLyCuaHangTienLoi
+{
+    partial class frmTrangChu
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.btn_quanLyTaiKhoan = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btn_quanLyCa = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_thongKe = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_quanLyHoaDon = new Guna.UI2.WinForms.Guna2Button();
+            this.panelContent = new System.Windows.Forms.Panel();
+            this.labTenNV = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labMaNV = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btn_quanLyDuLieu = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_chatBox = new Guna.UI2.WinForms.Guna2Button();
+            this.SuspendLayout();
+            // 
+            // btn_quanLyTaiKhoan
+            // 
+            this.btn_quanLyTaiKhoan.BorderRadius = 8;
+            this.btn_quanLyTaiKhoan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyTaiKhoan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyTaiKhoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_quanLyTaiKhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_quanLyTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_quanLyTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btn_quanLyTaiKhoan.Location = new System.Drawing.Point(22, 791);
+            this.btn_quanLyTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_quanLyTaiKhoan.Name = "btn_quanLyTaiKhoan";
+            this.btn_quanLyTaiKhoan.Size = new System.Drawing.Size(320, 100);
+            this.btn_quanLyTaiKhoan.TabIndex = 11;
+            this.btn_quanLyTaiKhoan.Text = "Quản lý tài khoản";
+            this.btn_quanLyTaiKhoan.Click += new System.EventHandler(this.btn_quanLyTaiKhoan_Click);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Red;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(724, 59);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(1089, 62);
+            this.guna2HtmlLabel1.TabIndex = 10;
+            this.guna2HtmlLabel1.Text = "QUẢN LÝ CỬA HÀNG TIỆN LỢI";
+            // 
+            // btn_quanLyCa
+            // 
+            this.btn_quanLyCa.BorderRadius = 8;
+            this.btn_quanLyCa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyCa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyCa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_quanLyCa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_quanLyCa.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_quanLyCa.ForeColor = System.Drawing.Color.White;
+            this.btn_quanLyCa.Location = new System.Drawing.Point(18, 380);
+            this.btn_quanLyCa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_quanLyCa.Name = "btn_quanLyCa";
+            this.btn_quanLyCa.Size = new System.Drawing.Size(324, 100);
+            this.btn_quanLyCa.TabIndex = 9;
+            this.btn_quanLyCa.Text = "Quản lý ca";
+            this.btn_quanLyCa.Click += new System.EventHandler(this.btn_quanLyCa_Click);
+            // 
+            // btn_thongKe
+            // 
+            this.btn_thongKe.BorderRadius = 8;
+            this.btn_thongKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_thongKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_thongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_thongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_thongKe.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_thongKe.ForeColor = System.Drawing.Color.White;
+            this.btn_thongKe.Location = new System.Drawing.Point(18, 647);
+            this.btn_thongKe.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_thongKe.Name = "btn_thongKe";
+            this.btn_thongKe.Size = new System.Drawing.Size(324, 100);
+            this.btn_thongKe.TabIndex = 8;
+            this.btn_thongKe.Text = "Thống kê";
+            this.btn_thongKe.Click += new System.EventHandler(this.btn_thongKe_Click);
+            // 
+            // btn_quanLyHoaDon
+            // 
+            this.btn_quanLyHoaDon.BorderRadius = 8;
+            this.btn_quanLyHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_quanLyHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_quanLyHoaDon.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_quanLyHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btn_quanLyHoaDon.Location = new System.Drawing.Point(18, 233);
+            this.btn_quanLyHoaDon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_quanLyHoaDon.Name = "btn_quanLyHoaDon";
+            this.btn_quanLyHoaDon.Size = new System.Drawing.Size(324, 100);
+            this.btn_quanLyHoaDon.TabIndex = 6;
+            this.btn_quanLyHoaDon.Text = "Quản lý hóa đơn";
+            this.btn_quanLyHoaDon.Click += new System.EventHandler(this.btn_quanLyHoaDon_Click);
+            // 
+            // panelContent
+            // 
+            this.panelContent.Location = new System.Drawing.Point(382, 233);
+            this.panelContent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(1725, 938);
+            this.panelContent.TabIndex = 12;
+            // 
+            // labTenNV
+            // 
+            this.labTenNV.AutoSize = false;
+            this.labTenNV.BackColor = System.Drawing.Color.Transparent;
+            this.labTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTenNV.ForeColor = System.Drawing.Color.Black;
+            this.labTenNV.Location = new System.Drawing.Point(1822, 91);
+            this.labTenNV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.labTenNV.Name = "labTenNV";
+            this.labTenNV.Size = new System.Drawing.Size(333, 62);
+            this.labTenNV.TabIndex = 13;
+            this.labTenNV.Text = null;
+            // 
+            // labMaNV
+            // 
+            this.labMaNV.AutoSize = false;
+            this.labMaNV.BackColor = System.Drawing.Color.Transparent;
+            this.labMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labMaNV.ForeColor = System.Drawing.Color.Black;
+            this.labMaNV.Location = new System.Drawing.Point(1822, 159);
+            this.labMaNV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.labMaNV.Name = "labMaNV";
+            this.labMaNV.Size = new System.Drawing.Size(333, 62);
+            this.labMaNV.TabIndex = 14;
+            this.labMaNV.Text = null;
+            // 
+            // btn_quanLyDuLieu
+            // 
+            this.btn_quanLyDuLieu.BorderRadius = 8;
+            this.btn_quanLyDuLieu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyDuLieu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyDuLieu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_quanLyDuLieu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_quanLyDuLieu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_quanLyDuLieu.ForeColor = System.Drawing.Color.White;
+            this.btn_quanLyDuLieu.Location = new System.Drawing.Point(18, 511);
+            this.btn_quanLyDuLieu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_quanLyDuLieu.Name = "btn_quanLyDuLieu";
+            this.btn_quanLyDuLieu.Size = new System.Drawing.Size(324, 100);
+            this.btn_quanLyDuLieu.TabIndex = 7;
+            this.btn_quanLyDuLieu.Text = "Quản lý dữ liệu";
+            this.btn_quanLyDuLieu.Click += new System.EventHandler(this.btn_quanLyDuLieu_Click);
+            // 
+            // btn_chatBox
+            // 
+            this.btn_chatBox.BorderRadius = 8;
+            this.btn_chatBox.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_chatBox.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_chatBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_chatBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_chatBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.btn_chatBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_chatBox.ForeColor = System.Drawing.Color.White;
+            this.btn_chatBox.Location = new System.Drawing.Point(22, 930);
+            this.btn_chatBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_chatBox.Name = "btn_chatBox";
+            this.btn_chatBox.Size = new System.Drawing.Size(320, 100);
+            this.btn_chatBox.TabIndex = 15;
+            this.btn_chatBox.Text = "💬 Hỗ trợ";
+            this.btn_chatBox.Click += new System.EventHandler(this.btn_chatBox_Click);
+            // 
+            // frmTrangChu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(2250, 1188);
+            this.Controls.Add(this.btn_chatBox);
+            this.Controls.Add(this.labMaNV);
+            this.Controls.Add(this.labTenNV);
+            this.Controls.Add(this.panelContent);
+            this.Controls.Add(this.btn_quanLyTaiKhoan);
+            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.btn_quanLyCa);
+            this.Controls.Add(this.btn_thongKe);
+            this.Controls.Add(this.btn_quanLyDuLieu);
+            this.Controls.Add(this.btn_quanLyHoaDon);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Name = "frmTrangChu";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmTrangChu_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private System.Windows.Forms.Panel panelContent;
+        public Guna.UI2.WinForms.Guna2Button btn_quanLyTaiKhoan;
+        public Guna.UI2.WinForms.Guna2Button btn_quanLyCa;
+        public Guna.UI2.WinForms.Guna2Button btn_thongKe;
+        public Guna.UI2.WinForms.Guna2Button btn_quanLyHoaDon;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labTenNV;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labMaNV;
+        public Guna.UI2.WinForms.Guna2Button btn_quanLyDuLieu;
+        public Guna.UI2.WinForms.Guna2Button btn_chatBox;
+    }
+}
+

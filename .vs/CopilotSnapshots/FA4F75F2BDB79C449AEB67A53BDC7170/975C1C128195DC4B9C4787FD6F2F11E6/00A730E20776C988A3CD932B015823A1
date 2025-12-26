@@ -1,0 +1,284 @@
+﻿namespace QuanLyCuaHangTienLoi
+{
+    partial class UCQuanLyHoaDon
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cardHoaDonBan = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_hoaDonBan = new Guna.UI2.WinForms.Guna2Button();
+            this.lblDescHDB = new System.Windows.Forms.Label();
+            this.lblHoaDonBan = new System.Windows.Forms.Label();
+            this.lblHoaDonBanIcon = new System.Windows.Forms.Label();
+            this.cardHoaDonNhap = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_hoaDonNhap = new Guna.UI2.WinForms.Guna2Button();
+            this.lblDescHDN = new System.Windows.Forms.Label();
+            this.lblHoaDonNhap = new System.Windows.Forms.Label();
+            this.lblHoaDonNhapIcon = new System.Windows.Forms.Label();
+            this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSubtitle = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelMain.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.cardHoaDonBan.SuspendLayout();
+            this.cardHoaDonNhap.SuspendLayout();
+            this.panelHeader.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.Transparent;
+            this.panelMain.Controls.Add(this.flowLayoutPanel1);
+            this.panelMain.Controls.Add(this.panelHeader);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Padding = new System.Windows.Forms.Padding(30);
+            this.panelMain.Size = new System.Drawing.Size(1150, 600);
+            this.panelMain.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.cardHoaDonBan);
+            this.flowLayoutPanel1.Controls.Add(this.cardHoaDonNhap);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(30, 150);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1090, 420);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // cardHoaDonBan
+            // 
+            this.cardHoaDonBan.BackColor = System.Drawing.Color.White;
+            this.cardHoaDonBan.BorderRadius = 15;
+            this.cardHoaDonBan.Controls.Add(this.btn_hoaDonBan);
+            this.cardHoaDonBan.Controls.Add(this.lblDescHDB);
+            this.cardHoaDonBan.Controls.Add(this.lblHoaDonBan);
+            this.cardHoaDonBan.Controls.Add(this.lblHoaDonBanIcon);
+            this.cardHoaDonBan.Margin = new System.Windows.Forms.Padding(0, 0, 30, 30);
+            this.cardHoaDonBan.ShadowDecoration.BorderRadius = 15;
+            this.cardHoaDonBan.ShadowDecoration.Depth = 10;
+            this.cardHoaDonBan.ShadowDecoration.Enabled = true;
+            this.cardHoaDonBan.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 5, 5);
+            this.cardHoaDonBan.Size = new System.Drawing.Size(340, 230);
+            this.cardHoaDonBan.TabIndex = 0;
+            // 
+            // btn_hoaDonBan
+            // 
+            this.btn_hoaDonBan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_hoaDonBan.Animated = true;
+            this.btn_hoaDonBan.BorderRadius = 8;
+            this.btn_hoaDonBan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_hoaDonBan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_hoaDonBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_hoaDonBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_hoaDonBan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.btn_hoaDonBan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_hoaDonBan.ForeColor = System.Drawing.Color.White;
+            this.btn_hoaDonBan.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.btn_hoaDonBan.Location = new System.Drawing.Point(25, 175);
+            this.btn_hoaDonBan.Name = "btn_hoaDonBan";
+            this.btn_hoaDonBan.Size = new System.Drawing.Size(290, 40);
+            this.btn_hoaDonBan.TabIndex = 3;
+            this.btn_hoaDonBan.Text = "Xem chi tiết";
+            this.btn_hoaDonBan.Click += new System.EventHandler(this.btn_hoaDonBan_Click);
+            // 
+            // lblDescHDB
+            // 
+            this.lblDescHDB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblDescHDB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
+            this.lblDescHDB.Location = new System.Drawing.Point(25, 120);
+            this.lblDescHDB.Name = "lblDescHDB";
+            this.lblDescHDB.Size = new System.Drawing.Size(290, 45);
+            this.lblDescHDB.TabIndex = 2;
+            this.lblDescHDB.Text = "Quản lý lịch sử bán hàng và hóa đơn";
+            this.lblDescHDB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblHoaDonBan
+            // 
+            this.lblHoaDonBan.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblHoaDonBan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblHoaDonBan.Location = new System.Drawing.Point(0, 85);
+            this.lblHoaDonBan.Name = "lblHoaDonBan";
+            this.lblHoaDonBan.Size = new System.Drawing.Size(340, 30);
+            this.lblHoaDonBan.TabIndex = 1;
+            this.lblHoaDonBan.Text = "Hóa đơn bán";
+            this.lblHoaDonBan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHoaDonBanIcon
+            // 
+            this.lblHoaDonBanIcon.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
+            this.lblHoaDonBanIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.lblHoaDonBanIcon.Location = new System.Drawing.Point(0, 10);
+            this.lblHoaDonBanIcon.Name = "lblHoaDonBanIcon";
+            this.lblHoaDonBanIcon.Size = new System.Drawing.Size(340, 70);
+            this.lblHoaDonBanIcon.TabIndex = 0;
+            this.lblHoaDonBanIcon.Text = "🧾";
+            this.lblHoaDonBanIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cardHoaDonNhap
+            // 
+            this.cardHoaDonNhap.BackColor = System.Drawing.Color.White;
+            this.cardHoaDonNhap.BorderRadius = 15;
+            this.cardHoaDonNhap.Controls.Add(this.btn_hoaDonNhap);
+            this.cardHoaDonNhap.Controls.Add(this.lblDescHDN);
+            this.cardHoaDonNhap.Controls.Add(this.lblHoaDonNhap);
+            this.cardHoaDonNhap.Controls.Add(this.lblHoaDonNhapIcon);
+            this.cardHoaDonNhap.Margin = new System.Windows.Forms.Padding(0, 0, 30, 30);
+            this.cardHoaDonNhap.ShadowDecoration.BorderRadius = 15;
+            this.cardHoaDonNhap.ShadowDecoration.Depth = 10;
+            this.cardHoaDonNhap.ShadowDecoration.Enabled = true;
+            this.cardHoaDonNhap.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 5, 5);
+            this.cardHoaDonNhap.Size = new System.Drawing.Size(340, 230);
+            this.cardHoaDonNhap.TabIndex = 1;
+            // 
+            // btn_hoaDonNhap
+            // 
+            this.btn_hoaDonNhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_hoaDonNhap.Animated = true;
+            this.btn_hoaDonNhap.BorderRadius = 8;
+            this.btn_hoaDonNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_hoaDonNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_hoaDonNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_hoaDonNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_hoaDonNhap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+
+            this.btn_hoaDonNhap.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_hoaDonNhap.ForeColor = System.Drawing.Color.White;
+            this.btn_hoaDonNhap.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
+            this.btn_hoaDonNhap.Location = new System.Drawing.Point(25, 175);
+            this.btn_hoaDonNhap.Name = "btn_hoaDonNhap";
+            this.btn_hoaDonNhap.Size = new System.Drawing.Size(290, 40);
+            this.btn_hoaDonNhap.TabIndex = 3;
+            this.btn_hoaDonNhap.Text = "Xem chi tiết";
+            this.btn_hoaDonNhap.Click += new System.EventHandler(this.btn_hoaDonNhap_Click);
+            // 
+            // lblDescHDN
+            // 
+            this.lblDescHDN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblDescHDN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
+            this.lblDescHDN.Location = new System.Drawing.Point(25, 120);
+            this.lblDescHDN.Name = "lblDescHDN";
+            this.lblDescHDN.Size = new System.Drawing.Size(290, 45);
+            this.lblDescHDN.TabIndex = 2;
+            this.lblDescHDN.Text = "Theo dõi lịch sử nhập hàng";
+            this.lblDescHDN.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblHoaDonNhap
+            // 
+            this.lblHoaDonNhap.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblHoaDonNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblHoaDonNhap.Location = new System.Drawing.Point(0, 85);
+            this.lblHoaDonNhap.Name = "lblHoaDonNhap";
+            this.lblHoaDonNhap.Size = new System.Drawing.Size(340, 30);
+            this.lblHoaDonNhap.TabIndex = 1;
+            this.lblHoaDonNhap.Text = "Lịch sử nhập hàng";
+            this.lblHoaDonNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHoaDonNhapIcon
+            // 
+            this.lblHoaDonNhapIcon.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
+            this.lblHoaDonNhapIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.lblHoaDonNhapIcon.Location = new System.Drawing.Point(0, 10);
+            this.lblHoaDonNhapIcon.Name = "lblHoaDonNhapIcon";
+            this.lblHoaDonNhapIcon.Size = new System.Drawing.Size(340, 70);
+            this.lblHoaDonNhapIcon.TabIndex = 0;
+            this.lblHoaDonNhapIcon.Text = "📥";
+            this.lblHoaDonNhapIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.Controls.Add(this.lblSubtitle);
+            this.panelHeader.Controls.Add(this.lblTitle);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(30, 30);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1090, 120);
+            this.panelHeader.TabIndex = 0;
+            // 
+            // lblSubtitle
+            // 
+            this.lblSubtitle.AutoSize = true;
+            this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
+            this.lblSubtitle.Location = new System.Drawing.Point(5, 70);
+            this.lblSubtitle.Name = "lblSubtitle";
+            this.lblSubtitle.Size = new System.Drawing.Size(486, 30);
+            this.lblSubtitle.TabIndex = 1;
+            this.lblSubtitle.Text = "Quản lý hóa đơn bán hàng và nhập hàng";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblTitle.Location = new System.Drawing.Point(0, 10);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(364, 60);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Quản lý hóa đơn";
+            // 
+            // UCQuanLyHoaDon
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            this.Controls.Add(this.panelMain);
+            this.Name = "UCQuanLyHoaDon";
+            this.Size = new System.Drawing.Size(1150, 600);
+            this.panelMain.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.cardHoaDonBan.ResumeLayout(false);
+            this.cardHoaDonNhap.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private Guna.UI2.WinForms.Guna2Panel panelMain;
+        private Guna.UI2.WinForms.Guna2Panel panelHeader;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblSubtitle;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Guna.UI2.WinForms.Guna2Panel cardHoaDonBan;
+        private System.Windows.Forms.Label lblHoaDonBanIcon;
+        private System.Windows.Forms.Label lblHoaDonBan;
+        private System.Windows.Forms.Label lblDescHDB;
+        private Guna.UI2.WinForms.Guna2Button btn_hoaDonBan;
+        private Guna.UI2.WinForms.Guna2Panel cardHoaDonNhap;
+        private Guna.UI2.WinForms.Guna2Button btn_hoaDonNhap;
+        private System.Windows.Forms.Label lblDescHDN;
+        private System.Windows.Forms.Label lblHoaDonNhap;
+        private System.Windows.Forms.Label lblHoaDonNhapIcon;
+    }
+}

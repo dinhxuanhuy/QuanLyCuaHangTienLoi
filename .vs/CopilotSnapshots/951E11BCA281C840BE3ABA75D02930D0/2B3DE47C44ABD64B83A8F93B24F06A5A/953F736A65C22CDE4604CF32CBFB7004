@@ -1,0 +1,142 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace QuanLyCuaHangTienLoi
+{
+    public partial class UCChatBox : UserControl
+    {
+        // Event để điều hướng về các UC khác nếu cần
+        public event Action<UserControl> NavigateRequest;
+
+        public UCChatBox()
+        {
+            InitializeComponent();
+        }
+
+        private void UCChatBox_Load(object sender, EventArgs e)
+        {
+            // Scroll xuống cuối khi load
+            flowPanelMessages.AutoScroll = true;
+        }
+
+        private void btn_guiTinNhan_Click(object sender, EventArgs e)
+        {
+            GuiTinNhan();
+        }
+
+        private void txt_nhapTinNhan_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Nhấn Enter để gửi tin nhắn
+            if (e.KeyCode == Keys.Enter && !e.Shift)
+            {
+                e.SuppressKeyPress = true;
+                GuiTinNhan();
+            }
+        }
+
+        private void GuiTinNhan()
+        {
+            string tinNhan = txt_nhapTinNhan.Text.Trim();
+            if (string.IsNullOrEmpty(tinNhan))
+                return;
+
+            // Ẩn label welcome khi bắt đầu chat
+            if (lblWelcome.Visible)
+            {
+                lblWelcome.Visible = false;
+            }
+
+            // Thêm tin nhắn của người dùng
+            ThemTinNhan(tinNhan, true);
+
+            // Xóa textbox
+            txt_nhapTinNhan.Text = "";
+
+            // Giả lập phản hồi từ bot (có thể thay đổi sau)
+            string phanHoi = XuLyTinNhan(tinNhan);
+            ThemTinNhan(phanHoi, false);
+        }
+
+        private void ThemTinNhan(string noiDung, bool laNguoiDung)
+        {
+            // Tạo panel chứa tin nhắn
+            Panel pnlMessage = new Panel();
+            pnlMessage.AutoSize = true;
+            pnlMessage.MaximumSize = new Size(flowPanelMessages.Width - 100, 0);
+            pnlMessage.Padding = new Padding(10);
+
+            // Tạo label hiển thị tin nhắn
+            Label lblMessage = new Label();
+            lblMessage.Text = noiDung;
+            lblMessage.AutoSize = true;
+            lblMessage.MaximumSize = new Size(flowPanelMessages.Width - 120, 0);
+            lblMessage.Font = new Font("Segoe UI", 10F);
+            lblMessage.Padding = new Padding(8);
+
+            if (laNguoiDung)
+            {
+                // Tin nhắn người dùng - màu xanh, căn phải
+                lblMessage.BackColor = Color.FromArgb(0, 120, 215);
+                lblMessage.ForeColor = Color.White;
+                pnlMessage.Dock = DockStyle.Right;
+            }
+            else
+            {
+                // Tin nhắn bot - màu xám, căn trái
+                lblMessage.BackColor = Color.FromArgb(230, 230, 230);
+                lblMessage.ForeColor = Color.Black;
+                pnlMessage.Dock = DockStyle.Left;
+            }
+
+            pnlMessage.Controls.Add(lblMessage);
+
+            // Thêm vào flow panel
+            flowPanelMessages.Controls.Add(pnlMessage);
+
+            // Scroll xuống cuối
+            flowPanelMessages.ScrollControlIntoView(pnlMessage);
+        }
+
+        private string XuLyTinNhan(string tinNhan)
+        {
+            // Logic xử lý tin nhắn cơ bản - có thể mở rộng sau
+            tinNhan = tinNhan.ToLower();
+
+            if (tinNhan.Contains("xin chào") || tinNhan.Contains("hello") || tinNhan.Contains("hi"))
+            {
+                return "Xin chào! Tôi có thể giúp gì cho bạn?";
+            }
+            else if (tinNhan.Contains("giá") || tinNhan.Contains("sản phẩm"))
+            {
+                return "Bạn có thể xem giá sản phẩm trong mục Quản lý dữ liệu > Sản phẩm.";
+            }
+            else if (tinNhan.Contains("hóa đơn"))
+            {
+                return "Để tạo hóa đơn mới, vui lòng vào mục Quản lý hóa đơn.";
+            }
+            else if (tinNhan.Contains("thống kê") || tinNhan.Contains("doanh thu"))
+            {
+                return "Bạn có thể xem thống kê doanh thu trong mục Thống kê.";
+            }
+            else if (tinNhan.Contains("ca làm") || tinNhan.Contains("ca làm việc"))
+            {
+                return "Thông tin ca làm việc có trong mục Quản lý ca.";
+            }
+            else if (tinNhan.Contains("cảm ơn") || tinNhan.Contains("thank"))
+            {
+                return "Không có gì! Nếu cần hỗ trợ thêm, hãy hỏi tôi nhé!";
+            }
+            else
+            {
+                return "Tôi chưa hiểu câu hỏi của bạn. Bạn có thể hỏi về: sản phẩm, hóa đơn, thống kê, ca làm việc...";
+            }
+        }
+    }
+}

@@ -1,0 +1,368 @@
+﻿namespace QuanLyCuaHangTienLoi
+{
+    partial class UCThongKe
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cardDoanhThu = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_doanhThu = new Guna.UI2.WinForms.Guna2Button();
+            this.lblDescDoanhThu = new System.Windows.Forms.Label();
+            this.lblDoanhThu = new System.Windows.Forms.Label();
+            this.lblDoanhThuIcon = new System.Windows.Forms.Label();
+            this.cardChiPhi = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_chiPhi = new Guna.UI2.WinForms.Guna2Button();
+            this.lblDescChiPhi = new System.Windows.Forms.Label();
+            this.lblChiPhi = new System.Windows.Forms.Label();
+            this.lblChiPhiIcon = new System.Windows.Forms.Label();
+            this.cardLoiNhuan = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_loiNhuan = new Guna.UI2.WinForms.Guna2Button();
+            this.lblDescLoiNhuan = new System.Windows.Forms.Label();
+            this.lblLoiNhuan = new System.Windows.Forms.Label();
+            this.lblLoiNhuanIcon = new System.Windows.Forms.Label();
+            this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSubtitle = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelMain.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.cardDoanhThu.SuspendLayout();
+            this.cardChiPhi.SuspendLayout();
+            this.cardLoiNhuan.SuspendLayout();
+            this.panelHeader.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.Transparent;
+            this.panelMain.Controls.Add(this.flowLayoutPanel1);
+            this.panelMain.Controls.Add(this.panelHeader);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Padding = new System.Windows.Forms.Padding(30);
+            this.panelMain.Size = new System.Drawing.Size(1150, 600);
+            this.panelMain.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.cardDoanhThu);
+            this.flowLayoutPanel1.Controls.Add(this.cardChiPhi);
+            this.flowLayoutPanel1.Controls.Add(this.cardLoiNhuan);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(30, 150);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1090, 420);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // cardDoanhThu
+            // 
+            this.cardDoanhThu.BackColor = System.Drawing.Color.White;
+            this.cardDoanhThu.BorderRadius = 15;
+            this.cardDoanhThu.Controls.Add(this.btn_doanhThu);
+            this.cardDoanhThu.Controls.Add(this.lblDescDoanhThu);
+            this.cardDoanhThu.Controls.Add(this.lblDoanhThu);
+            this.cardDoanhThu.Controls.Add(this.lblDoanhThuIcon);
+            this.cardDoanhThu.Margin = new System.Windows.Forms.Padding(0, 0, 30, 30);
+            this.cardDoanhThu.ShadowDecoration.BorderRadius = 15;
+            this.cardDoanhThu.ShadowDecoration.Depth = 10;
+            this.cardDoanhThu.ShadowDecoration.Enabled = true;
+            this.cardDoanhThu.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 5, 5);
+            this.cardDoanhThu.Size = new System.Drawing.Size(340, 230);
+            this.cardDoanhThu.TabIndex = 0;
+            // 
+            // btn_doanhThu
+            // 
+            this.btn_doanhThu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_doanhThu.Animated = true;
+            this.btn_doanhThu.BorderRadius = 8;
+            this.btn_doanhThu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_doanhThu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_doanhThu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_doanhThu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_doanhThu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btn_doanhThu.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_doanhThu.ForeColor = System.Drawing.Color.White;
+            this.btn_doanhThu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
+            this.btn_doanhThu.Location = new System.Drawing.Point(25, 175);
+            this.btn_doanhThu.Name = "btn_doanhThu";
+            this.btn_doanhThu.Size = new System.Drawing.Size(290, 40);
+            this.btn_doanhThu.TabIndex = 3;
+            this.btn_doanhThu.Text = "Xem chi tiết";
+            this.btn_doanhThu.Click += new System.EventHandler(this.btn_doanhThu_Click);
+            // 
+            // lblDescDoanhThu
+            // 
+            this.lblDescDoanhThu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblDescDoanhThu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
+            this.lblDescDoanhThu.Location = new System.Drawing.Point(25, 120);
+            this.lblDescDoanhThu.Name = "lblDescDoanhThu";
+            this.lblDescDoanhThu.Size = new System.Drawing.Size(290, 45);
+            this.lblDescDoanhThu.TabIndex = 2;
+            this.lblDescDoanhThu.Text = "Theo dõi doanh thu theo thời gian";
+            this.lblDescDoanhThu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblDoanhThu
+            // 
+            this.lblDoanhThu.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblDoanhThu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblDoanhThu.Location = new System.Drawing.Point(0, 85);
+            this.lblDoanhThu.Name = "lblDoanhThu";
+            this.lblDoanhThu.Size = new System.Drawing.Size(340, 30);
+            this.lblDoanhThu.TabIndex = 1;
+            this.lblDoanhThu.Text = "Doanh thu";
+            this.lblDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblDoanhThuIcon
+            // 
+            this.lblDoanhThuIcon.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
+            this.lblDoanhThuIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.lblDoanhThuIcon.Location = new System.Drawing.Point(0, 10);
+            this.lblDoanhThuIcon.Name = "lblDoanhThuIcon";
+            this.lblDoanhThuIcon.Size = new System.Drawing.Size(340, 70);
+            this.lblDoanhThuIcon.TabIndex = 0;
+            this.lblDoanhThuIcon.Text = "💰";
+            this.lblDoanhThuIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cardChiPhi
+            // 
+            this.cardChiPhi.BackColor = System.Drawing.Color.White;
+            this.cardChiPhi.BorderRadius = 15;
+            this.cardChiPhi.Controls.Add(this.btn_chiPhi);
+            this.cardChiPhi.Controls.Add(this.lblDescChiPhi);
+            this.cardChiPhi.Controls.Add(this.lblChiPhi);
+            this.cardChiPhi.Controls.Add(this.lblChiPhiIcon);
+            this.cardChiPhi.Margin = new System.Windows.Forms.Padding(0, 0, 30, 30);
+            this.cardChiPhi.ShadowDecoration.BorderRadius = 15;
+            this.cardChiPhi.ShadowDecoration.Depth = 10;
+            this.cardChiPhi.ShadowDecoration.Enabled = true;
+            this.cardChiPhi.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 5, 5);
+            this.cardChiPhi.Size = new System.Drawing.Size(340, 230);
+            this.cardChiPhi.TabIndex = 1;
+            // 
+            // btn_chiPhi
+            // 
+            this.btn_chiPhi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_chiPhi.Animated = true;
+            this.btn_chiPhi.BorderRadius = 8;
+            this.btn_chiPhi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_chiPhi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_chiPhi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_chiPhi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_chiPhi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.btn_chiPhi.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_chiPhi.ForeColor = System.Drawing.Color.White;
+            this.btn_chiPhi.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btn_chiPhi.Location = new System.Drawing.Point(25, 175);
+            this.btn_chiPhi.Name = "btn_chiPhi";
+            this.btn_chiPhi.Size = new System.Drawing.Size(290, 40);
+            this.btn_chiPhi.TabIndex = 3;
+            this.btn_chiPhi.Text = "Xem chi tiết";
+            this.btn_chiPhi.Click += new System.EventHandler(this.btn_chiPhi_Click);
+            // 
+            // lblDescChiPhi
+            // 
+            this.lblDescChiPhi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblDescChiPhi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
+            this.lblDescChiPhi.Location = new System.Drawing.Point(25, 120);
+            this.lblDescChiPhi.Name = "lblDescChiPhi";
+            this.lblDescChiPhi.Size = new System.Drawing.Size(290, 45);
+            this.lblDescChiPhi.TabIndex = 2;
+            this.lblDescChiPhi.Text = "Phân tích chi phí nhập hàng";
+            this.lblDescChiPhi.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblChiPhi
+            // 
+            this.lblChiPhi.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblChiPhi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblChiPhi.Location = new System.Drawing.Point(0, 85);
+            this.lblChiPhi.Name = "lblChiPhi";
+            this.lblChiPhi.Size = new System.Drawing.Size(340, 30);
+            this.lblChiPhi.TabIndex = 1;
+            this.lblChiPhi.Text = "Chi phí";
+            this.lblChiPhi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblChiPhiIcon
+            // 
+            this.lblChiPhiIcon.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
+            this.lblChiPhiIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.lblChiPhiIcon.Location = new System.Drawing.Point(0, 10);
+            this.lblChiPhiIcon.Name = "lblChiPhiIcon";
+            this.lblChiPhiIcon.Size = new System.Drawing.Size(340, 70);
+            this.lblChiPhiIcon.TabIndex = 0;
+            this.lblChiPhiIcon.Text = "💸";
+            this.lblChiPhiIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cardLoiNhuan
+            // 
+            this.cardLoiNhuan.BackColor = System.Drawing.Color.White;
+            this.cardLoiNhuan.BorderRadius = 15;
+            this.cardLoiNhuan.Controls.Add(this.btn_loiNhuan);
+            this.cardLoiNhuan.Controls.Add(this.lblDescLoiNhuan);
+            this.cardLoiNhuan.Controls.Add(this.lblLoiNhuan);
+            this.cardLoiNhuan.Controls.Add(this.lblLoiNhuanIcon);
+            this.cardLoiNhuan.Margin = new System.Windows.Forms.Padding(0, 0, 30, 30);
+            this.cardLoiNhuan.ShadowDecoration.BorderRadius = 15;
+            this.cardLoiNhuan.ShadowDecoration.Depth = 10;
+            this.cardLoiNhuan.ShadowDecoration.Enabled = true;
+            this.cardLoiNhuan.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 5, 5);
+            this.cardLoiNhuan.Size = new System.Drawing.Size(340, 230);
+            this.cardLoiNhuan.TabIndex = 2;
+            // 
+            // btn_loiNhuan
+            // 
+            this.btn_loiNhuan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_loiNhuan.Animated = true;
+            this.btn_loiNhuan.BorderRadius = 8;
+            this.btn_loiNhuan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_loiNhuan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_loiNhuan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_loiNhuan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_loiNhuan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.btn_loiNhuan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_loiNhuan.ForeColor = System.Drawing.Color.White;
+            this.btn_loiNhuan.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.btn_loiNhuan.Location = new System.Drawing.Point(25, 175);
+            this.btn_loiNhuan.Name = "btn_loiNhuan";
+            this.btn_loiNhuan.Size = new System.Drawing.Size(290, 40);
+            this.btn_loiNhuan.TabIndex = 3;
+            this.btn_loiNhuan.Text = "Xem chi tiết";
+            this.btn_loiNhuan.Click += new System.EventHandler(this.btn_loiNhuan_Click);
+            // 
+            // lblDescLoiNhuan
+            // 
+            this.lblDescLoiNhuan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblDescLoiNhuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
+            this.lblDescLoiNhuan.Location = new System.Drawing.Point(25, 120);
+            this.lblDescLoiNhuan.Name = "lblDescLoiNhuan";
+            this.lblDescLoiNhuan.Size = new System.Drawing.Size(290, 45);
+            this.lblDescLoiNhuan.TabIndex = 2;
+            this.lblDescLoiNhuan.Text = "Báo cáo lợi nhuận kinh doanh";
+            this.lblDescLoiNhuan.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblLoiNhuan
+            // 
+            this.lblLoiNhuan.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblLoiNhuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblLoiNhuan.Location = new System.Drawing.Point(0, 85);
+            this.lblLoiNhuan.Name = "lblLoiNhuan";
+            this.lblLoiNhuan.Size = new System.Drawing.Size(340, 30);
+            this.lblLoiNhuan.TabIndex = 1;
+            this.lblLoiNhuan.Text = "Lợi nhuận";
+            this.lblLoiNhuan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLoiNhuanIcon
+            // 
+            this.lblLoiNhuanIcon.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
+            this.lblLoiNhuanIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.lblLoiNhuanIcon.Location = new System.Drawing.Point(0, 10);
+            this.lblLoiNhuanIcon.Name = "lblLoiNhuanIcon";
+            this.lblLoiNhuanIcon.Size = new System.Drawing.Size(340, 70);
+            this.lblLoiNhuanIcon.TabIndex = 0;
+            this.lblLoiNhuanIcon.Text = "📈";
+            this.lblLoiNhuanIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.Controls.Add(this.lblSubtitle);
+            this.panelHeader.Controls.Add(this.lblTitle);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(30, 30);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1090, 120);
+            this.panelHeader.TabIndex = 0;
+            // 
+            // lblSubtitle
+            // 
+            this.lblSubtitle.AutoSize = true;
+            this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
+            this.lblSubtitle.Location = new System.Drawing.Point(5, 70);
+            this.lblSubtitle.Name = "lblSubtitle";
+            this.lblSubtitle.Size = new System.Drawing.Size(534, 30);
+            this.lblSubtitle.TabIndex = 1;
+            this.lblSubtitle.Text = "Theo dõi và phân tích hiệu quả kinh doanh";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblTitle.Location = new System.Drawing.Point(0, 10);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(191, 60);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Thống kê";
+            // 
+            // UCThongKe
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            this.Controls.Add(this.panelMain);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "UCThongKe";
+            this.Size = new System.Drawing.Size(1150, 600);
+            this.panelMain.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.cardDoanhThu.ResumeLayout(false);
+            this.cardChiPhi.ResumeLayout(false);
+            this.cardLoiNhuan.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Guna.UI2.WinForms.Guna2Panel panelMain;
+        private Guna.UI2.WinForms.Guna2Panel panelHeader;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblSubtitle;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Guna.UI2.WinForms.Guna2Panel cardDoanhThu;
+        private System.Windows.Forms.Label lblDoanhThuIcon;
+        private System.Windows.Forms.Label lblDoanhThu;
+        private System.Windows.Forms.Label lblDescDoanhThu;
+        private Guna.UI2.WinForms.Guna2Button btn_doanhThu;
+        private Guna.UI2.WinForms.Guna2Panel cardChiPhi;
+        private Guna.UI2.WinForms.Guna2Button btn_chiPhi;
+        private System.Windows.Forms.Label lblDescChiPhi;
+        private System.Windows.Forms.Label lblChiPhi;
+        private System.Windows.Forms.Label lblChiPhiIcon;
+        private Guna.UI2.WinForms.Guna2Panel cardLoiNhuan;
+        private Guna.UI2.WinForms.Guna2Button btn_loiNhuan;
+        private System.Windows.Forms.Label lblDescLoiNhuan;
+        private System.Windows.Forms.Label lblLoiNhuan;
+        private System.Windows.Forms.Label lblLoiNhuanIcon;
+    }
+}

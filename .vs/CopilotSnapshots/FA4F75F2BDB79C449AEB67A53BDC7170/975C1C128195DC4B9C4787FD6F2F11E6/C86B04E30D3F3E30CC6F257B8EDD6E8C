@@ -1,0 +1,394 @@
+﻿namespace QuanLyCuaHangTienLoi
+{
+    partial class UCQuanLyDuLieu
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cardNhanVien = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_quanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.lblNhanVien = new System.Windows.Forms.Label();
+            this.lblNhanVienIcon = new System.Windows.Forms.Label();
+            this.cardSanPham = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_sanPham = new Guna.UI2.WinForms.Guna2Button();
+            this.lblSanPham = new System.Windows.Forms.Label();
+            this.lblSanPhamIcon = new System.Windows.Forms.Label();
+            this.cardKhuyenMai = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_khuyenMai = new Guna.UI2.WinForms.Guna2Button();
+            this.lblKhuyenMai = new System.Windows.Forms.Label();
+            this.lblKhuyenMaiIcon = new System.Windows.Forms.Label();
+            this.cardNhaCungCap = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_nhaCungCap = new Guna.UI2.WinForms.Guna2Button();
+            this.lblNhaCungCap = new System.Windows.Forms.Label();
+            this.lblNhaCungCapIcon = new System.Windows.Forms.Label();
+            this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblSubtitle = new System.Windows.Forms.Label();
+            this.panelMain.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.cardNhanVien.SuspendLayout();
+            this.cardSanPham.SuspendLayout();
+            this.cardKhuyenMai.SuspendLayout();
+            this.cardNhaCungCap.SuspendLayout();
+            this.panelHeader.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.Transparent;
+            this.panelMain.Controls.Add(this.flowLayoutPanel1);
+            this.panelMain.Controls.Add(this.panelHeader);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Padding = new System.Windows.Forms.Padding(30);
+            this.panelMain.Size = new System.Drawing.Size(1150, 600);
+            this.panelMain.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.cardNhanVien);
+            this.flowLayoutPanel1.Controls.Add(this.cardSanPham);
+            this.flowLayoutPanel1.Controls.Add(this.cardKhuyenMai);
+            this.flowLayoutPanel1.Controls.Add(this.cardNhaCungCap);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(30, 150);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1090, 420);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // cardNhanVien
+            // 
+            this.cardNhanVien.BackColor = System.Drawing.Color.White;
+            this.cardNhanVien.BorderRadius = 15;
+            this.cardNhanVien.Controls.Add(this.btn_quanLyNhanVien);
+            this.cardNhanVien.Controls.Add(this.lblNhanVien);
+            this.cardNhanVien.Controls.Add(this.lblNhanVienIcon);
+            this.cardNhanVien.Margin = new System.Windows.Forms.Padding(0, 0, 20, 20);
+            this.cardNhanVien.ShadowDecoration.BorderRadius = 15;
+            this.cardNhanVien.ShadowDecoration.Depth = 10;
+            this.cardNhanVien.ShadowDecoration.Enabled = true;
+            this.cardNhanVien.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 5, 5);
+            this.cardNhanVien.Size = new System.Drawing.Size(260, 180);
+            this.cardNhanVien.TabIndex = 0;
+            // 
+            // btn_quanLyNhanVien
+            // 
+            this.btn_quanLyNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_quanLyNhanVien.Animated = true;
+            this.btn_quanLyNhanVien.BorderRadius = 8;
+            this.btn_quanLyNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_quanLyNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_quanLyNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_quanLyNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.btn_quanLyNhanVien.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_quanLyNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btn_quanLyNhanVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.btn_quanLyNhanVien.Location = new System.Drawing.Point(20, 130);
+            this.btn_quanLyNhanVien.Name = "btn_quanLyNhanVien";
+            this.btn_quanLyNhanVien.Size = new System.Drawing.Size(220, 35);
+            this.btn_quanLyNhanVien.TabIndex = 2;
+            this.btn_quanLyNhanVien.Text = "Quản lý";
+            this.btn_quanLyNhanVien.Click += new System.EventHandler(this.btn_quanLyNhanVien_Click);
+            // 
+            // lblNhanVien
+            // 
+            this.lblNhanVien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblNhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblNhanVien.Location = new System.Drawing.Point(0, 80);
+            this.lblNhanVien.Name = "lblNhanVien";
+            this.lblNhanVien.Size = new System.Drawing.Size(260, 35);
+            this.lblNhanVien.TabIndex = 1;
+            this.lblNhanVien.Text = "Nhân viên";
+            this.lblNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNhanVienIcon
+            // 
+            this.lblNhanVienIcon.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold);
+            this.lblNhanVienIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.lblNhanVienIcon.Location = new System.Drawing.Point(0, 10);
+            this.lblNhanVienIcon.Name = "lblNhanVienIcon";
+            this.lblNhanVienIcon.Size = new System.Drawing.Size(260, 65);
+            this.lblNhanVienIcon.TabIndex = 0;
+            this.lblNhanVienIcon.Text = "👤";
+            this.lblNhanVienIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cardSanPham
+            // 
+            this.cardSanPham.BackColor = System.Drawing.Color.White;
+            this.cardSanPham.BorderRadius = 15;
+            this.cardSanPham.Controls.Add(this.btn_sanPham);
+            this.cardSanPham.Controls.Add(this.lblSanPham);
+            this.cardSanPham.Controls.Add(this.lblSanPhamIcon);
+            this.cardSanPham.Margin = new System.Windows.Forms.Padding(0, 0, 20, 20);
+            this.cardSanPham.ShadowDecoration.BorderRadius = 15;
+            this.cardSanPham.ShadowDecoration.Depth = 10;
+            this.cardSanPham.ShadowDecoration.Enabled = true;
+            this.cardSanPham.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 5, 5);
+            this.cardSanPham.Size = new System.Drawing.Size(260, 180);
+            this.cardSanPham.TabIndex = 1;
+            // 
+            // btn_sanPham
+            // 
+            this.btn_sanPham.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_sanPham.Animated = true;
+            this.btn_sanPham.BorderRadius = 8;
+            this.btn_sanPham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sanPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sanPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_sanPham.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_sanPham.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btn_sanPham.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_sanPham.ForeColor = System.Drawing.Color.White;
+            this.btn_sanPham.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
+            this.btn_sanPham.Location = new System.Drawing.Point(20, 130);
+            this.btn_sanPham.Name = "btn_sanPham";
+            this.btn_sanPham.Size = new System.Drawing.Size(220, 35);
+            this.btn_sanPham.TabIndex = 2;
+            this.btn_sanPham.Text = "Quản lý";
+            this.btn_sanPham.Click += new System.EventHandler(this.btn_sanPham_Click);
+            // 
+            // lblSanPham
+            // 
+            this.lblSanPham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblSanPham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblSanPham.Location = new System.Drawing.Point(0, 80);
+            this.lblSanPham.Name = "lblSanPham";
+            this.lblSanPham.Size = new System.Drawing.Size(260, 35);
+            this.lblSanPham.TabIndex = 1;
+            this.lblSanPham.Text = "Sản phẩm";
+            this.lblSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSanPhamIcon
+            // 
+            this.lblSanPhamIcon.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold);
+            this.lblSanPhamIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.lblSanPhamIcon.Location = new System.Drawing.Point(0, 10);
+            this.lblSanPhamIcon.Name = "lblSanPhamIcon";
+            this.lblSanPhamIcon.Size = new System.Drawing.Size(260, 65);
+            this.lblSanPhamIcon.TabIndex = 0;
+            this.lblSanPhamIcon.Text = "📦";
+            this.lblSanPhamIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cardKhuyenMai
+            // 
+            this.cardKhuyenMai.BackColor = System.Drawing.Color.White;
+            this.cardKhuyenMai.BorderRadius = 15;
+            this.cardKhuyenMai.Controls.Add(this.btn_khuyenMai);
+            this.cardKhuyenMai.Controls.Add(this.lblKhuyenMai);
+            this.cardKhuyenMai.Controls.Add(this.lblKhuyenMaiIcon);
+            this.cardKhuyenMai.Margin = new System.Windows.Forms.Padding(0, 0, 20, 20);
+            this.cardKhuyenMai.ShadowDecoration.BorderRadius = 15;
+            this.cardKhuyenMai.ShadowDecoration.Depth = 10;
+            this.cardKhuyenMai.ShadowDecoration.Enabled = true;
+            this.cardKhuyenMai.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 5, 5);
+            this.cardKhuyenMai.Size = new System.Drawing.Size(260, 180);
+            this.cardKhuyenMai.TabIndex = 2;
+            // 
+            // btn_khuyenMai
+            // 
+            this.btn_khuyenMai.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_khuyenMai.Animated = true;
+            this.btn_khuyenMai.BorderRadius = 8;
+            this.btn_khuyenMai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_khuyenMai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_khuyenMai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_khuyenMai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_khuyenMai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153)))));
+            this.btn_khuyenMai.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_khuyenMai.ForeColor = System.Drawing.Color.White;
+            this.btn_khuyenMai.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(39)))), ((int)(((byte)(119)))));
+            this.btn_khuyenMai.Location = new System.Drawing.Point(20, 130);
+            this.btn_khuyenMai.Name = "btn_khuyenMai";
+            this.btn_khuyenMai.Size = new System.Drawing.Size(220, 35);
+            this.btn_khuyenMai.TabIndex = 2;
+            this.btn_khuyenMai.Text = "Quản lý";
+            this.btn_khuyenMai.Click += new System.EventHandler(this.btn_khuyenMai_Click);
+            // 
+            // lblKhuyenMai
+            // 
+            this.lblKhuyenMai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblKhuyenMai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblKhuyenMai.Location = new System.Drawing.Point(0, 80);
+            this.lblKhuyenMai.Name = "lblKhuyenMai";
+            this.lblKhuyenMai.Size = new System.Drawing.Size(260, 35);
+            this.lblKhuyenMai.TabIndex = 1;
+            this.lblKhuyenMai.Text = "Khuyến mãi";
+            this.lblKhuyenMai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblKhuyenMaiIcon
+            // 
+            this.lblKhuyenMaiIcon.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold);
+            this.lblKhuyenMaiIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153)))));
+            this.lblKhuyenMaiIcon.Location = new System.Drawing.Point(0, 10);
+            this.lblKhuyenMaiIcon.Name = "lblKhuyenMaiIcon";
+            this.lblKhuyenMaiIcon.Size = new System.Drawing.Size(260, 65);
+            this.lblKhuyenMaiIcon.TabIndex = 0;
+            this.lblKhuyenMaiIcon.Text = "🎁";
+            this.lblKhuyenMaiIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cardNhaCungCap
+            // 
+            this.cardNhaCungCap.BackColor = System.Drawing.Color.White;
+            this.cardNhaCungCap.BorderRadius = 15;
+            this.cardNhaCungCap.Controls.Add(this.btn_nhaCungCap);
+            this.cardNhaCungCap.Controls.Add(this.lblNhaCungCap);
+            this.cardNhaCungCap.Controls.Add(this.lblNhaCungCapIcon);
+            this.cardNhaCungCap.Margin = new System.Windows.Forms.Padding(0, 0, 20, 20);
+            this.cardNhaCungCap.ShadowDecoration.BorderRadius = 15;
+            this.cardNhaCungCap.ShadowDecoration.Depth = 10;
+            this.cardNhaCungCap.ShadowDecoration.Enabled = true;
+            this.cardNhaCungCap.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 5, 5);
+            this.cardNhaCungCap.Size = new System.Drawing.Size(260, 180);
+            this.cardNhaCungCap.TabIndex = 3;
+            // 
+            // btn_nhaCungCap
+            // 
+            this.btn_nhaCungCap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_nhaCungCap.Animated = true;
+            this.btn_nhaCungCap.BorderRadius = 8;
+            this.btn_nhaCungCap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_nhaCungCap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_nhaCungCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_nhaCungCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_nhaCungCap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
+            this.btn_nhaCungCap.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_nhaCungCap.ForeColor = System.Drawing.Color.White;
+            this.btn_nhaCungCap.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
+            this.btn_nhaCungCap.Location = new System.Drawing.Point(20, 130);
+            this.btn_nhaCungCap.Name = "btn_nhaCungCap";
+            this.btn_nhaCungCap.Size = new System.Drawing.Size(220, 35);
+            this.btn_nhaCungCap.TabIndex = 2;
+            this.btn_nhaCungCap.Text = "Quản lý";
+            this.btn_nhaCungCap.Click += new System.EventHandler(this.btn_nhaCungCap_Click);
+            // 
+            // lblNhaCungCap
+            // 
+            this.lblNhaCungCap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblNhaCungCap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblNhaCungCap.Location = new System.Drawing.Point(0, 80);
+            this.lblNhaCungCap.Name = "lblNhaCungCap";
+            this.lblNhaCungCap.Size = new System.Drawing.Size(260, 35);
+            this.lblNhaCungCap.TabIndex = 1;
+            this.lblNhaCungCap.Text = "Nhà cung cấp";
+            this.lblNhaCungCap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNhaCungCapIcon
+            // 
+            this.lblNhaCungCapIcon.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold);
+            this.lblNhaCungCapIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
+            this.lblNhaCungCapIcon.Location = new System.Drawing.Point(0, 10);
+            this.lblNhaCungCapIcon.Name = "lblNhaCungCapIcon";
+            this.lblNhaCungCapIcon.Size = new System.Drawing.Size(260, 65);
+            this.lblNhaCungCapIcon.TabIndex = 0;
+            this.lblNhaCungCapIcon.Text = "🏢";
+            this.lblNhaCungCapIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.Controls.Add(this.lblSubtitle);
+            this.panelHeader.Controls.Add(this.lblTitle);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(30, 30);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1090, 120);
+            this.panelHeader.TabIndex = 0;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.lblTitle.Location = new System.Drawing.Point(0, 10);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(317, 60);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Quản lý dữ liệu";
+            // 
+            // lblSubtitle
+            // 
+            this.lblSubtitle.AutoSize = true;
+            this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
+            this.lblSubtitle.Location = new System.Drawing.Point(5, 70);
+            this.lblSubtitle.Name = "lblSubtitle";
+            this.lblSubtitle.Size = new System.Drawing.Size(550, 30);
+            this.lblSubtitle.TabIndex = 1;
+            this.lblSubtitle.Text = "Quản lý thông tin nhân viên, sản phẩm và đối tác";
+            // 
+            // UCQuanLyDuLieu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            this.Controls.Add(this.panelMain);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "UCQuanLyDuLieu";
+            this.Size = new System.Drawing.Size(1150, 600);
+            this.panelMain.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.cardNhanVien.ResumeLayout(false);
+            this.cardSanPham.ResumeLayout(false);
+            this.cardKhuyenMai.ResumeLayout(false);
+            this.cardNhaCungCap.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private Guna.UI2.WinForms.Guna2Panel panelMain;
+        private Guna.UI2.WinForms.Guna2Panel panelHeader;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblSubtitle;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Guna.UI2.WinForms.Guna2Panel cardNhanVien;
+        private System.Windows.Forms.Label lblNhanVienIcon;
+        private System.Windows.Forms.Label lblNhanVien;
+        private Guna.UI2.WinForms.Guna2Button btn_quanLyNhanVien;
+        private Guna.UI2.WinForms.Guna2Panel cardSanPham;
+        private Guna.UI2.WinForms.Guna2Button btn_sanPham;
+        private System.Windows.Forms.Label lblSanPham;
+        private System.Windows.Forms.Label lblSanPhamIcon;
+        private Guna.UI2.WinForms.Guna2Panel cardKhuyenMai;
+        private Guna.UI2.WinForms.Guna2Button btn_khuyenMai;
+        private System.Windows.Forms.Label lblKhuyenMai;
+        private System.Windows.Forms.Label lblKhuyenMaiIcon;
+        private Guna.UI2.WinForms.Guna2Panel cardNhaCungCap;
+        private Guna.UI2.WinForms.Guna2Button btn_nhaCungCap;
+        private System.Windows.Forms.Label lblNhaCungCap;
+        private System.Windows.Forms.Label lblNhaCungCapIcon;
+    }
+}

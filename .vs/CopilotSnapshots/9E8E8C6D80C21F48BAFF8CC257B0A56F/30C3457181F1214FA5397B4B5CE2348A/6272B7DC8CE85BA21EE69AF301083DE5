@@ -1,0 +1,173 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Text;
+using System.Text;
+using System.Windows.Forms;
+using DataAccessLayer;
+
+namespace QuanLyCuaHangTienLoi
+{
+    public partial class UCChatbox : UserControl
+    {
+        private SqlAgent sqlAgent;
+
+        public UCChatbox()
+        {
+            InitializeComponent();
+        }
+
+        private void UCChatbox_Load(object sender, EventArgs e)
+        {
+            // Set encoding
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+            // Initialize SQL Agent
+            try
+            {
+                sqlAgent = SqlAgent.Instance;
+                AddBotMessage("Xin chào! Tôi là trợ lý AI của cửa hàng. Tôi có thể giúp bạn tìm kiếm thông tin về sản phẩm, đơn hàng, nhân viên và nhiều hơn nữa. Hãy hỏi tôi bất cứ điều gì!");
+            }
+            catch (Exception ex)
+            {
+                AddBotMessage($"Lỗi khởi tạo AI: {ex.Message}");
+            }
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            SendMessage();
+        }
+
+        private void txtMessage_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && !e.Shift)
+            {
+                e.SuppressKeyPress = true;
+                SendMessage();
+            }
+        }
+
+        private async void SendMessage()
+        {
+            string message = txtMessage.Text.Trim();
+            if (string.IsNullOrEmpty(message))
+                return;
+
+            // Add user message to chat
+            AddUserMessage(message);
+
+            // Clear input
+            txtMessage.Clear();
+
+            // Disable input while processing
+            txtMessage.Enabled = false;
+            btnSend.Enabled = false;
+
+            // Show processing message
+            AddBotMessage("🤔 Đang suy nghĩ...");
+
+            try
+            {
+                // Get AI response
+                string response = await sqlAgent.GetAnswer(message);
+
+                // Remove processing message
+                if (chatContainer.Controls.Count > 0)
+                {
+                    chatContainer.Controls.RemoveAt(chatContainer.Controls.Count - 1);
+                }
+
+                // Add AI response
+                AddBotMessage(response);
+            }
+            catch (Exception ex)
+            {
+                // Remove processing message
+                if (chatContainer.Controls.Count > 0)
+                {
+                    chatContainer.Controls.RemoveAt(chatContainer.Controls.Count - 1);
+                }
+
+                AddBotMessage($"❌ Lỗi: {ex.Message}");
+            }
+            finally
+            {
+                // Re-enable input
+                txtMessage.Enabled = true;
+                btnSend.Enabled = true;
+                txtMessage.Focus();
+            }
+        }
+
+        private void AddUserMessage(string message)
+        {
+            var messagePanel = CreateMessagePanel(message, true);
+            chatContainer.Controls.Add(messagePanel);
+            chatContainer.ScrollControlIntoView(messagePanel);
+        }
+
+        private void AddBotMessage(string message)
+        {
+            var messagePanel = CreateMessagePanel(message, false);
+            chatContainer.Controls.Add(messagePanel);
+            chatContainer.ScrollControlIntoView(messagePanel);
+        }
+
+        private Panel CreateMessagePanel(string message, bool isUser)
+        {
+            var mainPanel = new Panel
+            {
+                Width = chatContainer.Width - 30,
+                AutoSize = true,
+                Padding = new Padding(10, 5, 10, 5),
+                Margin = new Padding(0, 5, 0, 5)
+            };
+
+            var messageBox = new Panel
+            {
+                AutoSize = true,
+                MaximumSize = new Size(chatContainer.Width - 150, 0),
+                Padding = new Padding(15, 10, 15, 10),
+                BackColor = isUser ? Color.FromArgb(59, 130, 246) : Color.FromArgb(243, 244, 246)
+            };
+
+            // Create label with proper UTF-8 encoding
+            var lblMessage = new Label
+            {
+                Text = message,
+                AutoSize = true,
+                MaximumSize = new Size(chatContainer.Width - 180, 0),
+                Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))),
+                ForeColor = isUser ? Color.White : Color.FromArgb(31, 41, 55),
+                UseMnemonic = false // Prevent & from being treated as mnemonic
+            };
+
+            messageBox.Controls.Add(lblMessage);
+
+            if (isUser)
+            {
+                messageBox.Location = new Point(mainPanel.Width - messageBox.Width - 10, 0);
+            }
+            else
+            {
+                messageBox.Location = new Point(10, 0);
+            }
+
+            mainPanel.Controls.Add(messageBox);
+            mainPanel.Height = messageBox.Height + 10;
+
+            return mainPanel;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            chatContainer.Controls.Clear();
+            AddBotMessage("Cuộc trò chuyện đã được xóa. Tôi có thể giúp gì cho bạn?");
+        }
+
+        private void txtMessage_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

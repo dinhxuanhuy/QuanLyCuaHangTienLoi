@@ -1,0 +1,502 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace QuanLyCuaHangTienLoi
+{
+    public partial class UCChatBox : UserControl
+    {
+        public event Action<UserControl> NavigateRequest;
+        private static readonly HttpClient httpClient = new HttpClient();
+        private bool isWaitingForResponse = false;
+
+        public UCChatBox()
+        {
+            InitializeComponent();
+        }
+
+        private void UCChatBox_Load(object sender, EventArgs e)
+        {
+            flowPanelMessages.AutoScroll = true;
+            flowPanelMessages.WrapContents = false;
+            
+            // Hiển thị tin nhắn chào mừng
+            HienThiTinNhanChaoMung();
+        }
+
+        private void HienThiTinNhanChaoMung()
+        {
+            string chaoMung = "👋 Xin chào! Tôi là trợ lý ảo của hệ thống Quản lý Cửa hàng Tiện lợi.\n\n" +
+                "Tôi có thể giúp bạn:\n" +
+                "• 📦 Tra cứu thông tin sản phẩm và giá cả\n" +
+                "• 🧾 Quản lý hóa đơn bán hàng, nhập hàng\n" +
+                "• 📊 Xem thống kê doanh thu, chi phí, lợi nhuận\n" +
+                "• 👥 Quản lý nhân viên và ca làm việc\n" +
+                "• 🎁 Tra cứu chương trình khuyến mãi\n\n" +
+                "Hãy nhập câu hỏi của bạn bên dưới để bắt đầu...";
+            
+            ThemTinNhanBot(chaoMung);
+        }
+
+        private async void btn_guiTinNhan_Click(object sender, EventArgs e)
+        {
+            await GuiTinNhan();
+        }
+
+        private async void txt_nhapTinNhan_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && !e.Shift)
+            {
+                e.SuppressKeyPress = true;
+                await GuiTinNhan();
+            }
+        }
+
+        private async Task GuiTinNhan()
+        {
+            string tinNhan = txt_nhapTinNhan.Text.Trim();
+            if (string.IsNullOrEmpty(tinNhan) || isWaitingForResponse)
+                return;
+
+            // Ẩn label welcome
+            if (lblWelcome.Visible)
+                lblWelcome.Visible = false;
+
+            // Hiển thị tin nhắn người dùng
+            ThemTinNhanNguoiDung(tinNhan);
+
+            // Xóa textbox và disable
+            txt_nhapTinNhan.Text = "";
+            txt_nhapTinNhan.Enabled = false;
+            btn_guiTinNhan.Enabled = false;
+            isWaitingForResponse = true;
+
+            // Hiển thị typing indicator
+            var typingPanel = HienThiTypingIndicator();
+
+            try
+            {
+                // Xử lý tin nhắn
+                string phanHoi = await Task.Run(() => XuLyTinNhanLocal(tinNhan));
+                
+                // Xóa typing indicator
+                flowPanelMessages.Controls.Remove(typingPanel);
+                typingPanel.Dispose();
+
+                // Hiển thị phản hồi
+                ThemTinNhanBot(phanHoi);
+            }
+            catch (Exception ex)
+            {
+                // Xóa typing indicator
+                flowPanelMessages.Controls.Remove(typingPanel);
+                typingPanel.Dispose();
+
+                // Hiển thị lỗi
+                ThemTinNhanBot("❌ Xin lỗi, đã có lỗi xảy ra: " + ex.Message);
+            }
+            finally
+            {
+                // Enable lại controls
+                txt_nhapTinNhan.Enabled = true;
+                btn_guiTinNhan.Enabled = true;
+                isWaitingForResponse = false;
+                txt_nhapTinNhan.Focus();
+            }
+        }
+
+        private Panel HienThiTypingIndicator()
+        {
+            Panel typingPanel = new Panel
+            {
+                AutoSize = true,
+                Padding = new Padding(10),
+                Margin = new Padding(5)
+            };
+
+            Label typingLabel = new Label
+            {
+                Text = "💭 Đang suy nghĩ...",
+                AutoSize = true,
+                Font = new Font("Segoe UI", 10F, FontStyle.Italic),
+                ForeColor = Color.Gray,
+                Padding = new Padding(8)
+            };
+
+            typingPanel.Controls.Add(typingLabel);
+            flowPanelMessages.Controls.Add(typingPanel);
+            flowPanelMessages.ScrollControlIntoView(typingPanel);
+
+            return typingPanel;
+        }
+
+        private void ThemTinNhanNguoiDung(string noiDung)
+        {
+            Panel containerPanel = new Panel
+            {
+                AutoSize = true,
+                Width = flowPanelMessages.Width - 120,
+                Margin = new Padding(5, 5, 5, 10)
+            };
+
+            Panel messagePanel = new Panel
+            {
+                AutoSize = true,
+                MaximumSize = new Size(flowPanelMessages.Width - 150, 0),
+                BackColor = Color.FromArgb(0, 120, 215),
+                Padding = new Padding(12, 10, 12, 10),
+                Anchor = AnchorStyles.Right
+            };
+
+            Label lblMessage = new Label
+            {
+                Text = noiDung,
+                AutoSize = true,
+                MaximumSize = new Size(flowPanelMessages.Width - 180, 0),
+                Font = new Font("Segoe UI", 10F),
+                ForeColor = Color.White,
+                BackColor = Color.Transparent
+            };
+
+            messagePanel.Controls.Add(lblMessage);
+            messagePanel.Left = containerPanel.Width - messagePanel.Width - 10;
+            containerPanel.Controls.Add(messagePanel);
+            containerPanel.Height = messagePanel.Height + 5;
+
+            flowPanelMessages.Controls.Add(containerPanel);
+            flowPanelMessages.ScrollControlIntoView(containerPanel);
+        }
+
+        private void ThemTinNhanBot(string noiDung)
+        {
+            Panel containerPanel = new Panel
+            {
+                AutoSize = true,
+                Width = flowPanelMessages.Width - 120,
+                Margin = new Padding(5, 5, 5, 10)
+            };
+
+            Panel messagePanel = new Panel
+            {
+                AutoSize = true,
+                MaximumSize = new Size(flowPanelMessages.Width - 150, 0),
+                BackColor = Color.White,
+                Padding = new Padding(12, 10, 12, 10)
+            };
+
+            // Parse và render markdown
+            RichTextBox rtbMessage = new RichTextBox
+            {
+                BorderStyle = BorderStyle.None,
+                ReadOnly = true,
+                BackColor = Color.White,
+                Font = new Font("Segoe UI", 10F),
+                ScrollBars = RichTextBoxScrollBars.None,
+                Width = flowPanelMessages.Width - 180
+            };
+
+            RenderMarkdown(rtbMessage, noiDung);
+            
+            // Tự động điều chỉnh chiều cao
+            rtbMessage.Height = rtbMessage.GetPositionFromCharIndex(rtbMessage.TextLength).Y + 25;
+
+            messagePanel.Controls.Add(rtbMessage);
+            messagePanel.Width = rtbMessage.Width + 24;
+            messagePanel.Height = rtbMessage.Height + 20;
+
+            containerPanel.Controls.Add(messagePanel);
+            containerPanel.Height = messagePanel.Height + 5;
+
+            flowPanelMessages.Controls.Add(containerPanel);
+            flowPanelMessages.ScrollControlIntoView(containerPanel);
+        }
+
+        private void RenderMarkdown(RichTextBox rtb, string markdown)
+        {
+            rtb.Clear();
+            string[] lines = markdown.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+
+            foreach (string line in lines)
+            {
+                string trimmedLine = line.Trim();
+
+                // Headers
+                if (trimmedLine.StartsWith("### "))
+                {
+                    rtb.SelectionFont = new Font("Segoe UI", 12F, FontStyle.Bold);
+                    rtb.SelectionColor = Color.FromArgb(0, 120, 215);
+                    rtb.AppendText(trimmedLine.Substring(4) + "\n");
+                }
+                else if (trimmedLine.StartsWith("## "))
+                {
+                    rtb.SelectionFont = new Font("Segoe UI", 13F, FontStyle.Bold);
+                    rtb.SelectionColor = Color.FromArgb(0, 100, 180);
+                    rtb.AppendText(trimmedLine.Substring(3) + "\n");
+                }
+                else if (trimmedLine.StartsWith("# "))
+                {
+                    rtb.SelectionFont = new Font("Segoe UI", 14F, FontStyle.Bold);
+                    rtb.SelectionColor = Color.FromArgb(0, 80, 150);
+                    rtb.AppendText(trimmedLine.Substring(2) + "\n");
+                }
+                // Bold **text**
+                else if (trimmedLine.Contains("**"))
+                {
+                    RenderBoldLine(rtb, trimmedLine);
+                }
+                // Bullet points
+                else if (trimmedLine.StartsWith("• ") || trimmedLine.StartsWith("- ") || trimmedLine.StartsWith("* "))
+                {
+                    rtb.SelectionFont = new Font("Segoe UI", 10F);
+                    rtb.SelectionColor = Color.Black;
+                    rtb.AppendText("  " + trimmedLine + "\n");
+                }
+                // Code blocks
+                else if (trimmedLine.StartsWith("```"))
+                {
+                    rtb.SelectionFont = new Font("Consolas", 9F);
+                    rtb.SelectionColor = Color.DarkGreen;
+                    rtb.SelectionBackColor = Color.FromArgb(240, 240, 240);
+                    rtb.AppendText(trimmedLine + "\n");
+                }
+                // Normal text
+                else
+                {
+                    rtb.SelectionFont = new Font("Segoe UI", 10F);
+                    rtb.SelectionColor = Color.Black;
+                    rtb.AppendText(trimmedLine + "\n");
+                }
+            }
+        }
+
+        private void RenderBoldLine(RichTextBox rtb, string line)
+        {
+            int startIndex = 0;
+            while (startIndex < line.Length)
+            {
+                int boldStart = line.IndexOf("**", startIndex);
+                if (boldStart == -1)
+                {
+                    // Không còn bold, thêm phần còn lại
+                    rtb.SelectionFont = new Font("Segoe UI", 10F);
+                    rtb.SelectionColor = Color.Black;
+                    rtb.AppendText(line.Substring(startIndex));
+                    break;
+                }
+
+                // Thêm text trước bold
+                if (boldStart > startIndex)
+                {
+                    rtb.SelectionFont = new Font("Segoe UI", 10F);
+                    rtb.SelectionColor = Color.Black;
+                    rtb.AppendText(line.Substring(startIndex, boldStart - startIndex));
+                }
+
+                // Tìm end bold
+                int boldEnd = line.IndexOf("**", boldStart + 2);
+                if (boldEnd == -1)
+                {
+                    // Không tìm thấy closing, thêm phần còn lại
+                    rtb.SelectionFont = new Font("Segoe UI", 10F);
+                    rtb.SelectionColor = Color.Black;
+                    rtb.AppendText(line.Substring(boldStart));
+                    break;
+                }
+
+                // Thêm bold text
+                rtb.SelectionFont = new Font("Segoe UI", 10F, FontStyle.Bold);
+                rtb.SelectionColor = Color.Black;
+                rtb.AppendText(line.Substring(boldStart + 2, boldEnd - boldStart - 2));
+
+                startIndex = boldEnd + 2;
+            }
+            rtb.AppendText("\n");
+        }
+
+        private async Task<string> XuLyTinNhanVoiAPI(string tinNhan)
+        {
+            // TODO: Thay đổi URL API của bạn ở đây
+            string apiUrl = "https://your-api-endpoint.com/chat";
+            
+            // Nếu chưa có API, xử lý local trước
+            if (apiUrl.Contains("your-api-endpoint"))
+            {
+                return await Task.Run(() => XuLyTinNhanLocal(tinNhan));
+            }
+
+            try
+            {
+                // Tạo request body
+                var requestBody = new
+                {
+                    message = tinNhan,
+                    userId = frmTrangChu.MaNV,
+                    context = "convenience_store_management"
+                };
+
+                string jsonContent = JsonConvert.SerializeObject(requestBody);
+                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                // Gọi API
+                HttpResponseMessage response = await httpClient.PostAsync(apiUrl, content);
+                response.EnsureSuccessStatusCode();
+
+                string responseBody = await response.Content.ReadAsStringAsync();
+                dynamic result = JsonConvert.DeserializeObject(responseBody);
+
+                return result.response ?? "Không nhận được phản hồi từ server.";
+            }
+            catch (HttpRequestException)
+            {
+                // Nếu API không khả dụng, fallback về xử lý local
+                return await Task.Run(() => XuLyTinNhanLocal(tinNhan));
+            }
+        }
+
+        private string XuLyTinNhanLocal(string tinNhan)
+        {
+            tinNhan = tinNhan.ToLower();
+
+            // Chào hỏi
+            if (tinNhan.Contains("xin chào") || tinNhan.Contains("hello") || tinNhan.Contains("hi") || tinNhan.Contains("chào"))
+            {
+                return "👋 Xin chào! Tôi có thể giúp gì cho bạn hôm nay?";
+            }
+
+            // Sản phẩm
+            if (tinNhan.Contains("sản phẩm") || tinNhan.Contains("giá") || tinNhan.Contains("hàng hóa"))
+            {
+                return "## 📦 Quản lý Sản phẩm\n\n" +
+                       "Để xem và quản lý sản phẩm, bạn có thể:\n\n" +
+                       "• **Xem danh sách sản phẩm**: Vào mục *Quản lý dữ liệu → Sản phẩm*\n" +
+                       "• **Thêm sản phẩm mới**: Nhấn nút *Thêm* trong màn hình Sản phẩm\n" +
+                       "• **Nhập hàng**: Chọn sản phẩm và nhấn *Sửa* để cập nhật số lượng\n" +
+                       "• **Tra cứu giá**: Sử dụng thanh tìm kiếm theo tên sản phẩm\n\n" +
+                       "Bạn cần hỗ trợ gì thêm về sản phẩm không?";
+            }
+
+            // Hóa đơn
+            if (tinNhan.Contains("hóa đơn") || tinNhan.Contains("bán hàng") || tinNhan.Contains("nhập hàng"))
+            {
+                return "## 🧾 Quản lý Hóa đơn\n\n" +
+                       "Hệ thống hỗ trợ 2 loại hóa đơn:\n\n" +
+                       "### Hóa đơn Bán hàng\n" +
+                       "• Tạo hóa đơn mới: *Quản lý hóa đơn → Hóa đơn bán*\n" +
+                       "• Xem lịch sử bán hàng và in hóa đơn\n\n" +
+                       "### Hóa đơn Nhập hàng\n" +
+                       "• Ghi nhận nhập hàng từ nhà cung cấp\n" +
+                       "• Cập nhật kho và giá nhập\n\n" +
+                       "Bạn muốn tìm hiểu về loại hóa đơn nào?";
+            }
+
+            // Thống kê
+            if (tinNhan.Contains("thống kê") || tinNhan.Contains("doanh thu") || tinNhan.Contains("báo cáo") || tinNhan.Contains("lợi nhuận"))
+            {
+                return "## 📊 Thống kê & Báo cáo\n\n" +
+                       "Hệ thống cung cấp các loại thống kê:\n\n" +
+                       "• **Doanh thu**: Theo ngày, tháng, năm\n" +
+                       "• **Chi phí**: Nhập hàng, chi phí vận hành\n" +
+                       "• **Lợi nhuận**: Phân tích thu chi\n" +
+                       "• **Sản phẩm bán chạy**: Top sản phẩm theo doanh số\n\n" +
+                       "Vào mục *Thống kê* để xem chi tiết các báo cáo.";
+            }
+
+            // Nhân viên
+            if (tinNhan.Contains("nhân viên") || tinNhan.Contains("nv") || tinNhan.Contains("quản lý nhân sự"))
+            {
+                return "## 👥 Quản lý Nhân viên\n\n" +
+                       "Các chức năng quản lý nhân viên:\n\n" +
+                       "• **Danh sách nhân viên**: *Quản lý dữ liệu → Nhân viên*\n" +
+                       "• **Thêm nhân viên**: Nhập thông tin cơ bản\n" +
+                       "• **Phân ca làm việc**: *Quản lý ca*\n" +
+                       "• **Theo dõi hiệu suất**: Xem thống kê ca làm việc\n\n" +
+                       "Mã nhân viên được tự động sinh khi thêm mới.";
+            }
+
+            // Ca làm việc
+            if (tinNhan.Contains("ca làm") || tinNhan.Contains("ca") || tinNhan.Contains("shift"))
+            {
+                return "## ⏰ Quản lý Ca làm việc\n\n" +
+                       "Quản lý ca làm việc của nhân viên:\n\n" +
+                       "• **Xem lịch ca**: *Quản lý ca → Ca làm việc*\n" +
+                       "• **Tạo ca mới**: Phân công nhân viên vào ca\n" +
+                       "• **Điều chỉnh ca**: Thay đổi thời gian hoặc nhân viên\n" +
+                       "• **Theo dõi**: Xem lịch sử làm việc\n\n" +
+                       "Hệ thống hỗ trợ nhiều ca trong ngày.";
+            }
+
+            // Khuyến mãi
+            if (tinNhan.Contains("khuyến mãi") || tinNhan.Contains("km") || tinNhan.Contains("giảm giá"))
+            {
+                return "## 🎁 Chương trình Khuyến mãi\n\n" +
+                       "Quản lý các chương trình khuyến mãi:\n\n" +
+                       "• **Tạo khuyến mãi**: Thiết lập % giảm giá\n" +
+                       "• **Áp dụng**: Cho từng sản phẩm hoặc nhóm sản phẩm\n" +
+                       "• **Theo dõi**: Hiệu quả chương trình khuyến mãi\n\n" +
+                       "Vào *Quản lý dữ liệu → Khuyến mãi* để thiết lập.";
+            }
+
+            // Nhà cung cấp
+            if (tinNhan.Contains("nhà cung cấp") || tinNhan.Contains("ncc") || tinNhan.Contains("supplier"))
+            {
+                return "## 🏢 Quản lý Nhà cung cấp\n\n" +
+                       "Quản lý thông tin nhà cung cấp:\n\n" +
+                       "• **Danh sách NCC**: *Quản lý dữ liệu → Nhà cung cấp*\n" +
+                       "• **Thêm NCC mới**: Lưu thông tin liên hệ\n" +
+                       "• **Theo dõi**: Lịch sử nhập hàng từ từng NCC\n\n" +
+                       "Mỗi sản phẩm được liên kết với một nhà cung cấp.";
+            }
+
+            // Tài khoản
+            if (tinNhan.Contains("tài khoản") || tinNhan.Contains("đăng nhập") || tinNhan.Contains("mật khẩu"))
+            {
+                return "## 🔐 Quản lý Tài khoản\n\n" +
+                       "Quản lý tài khoản và phân quyền:\n\n" +
+                       "• **Đổi mật khẩu**: Cập nhật thông tin bảo mật\n" +
+                       "• **Phân quyền**: Admin có toàn quyền truy cập\n" +
+                       "• **Đăng xuất**: Thoát khỏi phiên làm việc\n\n" +
+                       "Vào *Quản lý tài khoản* để cập nhật thông tin.";
+            }
+
+            // Hướng dẫn chung
+            if (tinNhan.Contains("hướng dẫn") || tinNhan.Contains("help") || tinNhan.Contains("giúp đỡ"))
+            {
+                return "## 📚 Hướng dẫn sử dụng Hệ thống\n\n" +
+                       "Các module chính của hệ thống:\n\n" +
+                       "1️⃣ **Quản lý Hóa đơn**: Bán hàng, nhập hàng\n" +
+                       "2️⃣ **Quản lý Ca**: Phân ca làm việc\n" +
+                       "3️⃣ **Quản lý Dữ liệu**: Sản phẩm, Nhân viên, NCC, Khuyến mãi\n" +
+                       "4️⃣ **Thống kê**: Doanh thu, Chi phí, Lợi nhuận\n" +
+                       "5️⃣ **Quản lý Tài khoản**: Đăng nhập, phân quyền\n\n" +
+                       "Bạn muốn tìm hiểu chi tiết về module nào?";
+            }
+
+            // Cảm ơn
+            if (tinNhan.Contains("cảm ơn") || tinNhan.Contains("thank") || tinNhan.Contains("cám ơn"))
+            {
+                return "😊 Rất vui được giúp đỡ bạn!\n\nNếu có thắc mắc gì thêm, đừng ngại hỏi nhé!";
+            }
+
+            // Tạm biệt
+            if (tinNhan.Contains("tạm biệt") || tinNhan.Contains("bye") || tinNhan.Contains("goodbye"))
+            {
+                return "👋 Tạm biệt! Chúc bạn làm việc hiệu quả!\n\nHẹn gặp lại bạn lần sau!";
+            }
+
+            // Default response
+            return "🤔 Xin lỗi, tôi chưa hiểu rõ câu hỏi của bạn.\n\n" +
+                   "Bạn có thể hỏi tôi về:\n" +
+                   "• 📦 Sản phẩm và giá cả\n" +
+                   "• 🧾 Hóa đơn (bán/nhập hàng)\n" +
+                   "• 📊 Thống kê doanh thu\n" +
+                   "• 👥 Quản lý nhân viên\n" +
+                   "• ⏰ Ca làm việc\n" +
+                   "• 🎁 Khuyến mãi\n\n" +
+                   "Hoặc gõ **'hướng dẫn'** để xem chi tiết.";
+        }
+    }
+}

@@ -1,0 +1,230 @@
+﻿namespace QuanLyCuaHangTienLoi
+{
+    partial class UCChatbox
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        private void InitializeComponent()
+        {
+            this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.chatContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelInput = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnSend = new Guna.UI2.WinForms.Guna2Button();
+            this.txtMessage = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSubtitle = new System.Windows.Forms.Label();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelMain.SuspendLayout();
+            this.panelInput.SuspendLayout();
+            this.panelHeader.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.BorderRadius = 16;
+            this.panelMain.Controls.Add(this.chatContainer);
+            this.panelMain.Controls.Add(this.panelInput);
+            this.panelMain.Controls.Add(this.panelHeader);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Padding = new System.Windows.Forms.Padding(15);
+            this.panelMain.ShadowDecoration.BorderRadius = 16;
+            this.panelMain.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panelMain.ShadowDecoration.Depth = 20;
+            this.panelMain.ShadowDecoration.Enabled = true;
+            this.panelMain.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 4, 8, 8);
+            this.panelMain.Size = new System.Drawing.Size(1150, 600);
+            this.panelMain.TabIndex = 0;
+            // 
+            // chatContainer
+            // 
+            this.chatContainer.AutoScroll = true;
+            this.chatContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            this.chatContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chatContainer.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.chatContainer.Location = new System.Drawing.Point(15, 115);
+            this.chatContainer.Name = "chatContainer";
+            this.chatContainer.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
+            this.chatContainer.Size = new System.Drawing.Size(1120, 360);
+            this.chatContainer.TabIndex = 2;
+            this.chatContainer.WrapContents = false;
+            // 
+            // panelInput
+            // 
+            this.panelInput.BackColor = System.Drawing.Color.White;
+            this.panelInput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.panelInput.BorderRadius = 12;
+            this.panelInput.BorderThickness = 2;
+            this.panelInput.Controls.Add(this.btnSend);
+            this.panelInput.Controls.Add(this.txtMessage);
+            this.panelInput.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelInput.Location = new System.Drawing.Point(15, 475);
+            this.panelInput.Name = "panelInput";
+            this.panelInput.Padding = new System.Windows.Forms.Padding(20, 15, 20, 15);
+            this.panelInput.ShadowDecoration.BorderRadius = 12;
+            this.panelInput.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.panelInput.ShadowDecoration.Depth = 10;
+            this.panelInput.Size = new System.Drawing.Size(1120, 110);
+            this.panelInput.TabIndex = 1;
+            // 
+            // btnSend
+            // 
+            this.btnSend.BorderRadius = 10;
+            this.btnSend.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSend.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSend.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSend.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSend.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSend.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.ForeColor = System.Drawing.Color.White;
+            this.btnSend.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.btnSend.Image = global::QuanLyCuaHangTienLoi.Properties.Resources.send_icon;
+            this.btnSend.ImageSize = new System.Drawing.Size(24, 24);
+            this.btnSend.Location = new System.Drawing.Point(920, 15);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.ShadowDecoration.BorderRadius = 10;
+            this.btnSend.ShadowDecoration.Depth = 8;
+            this.btnSend.ShadowDecoration.Enabled = true;
+            this.btnSend.Size = new System.Drawing.Size(180, 80);
+            this.btnSend.TabIndex = 1;
+            this.btnSend.Text = "Gửi";
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            // 
+            // txtMessage
+            // 
+            this.txtMessage.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.txtMessage.BorderRadius = 10;
+            this.txtMessage.BorderThickness = 2;
+            this.txtMessage.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMessage.DefaultText = "";
+            this.txtMessage.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(235)))));
+            this.txtMessage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(244)))), ((int)(((byte)(246)))));
+            this.txtMessage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
+            this.txtMessage.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMessage.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtMessage.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.txtMessage.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(41)))), ((int)(((byte)(55)))));
+            this.txtMessage.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.txtMessage.Location = new System.Drawing.Point(20, 15);
+            this.txtMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMessage.Multiline = true;
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
+            this.txtMessage.PasswordChar = '\0';
+            this.txtMessage.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
+            this.txtMessage.PlaceholderText = "💬 Nhập câu hỏi của bạn... (Enter để gửi, Shift+Enter để xuống dòng)";
+            this.txtMessage.SelectedText = "";
+            this.txtMessage.Size = new System.Drawing.Size(880, 80);
+            this.txtMessage.TabIndex = 0;
+            this.txtMessage.TextChanged += new System.EventHandler(this.txtMessage_TextChanged);
+            this.txtMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMessage_KeyDown);
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
+            this.panelHeader.BorderRadius = 12;
+            this.panelHeader.Controls.Add(this.lblSubtitle);
+            this.panelHeader.Controls.Add(this.btnClear);
+            this.panelHeader.Controls.Add(this.lblTitle);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(15, 15);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Padding = new System.Windows.Forms.Padding(25, 15, 25, 15);
+            this.panelHeader.ShadowDecoration.BorderRadius = 12;
+            this.panelHeader.ShadowDecoration.Depth = 10;
+            this.panelHeader.ShadowDecoration.Enabled = true;
+            this.panelHeader.Size = new System.Drawing.Size(1120, 100);
+            this.panelHeader.TabIndex = 0;
+            // 
+            // lblSubtitle
+            // 
+            this.lblSubtitle.AutoSize = true;
+            this.lblSubtitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(234)))), ((int)(((byte)(254)))));
+            this.lblSubtitle.Location = new System.Drawing.Point(25, 55);
+            this.lblSubtitle.Name = "lblSubtitle";
+            this.lblSubtitle.Size = new System.Drawing.Size(348, 23);
+            this.lblSubtitle.TabIndex = 2;
+            this.lblSubtitle.Text = "Hỗ trợ bởi AI - Trả lời nhanh chóng và chính xác";
+            // 
+            // btnClear
+            // 
+            this.btnClear.BorderColor = System.Drawing.Color.White;
+            this.btnClear.BorderRadius = 8;
+            this.btnClear.BorderThickness = 2;
+            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClear.FillColor = System.Drawing.Color.Transparent;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.HoverState.BorderColor = System.Drawing.Color.White;
+            this.btnClear.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.btnClear.Location = new System.Drawing.Point(925, 15);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(170, 70);
+            this.btnClear.TabIndex = 1;
+            this.btnClear.Text = "🗑️ Xóa Chat";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(20, 15);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(352, 41);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "🤖 Trợ Lý AI Cửa Hàng";
+            // 
+            // UCChatbox
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(244)))), ((int)(((byte)(246)))));
+            this.Controls.Add(this.panelMain);
+            this.Name = "UCChatbox";
+            this.Size = new System.Drawing.Size(1150, 600);
+            this.Load += new System.EventHandler(this.UCChatbox_Load);
+            this.panelMain.ResumeLayout(false);
+            this.panelInput.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Guna.UI2.WinForms.Guna2Panel panelMain;
+        private Guna.UI2.WinForms.Guna2Panel panelHeader;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblSubtitle;
+        private Guna.UI2.WinForms.Guna2Panel panelInput;
+        private Guna.UI2.WinForms.Guna2TextBox txtMessage;
+        private Guna.UI2.WinForms.Guna2Button btnSend;
+        private System.Windows.Forms.FlowLayoutPanel chatContainer;
+        private Guna.UI2.WinForms.Guna2Button btnClear;
+    }
+}

@@ -1,0 +1,9 @@
+C:\Users\dinhx\Downloads\DoAnCNTT\convenience-store-management\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\dinhx\Downloads\DoAnCNTT\convenience-store-management\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dinhx\Downloads\DoAnCNTT\convenience-store-management\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\dinhx\Downloads\DoAnCNTT\convenience-store-management\DataAccessLayer\bin\Debug\netstandard2.0\DataAccessLayer.dll.config
+C:\Users\dinhx\Downloads\DoAnCNTT\convenience-store-management\DataAccessLayer\bin\Debug\netstandard2.0\DataAccessLayer.deps.json
+C:\Users\dinhx\Downloads\DoAnCNTT\convenience-store-management\DataAccessLayer\bin\Debug\netstandard2.0\DataAccessLayer.dll
+C:\Users\dinhx\Downloads\DoAnCNTT\convenience-store-management\DataAccessLayer\bin\Debug\netstandard2.0\DataAccessLayer.pdb
+C:\Users\dinhx\Downloads\DoAnCNTT\convenience-store-management\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.dll
+C:\Users\dinhx\Downloads\DoAnCNTT\convenience-store-management\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.pdb
