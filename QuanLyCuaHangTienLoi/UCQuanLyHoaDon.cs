@@ -25,6 +25,7 @@ namespace QuanLyCuaHangTienLoi
         public UCQuanLyHoaDon()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
         }
 
         private void btn_hoaDonBan_Click(object sender, EventArgs e)

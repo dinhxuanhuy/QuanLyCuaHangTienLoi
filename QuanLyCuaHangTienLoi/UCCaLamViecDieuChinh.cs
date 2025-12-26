@@ -24,6 +24,7 @@ namespace QuanLyCuaHangTienLoi
         public UCCaLamViecDieuChinh()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbcl = new BALQuanLyCa();
             LoadDuLieuBuoi();
             LoadDuLieuNhanVien();

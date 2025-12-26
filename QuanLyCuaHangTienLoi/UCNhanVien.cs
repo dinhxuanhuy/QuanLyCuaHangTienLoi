@@ -28,6 +28,7 @@ namespace QuanLyCuaHangTienLoi
         public UCNhanVien()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbnv = new BALNhanVien();
             LoadGioiTinh();
             LoadChucVu();

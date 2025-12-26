@@ -22,6 +22,7 @@ namespace QuanLyCuaHangTienLoi
         public UCHoaDonNhap()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbhd = new BALHoaDon();
 
             this.dgvHoaDon = this.guna2DataGridView1;

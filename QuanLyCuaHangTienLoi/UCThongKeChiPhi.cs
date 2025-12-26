@@ -28,6 +28,7 @@ namespace QuanLyCuaHangTienLoi
         public UCThongKeChiPhi()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbtk = new BALThongKe();
         }
 

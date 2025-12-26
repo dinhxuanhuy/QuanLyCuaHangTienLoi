@@ -26,6 +26,7 @@ namespace QuanLyCuaHangTienLoi
         public UC_caLamViec()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbcl = new BALQuanLyCa();
             DataTable dt = dbcl.CaLamViec();
             dgv_caLamViec.DataSource = dt;
