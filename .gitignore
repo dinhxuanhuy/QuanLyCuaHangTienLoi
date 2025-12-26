@@ -1,0 +1,36 @@
+# ===== Visual Studio =====
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===== Build results =====
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# ===== NuGet =====
+packages/
+*.nupkg
+*.snupkg
+
+# ===== Logs =====
+*.log
+
+# ===== OS files =====
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ===== Rider / VSCode =====
+.idea/
+.vscode/
+
+# ===== Test results =====
+TestResults/
+
+# ===== Backup files =====
+*.bak
+*.tmp
