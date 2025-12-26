@@ -1,3 +1,4 @@
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
@@ -47,6 +48,8 @@ namespace QuanLyCuaHangTienLoi
 
         #region Font Constants
 
+        // Static readonly fonts - these live for the application lifetime so disposal is not needed
+        // They are only created once and reused across all controls
         public static readonly Font DefaultFont = new Font("Segoe UI", 10F, FontStyle.Regular);
         public static readonly Font DefaultFontBold = new Font("Segoe UI", 10F, FontStyle.Bold);
         public static readonly Font HeaderFont = new Font("Segoe UI", 10F, FontStyle.Bold);
@@ -238,34 +241,31 @@ namespace QuanLyCuaHangTienLoi
             button.Font = DefaultFontBold;
             button.ForeColor = TextLight;
 
-            string buttonText = button.Text.ToLowerInvariant();
-            string buttonName = button.Name.ToLowerInvariant();
+            // Use StringComparison.OrdinalIgnoreCase for case-insensitive comparison
+            string buttonText = button.Text ?? string.Empty;
+            string buttonName = button.Name ?? string.Empty;
 
-            // Determine button type based on text or name
-            if (buttonText.Contains("xóa") || buttonText.Contains("xoa") || buttonText.Contains("delete") ||
-                buttonName.Contains("xoa") || buttonName.Contains("delete"))
+            // Determine button type based on text or name using case-insensitive comparison
+            if (ContainsAnyIgnoreCase(buttonText, "xóa", "xoa", "delete") ||
+                ContainsAnyIgnoreCase(buttonName, "xoa", "delete"))
             {
                 // Danger button (Delete)
                 button.FillColor = ButtonDanger;
             }
-            else if (buttonText.Contains("hủy") || buttonText.Contains("huy") || buttonText.Contains("cancel") ||
-                     buttonName.Contains("huy") || buttonName.Contains("cancel"))
+            else if (ContainsAnyIgnoreCase(buttonText, "hủy", "huy", "cancel") ||
+                     ContainsAnyIgnoreCase(buttonName, "huy", "cancel"))
             {
                 // Secondary button (Cancel)
                 button.FillColor = ButtonSecondary;
             }
-            else if (buttonText.Contains("lưu") || buttonText.Contains("luu") || buttonText.Contains("save") ||
-                     buttonText.Contains("quay") || buttonText.Contains("back") ||
-                     buttonName.Contains("luu") || buttonName.Contains("save") ||
-                     buttonName.Contains("quaylai") || buttonName.Contains("back"))
+            else if (ContainsAnyIgnoreCase(buttonText, "lưu", "luu", "save", "quay", "back") ||
+                     ContainsAnyIgnoreCase(buttonName, "luu", "save", "quaylai", "back"))
             {
                 // Success button (Save/Back)
                 button.FillColor = ButtonSuccess;
             }
-            else if (buttonText.Contains("sửa") || buttonText.Contains("sua") || buttonText.Contains("edit") ||
-                     buttonText.Contains("nhập") || buttonText.Contains("nhap") ||
-                     buttonName.Contains("sua") || buttonName.Contains("edit") ||
-                     buttonName.Contains("nhap"))
+            else if (ContainsAnyIgnoreCase(buttonText, "sửa", "sua", "edit", "nhập", "nhap") ||
+                     ContainsAnyIgnoreCase(buttonName, "sua", "edit", "nhap"))
             {
                 // Warning button (Edit/Import)
                 button.FillColor = ButtonWarning;
@@ -327,6 +327,23 @@ namespace QuanLyCuaHangTienLoi
         #endregion
 
         #region Helper Methods
+
+        /// <summary>
+        /// Checks if a string contains any of the specified substrings (case-insensitive)
+        /// </summary>
+        private static bool ContainsAnyIgnoreCase(string text, params string[] substrings)
+        {
+            if (string.IsNullOrEmpty(text))
+                return false;
+
+            foreach (string substring in substrings)
+            {
+                if (text.IndexOf(substring, StringComparison.OrdinalIgnoreCase) >= 0)
+                    return true;
+            }
+
+            return false;
+        }
 
         /// <summary>
         /// Darkens a color by a given factor (0.0 - 1.0)
