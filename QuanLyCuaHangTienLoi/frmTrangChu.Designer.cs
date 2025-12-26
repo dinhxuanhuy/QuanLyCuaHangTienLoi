@@ -58,6 +58,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pnlSidebar = new Guna.UI2.WinForms.Guna2Panel();
             labMaNV = new System.Windows.Forms.Label();
             labTenNV = new System.Windows.Forms.Label();
@@ -446,8 +448,8 @@
             // 
             // panelContent
             // 
-            panelContent.CustomizableEdges = customizableEdges27;
-            panelContent.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            panelContent.CustomizableEdges = customizableEdges29;
+            panelContent.ShadowDecoration.CustomizableEdges = customizableEdges30;
             panelContent.FillColor = System.Drawing.Color.FromArgb(236, 240, 241);
             panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             panelContent.Location = new System.Drawing.Point(280, 70);

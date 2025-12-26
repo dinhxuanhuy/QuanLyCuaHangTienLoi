@@ -17,7 +17,6 @@ namespace QuanLyCuaHangTienLoi
         public static string MaNV = "";
         
         // Color constants for modern UI
-        private readonly Color SidebarColor = Color.FromArgb(44, 62, 80);
         private readonly Color ActiveButtonColor = Color.FromArgb(52, 152, 219);
         private readonly Color NormalButtonColor = Color.FromArgb(44, 62, 80);
         private readonly Color TextColorNormal = Color.FromArgb(236, 240, 241);
