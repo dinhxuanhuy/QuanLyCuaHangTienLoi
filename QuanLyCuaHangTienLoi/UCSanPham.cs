@@ -35,6 +35,7 @@ namespace QuanLyCuaHangTienLoi
         public UCSanPham()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbsp = new BALSanPham();
         }
 

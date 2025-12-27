@@ -24,6 +24,7 @@ namespace QuanLyCuaHangTienLoi
         public UCThemHDBanHang()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
         }
 
         // Sự kiện khi UserControl được load

@@ -30,6 +30,7 @@ namespace QuanLyCuaHangTienLoi
         public UCHoaDonBan()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbhd = new BALHoaDon();
             // 🚨 Gán DataGridView thực tế
             this.dgvHoaDon = this.guna2DataGridView1;

@@ -25,6 +25,7 @@ namespace QuanLyCuaHangTienLoi
         public UCQuanLyDuLieu()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
         }
 
         private void btn_quanLyNhanVien_Click(object sender, EventArgs e)

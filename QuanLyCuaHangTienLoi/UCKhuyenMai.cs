@@ -28,6 +28,7 @@ namespace QuanLyCuaHangTienLoi
         public UCKhuyenMai()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbkm = new BALKhuyenMai();
         }
 

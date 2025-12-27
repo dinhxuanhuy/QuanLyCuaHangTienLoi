@@ -27,6 +27,7 @@ namespace QuanLyCuaHangTienLoi
         public UCQuanLyTaiKhoan()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbtk = new BALTaiKhoan();
             pan_dangKy.Hide();
             pan_dangNhap.Show();

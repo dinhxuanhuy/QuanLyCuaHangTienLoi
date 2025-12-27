@@ -26,6 +26,7 @@ namespace QuanLyCuaHangTienLoi
         public UCNhaCungCap()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
             dbncc = new BALNhaCungCap();
         }
 

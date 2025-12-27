@@ -26,6 +26,7 @@ namespace QuanLyCuaHangTienLoi
         public UCThongKe()
         {
             InitializeComponent();
+            UIStyles.ApplyUIStyle(this);
         }
 
         private void btn_doanhThu_Click(object sender, EventArgs e)
