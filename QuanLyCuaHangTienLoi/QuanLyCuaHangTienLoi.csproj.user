@@ -8,7 +8,13 @@
     <Compile Update="frmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UCChatbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCNCC.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

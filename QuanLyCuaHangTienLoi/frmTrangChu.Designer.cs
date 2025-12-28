@@ -110,6 +110,7 @@
             // labMaNV
             // 
             labMaNV.AutoSize = true;
+            labMaNV.BackColor = System.Drawing.Color.White;
             labMaNV.Location = new System.Drawing.Point(120, 893);
             labMaNV.Name = "labMaNV";
             labMaNV.Size = new System.Drawing.Size(66, 32);
@@ -119,6 +120,7 @@
             // labTenNV
             // 
             labTenNV.AutoSize = true;
+            labTenNV.BackColor = System.Drawing.Color.White;
             labTenNV.Location = new System.Drawing.Point(120, 851);
             labTenNV.Name = "labTenNV";
             labTenNV.Size = new System.Drawing.Size(64, 32);
@@ -127,6 +129,7 @@
             // 
             // guna2CirclePictureBox1
             // 
+            guna2CirclePictureBox1.BackColor = System.Drawing.Color.White;
             guna2CirclePictureBox1.Image = (System.Drawing.Image)resources.GetObject("guna2CirclePictureBox1.Image");
             guna2CirclePictureBox1.ImageRotate = 0F;
             guna2CirclePictureBox1.Location = new System.Drawing.Point(13, 851);
@@ -147,7 +150,7 @@
             btn_chatBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_chatBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_chatBox.FillColor = System.Drawing.Color.White;
-            btn_chatBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            btn_chatBox.Font = new System.Drawing.Font("Bahnschrift", 9F);
             btn_chatBox.ForeColor = System.Drawing.Color.Black;
             btn_chatBox.HoverState.BorderColor = System.Drawing.Color.Navy;
             btn_chatBox.HoverState.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
@@ -155,7 +158,7 @@
             btn_chatBox.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             btn_chatBox.ImageOffset = new System.Drawing.Point(8, 0);
             btn_chatBox.ImageSize = new System.Drawing.Size(30, 30);
-            btn_chatBox.Location = new System.Drawing.Point(0, 628);
+            btn_chatBox.Location = new System.Drawing.Point(13, 629);
             btn_chatBox.Name = "btn_chatBox";
             btn_chatBox.ShadowDecoration.CustomizableEdges = customizableEdges3;
             btn_chatBox.Size = new System.Drawing.Size(316, 69);
@@ -173,7 +176,7 @@
             btn_quanLyTaiKhoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_quanLyTaiKhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_quanLyTaiKhoan.FillColor = System.Drawing.Color.White;
-            btn_quanLyTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            btn_quanLyTaiKhoan.Font = new System.Drawing.Font("Bahnschrift", 9F);
             btn_quanLyTaiKhoan.ForeColor = System.Drawing.Color.Black;
             btn_quanLyTaiKhoan.HoverState.BorderColor = System.Drawing.Color.Navy;
             btn_quanLyTaiKhoan.HoverState.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
@@ -181,7 +184,7 @@
             btn_quanLyTaiKhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             btn_quanLyTaiKhoan.ImageOffset = new System.Drawing.Point(8, 0);
             btn_quanLyTaiKhoan.ImageSize = new System.Drawing.Size(30, 30);
-            btn_quanLyTaiKhoan.Location = new System.Drawing.Point(3, 527);
+            btn_quanLyTaiKhoan.Location = new System.Drawing.Point(7, 527);
             btn_quanLyTaiKhoan.Name = "btn_quanLyTaiKhoan";
             btn_quanLyTaiKhoan.ShadowDecoration.CustomizableEdges = customizableEdges5;
             btn_quanLyTaiKhoan.Size = new System.Drawing.Size(316, 69);
@@ -199,7 +202,7 @@
             btn_thongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_thongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_thongKe.FillColor = System.Drawing.Color.White;
-            btn_thongKe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            btn_thongKe.Font = new System.Drawing.Font("Bahnschrift", 9F);
             btn_thongKe.ForeColor = System.Drawing.Color.Black;
             btn_thongKe.HoverState.BorderColor = System.Drawing.Color.Navy;
             btn_thongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
@@ -207,7 +210,7 @@
             btn_thongKe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             btn_thongKe.ImageOffset = new System.Drawing.Point(8, 0);
             btn_thongKe.ImageSize = new System.Drawing.Size(30, 30);
-            btn_thongKe.Location = new System.Drawing.Point(3, 430);
+            btn_thongKe.Location = new System.Drawing.Point(12, 430);
             btn_thongKe.Name = "btn_thongKe";
             btn_thongKe.ShadowDecoration.CustomizableEdges = customizableEdges7;
             btn_thongKe.Size = new System.Drawing.Size(316, 69);
@@ -225,7 +228,7 @@
             btn_quanLyCa.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_quanLyCa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_quanLyCa.FillColor = System.Drawing.Color.White;
-            btn_quanLyCa.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            btn_quanLyCa.Font = new System.Drawing.Font("Bahnschrift", 9F);
             btn_quanLyCa.ForeColor = System.Drawing.Color.Black;
             btn_quanLyCa.HoverState.BorderColor = System.Drawing.Color.Navy;
             btn_quanLyCa.HoverState.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
@@ -251,7 +254,7 @@
             btn_quanLyDuLieu.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_quanLyDuLieu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_quanLyDuLieu.FillColor = System.Drawing.Color.White;
-            btn_quanLyDuLieu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            btn_quanLyDuLieu.Font = new System.Drawing.Font("Bahnschrift", 9F);
             btn_quanLyDuLieu.ForeColor = System.Drawing.Color.Black;
             btn_quanLyDuLieu.HoverState.BorderColor = System.Drawing.Color.Navy;
             btn_quanLyDuLieu.HoverState.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
@@ -277,7 +280,7 @@
             btn_quanLyHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_quanLyHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_quanLyHoaDon.FillColor = System.Drawing.Color.White;
-            btn_quanLyHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            btn_quanLyHoaDon.Font = new System.Drawing.Font("Bahnschrift", 9F);
             btn_quanLyHoaDon.ForeColor = System.Drawing.Color.Black;
             btn_quanLyHoaDon.HoverState.BorderColor = System.Drawing.Color.Navy;
             btn_quanLyHoaDon.HoverState.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
@@ -289,13 +292,14 @@
             btn_quanLyHoaDon.Name = "btn_quanLyHoaDon";
             btn_quanLyHoaDon.ShadowDecoration.CustomizableEdges = customizableEdges13;
             btn_quanLyHoaDon.Size = new System.Drawing.Size(316, 69);
-            btn_quanLyHoaDon.TabIndex = 2;
+            btn_quanLyHoaDon.TabIndex = 1;
             btn_quanLyHoaDon.Text = "Quản lý hóa đơn";
             btn_quanLyHoaDon.TextOffset = new System.Drawing.Point(8, 0);
             btn_quanLyHoaDon.Click += btn_quanLyHoaDon_Click_1;
             // 
             // guna2PictureBox1
             // 
+            guna2PictureBox1.BackColor = System.Drawing.Color.White;
             guna2PictureBox1.CustomizableEdges = customizableEdges14;
             guna2PictureBox1.Image = (System.Drawing.Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
@@ -340,10 +344,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 14.1428576F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            label1.Font = new System.Drawing.Font("Bahnschrift", 14.1428576F, System.Drawing.FontStyle.Bold);
             label1.Location = new System.Drawing.Point(471, 15);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(501, 51);
+            label1.Size = new System.Drawing.Size(474, 46);
             label1.TabIndex = 4;
             label1.Text = "Quản Lý Cửa Hàng Tiện Lợi";
             // 
@@ -413,8 +417,10 @@
             // 
             panelContent.BackColor = System.Drawing.Color.FromArgb(242, 245, 250);
             panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            panelContent.Location = new System.Drawing.Point(323, 78);
             panelContent.Name = "panelContent";
             panelContent.Padding = new System.Windows.Forms.Padding(10);
+            panelContent.Size = new System.Drawing.Size(1388, 856);
             panelContent.TabIndex = 2;
             // 
             // frmTrangChu

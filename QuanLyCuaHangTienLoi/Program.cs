@@ -35,6 +35,8 @@ namespace QuanLyCuaHangTienLoi
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmDangNhap());
+            
+
         }
     }
 }

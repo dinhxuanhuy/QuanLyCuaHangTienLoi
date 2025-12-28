@@ -47,7 +47,7 @@ namespace QuanLyCuaHangTienLoi
 
         private void btn_nhaCungCap_Click(object sender, EventArgs e)
         {
-            UserControl ucCanChuyenToi = Program.ucNhaCungCap;
+            UserControl ucCanChuyenToi = new UCNCC();
             NavigateRequest?.Invoke(ucCanChuyenToi);
         }
     }

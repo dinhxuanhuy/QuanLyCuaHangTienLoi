@@ -10,8 +10,7 @@ namespace DataAccessLayer
 {
     public class SqlAgent
     {
-        // Thông tin cấu hình (Nên đưa vào Config file sau này)
-        private const string ApiKey = "";
+        private string ApiKey = Environment.GetEnvironmentVariable("GROQ_API_KEY");
         private const string ModelId = "llama-3.3-70b-versatile";
 
         private static SqlAgent instance = null;

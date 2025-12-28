@@ -462,10 +462,6 @@
               "version": "[8.0.22, 8.0.22]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[8.0.22, 8.0.22]"
             },
@@ -517,6 +513,9 @@
             "projectReferences": {
               "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
                 "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\BusinessAccessLayer.csproj"
+              },
+              "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }

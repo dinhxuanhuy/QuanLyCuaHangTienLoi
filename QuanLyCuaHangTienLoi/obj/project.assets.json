@@ -5753,6 +5753,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "BusinessAccessLayer >= 1.0.0",
+      "DataAccessLayer >= 1.0.0",
       "EPPlus >= 8.4.0",
       "EPPlus.Interfaces >= 8.4.0",
       "Guna.UI2.WinForms >= 2.0.4.7",
@@ -5830,6 +5831,9 @@
           "projectReferences": {
             "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
               "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\BusinessAccessLayer.csproj"
+            },
+            "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }

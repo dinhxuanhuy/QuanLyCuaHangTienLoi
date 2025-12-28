@@ -52,9 +52,10 @@ D:\Subject\Do An CNTT\convenience-store-management\convenience-store-management\
 D:\Subject\Do An CNTT\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\refint\BusinessAccessLayer.dll
 D:\Subject\Do An CNTT\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.pdb
 D:\Subject\Do An CNTT\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\ref\BusinessAccessLayer.dll
-C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.deps.json
-C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.runtimeconfig.json
-C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.exe
+C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.sourcelink.json
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\bin\Debug\net8.0-windows\BusinessAccessLayer.dll.config
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\bin\Debug\net8.0-windows\BusinessAccessLayer.deps.json
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\bin\Debug\net8.0-windows\BusinessAccessLayer.dll
@@ -62,9 +63,6 @@ C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-manag
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.dll
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.pdb
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.dll.config
-C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.csproj.AssemblyReference.cache
-C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\Business.395A7FC9.Up2Date
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.dll
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\refint\BusinessAccessLayer.dll

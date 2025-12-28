@@ -9,6 +9,7 @@
       "QuanLyCuaHangTienLoi/1.0.0": {
         "dependencies": {
           "BusinessAccessLayer": "1.0.0",
+          "DataAccessLayer": "1.0.0",
           "EPPlus": "8.4.0",
           "EPPlus.Interfaces": "8.4.0",
           "Guna.UI2.WinForms": "2.0.4.7",

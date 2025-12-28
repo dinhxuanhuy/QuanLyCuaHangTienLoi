@@ -306,9 +306,6 @@ D:\Subject\Do An CNTT\convenience-store-management\convenience-store-management\
 D:\Subject\Do An CNTT\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCu.6EB7CA89.Up2Date
 D:\Subject\Do An CNTT\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.genruntimeconfig.cache
 D:\Subject\Do An CNTT\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\ref\QuanLyCuaHangTienLoi.dll
-C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\bin\Debug\net8.0-windows\DataAccessLayer.deps.json
-C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\bin\Debug\net8.0-windows\DataAccessLayer.runtimeconfig.json
-C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\bin\Debug\net8.0-windows\DataAccessLayer.exe
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\bin\Debug\net8.0-windows\QuanLyCuaHangTienLoi.exe
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\bin\Debug\net8.0-windows\QuanLyCuaHangTienLoi.dll.config
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\bin\Debug\net8.0-windows\QuanLyCuaHangTienLoi.deps.json
@@ -382,6 +379,7 @@ C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-manag
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.csproj.AssemblyReference.cache
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.frmDangNhap.resources
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.frmTrangChu.resources
+C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\dental_sys.Patient.resources
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.Properties.Resources.resources
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UC_caLamViec.resources
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UCCaLamViecDieuChinh.resources
@@ -389,6 +387,7 @@ C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-manag
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UCHoaDonBan.resources
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UCHoaDonNhap.resources
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UCKhuyenMai.resources
+C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UCNCC.resources
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UCNhaCungCap.resources
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UCNhanVien.resources
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UCQuanLyDuLieu.resources
@@ -403,6 +402,7 @@ C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-manag
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.csproj.GenerateResource.cache
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.sourcelink.json
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCu.6EB7CA89.Up2Date
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.dll
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\refint\QuanLyCuaHangTienLoi.dll
