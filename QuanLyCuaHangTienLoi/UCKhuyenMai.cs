@@ -334,5 +334,16 @@ namespace QuanLyCuaHangTienLoi
                 txtTimKiem.ForeColor = Color.Gray;
             }
         }
+
+        private void btn_KMAD_Click(object sender, EventArgs e)
+        {
+            // Lấy UserControl Doanh Thu mà bạn đã tạo sẵn trong Program.cs
+            UserControl ucCanChuyenToi = Program.ucKhuyenMaiAD;
+
+            // 4. Kích hoạt sự kiện và gửi UserControl đi
+            //    Dấu ? (null-conditional operator) để kiểm tra xem có ai (frmTrangChu)
+            //    đang lắng nghe sự kiện này không. Nếu có, nó sẽ gọi Invoke.
+            NavigateRequest?.Invoke(ucCanChuyenToi);
+        }
     }
 }

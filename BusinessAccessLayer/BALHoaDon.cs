@@ -124,5 +124,32 @@ namespace BusinessAccessLayer
             // Hàm này trả về True/False
             return dp.MyExecuteNonQuery("sp_ThemChiTietHDBanHang", CommandType.StoredProcedure, ref err, param);
         }
+        // Trong class BALHoaDon
+
+        public DataTable LayThongTinKhuyenMai(string maSP)
+        {
+            try
+            {
+                // Truy vấn lấy Mức KM và Điều Kiện dựa trên MaSP
+                // Chỉ lấy các khuyến mãi đang trong thời gian hiệu lực
+                string query = @"
+            SELECT k.MucKM, k.DieuKien
+            FROM SanPhamKhuyenMai spkm
+            INNER JOIN KhuyenMai k ON spkm.MaKM = k.MaKM
+            WHERE spkm.MaSP = @MaSP 
+              AND k.ThoiGianBatDau <= GETDATE() 
+              AND k.ThoiGianKetThuc >= GETDATE()";
+
+                SqlParameter[] param = new SqlParameter[] {
+            new SqlParameter("@MaSP", maSP)
+        };
+
+                return dp.MyExecuteQuery(query, param);
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }

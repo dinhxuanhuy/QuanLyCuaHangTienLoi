@@ -25,6 +25,7 @@ namespace QuanLyCuaHangTienLoi
         public static UCQuanLyTaiKhoan ucQuanLyTaiKhoan;
         public static UCThemHDBanHang ucThemHDBanHang;
         public static UCChatbox ucChatbox;
+        public static UCKhuyenMaiAD ucKhuyenMaiAD;
 
         /// <summary>
         /// The main entry point for the application.

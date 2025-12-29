@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj": {}
+    "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
+    "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
+        "projectUniqueName": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
         "projectName": "BusinessAccessLayer",
-        "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\obj\\",
+        "projectPath": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\BusinessAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj"
+              "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -241,25 +236,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\obj\\",
+        "projectPath": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -267,7 +258,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -478,25 +468,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj": {
+    "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj",
+        "projectUniqueName": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj",
         "projectName": "QuanLyCuaHangTienLoi",
-        "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\obj\\",
+        "projectPath": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -504,18 +490,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\BusinessAccessLayer\\BusinessAccessLayer.csproj"
+              "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
+                "projectPath": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\BusinessAccessLayer\\BusinessAccessLayer.csproj"
               },
-              "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\DataAccessLayer\\DataAccessLayer.csproj"
+              "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\DAI_HOC\\Nam_Ba\\HK1\\Dot_2\\Do_An_CNTT\\current\\QuanLyCuaHangTienLoi\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -734,7 +719,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

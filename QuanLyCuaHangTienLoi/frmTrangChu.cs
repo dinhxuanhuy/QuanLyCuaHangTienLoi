@@ -66,6 +66,7 @@ namespace QuanLyCuaHangTienLoi
             Program.ucQuanLyTaiKhoan = new UCQuanLyTaiKhoan();
             Program.ucThemHDBanHang = new UCThemHDBanHang();
             Program.ucChatbox = new UCChatbox(); // Initialize chatbox
+            Program.ucKhuyenMaiAD = new UCKhuyenMaiAD();
 
             // tương tác sự kiện trong module ThongKe
             Program.ucThongKe.NavigateRequest += Uc_NavigateRequest;
@@ -89,11 +90,11 @@ namespace QuanLyCuaHangTienLoi
             // tương tác với quá trình đăng nhập
             Program.ucQuanLyTaiKhoan.NavigateRequest += Uc_NavigateRequest;
 
-            btn_quanLyCa.Enabled = false;
-            btn_quanLyDuLieu.Enabled = false;
-            btn_quanLyHoaDon.Enabled = false;
-            btn_quanLyTaiKhoan.Enabled = false;
-            btn_thongKe.Enabled = false;
+            btn_quanLyCa.Enabled = true;
+            btn_quanLyDuLieu.Enabled = true;
+            btn_quanLyHoaDon.Enabled = true;
+            btn_quanLyTaiKhoan.Enabled = true;
+            btn_thongKe.Enabled = true;
 
             LoadUserControl(Program.ucQuanLyTaiKhoan, false); // Hiển thị giao diện Trang chủ mặc định
         }

@@ -68,3 +68,19 @@ C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-manag
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\refint\BusinessAccessLayer.dll
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.pdb
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\BusinessAccessLayer\obj\Debug\net8.0-windows\ref\BusinessAccessLayer.dll
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\bin\Debug\net8.0-windows\BusinessAccessLayer.dll.config
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\bin\Debug\net8.0-windows\BusinessAccessLayer.deps.json
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\bin\Debug\net8.0-windows\BusinessAccessLayer.dll
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\bin\Debug\net8.0-windows\BusinessAccessLayer.pdb
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.dll
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.dll.config
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.csproj.AssemblyReference.cache
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.sourcelink.json
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\obj\Debug\net8.0-windows\Business.395A7FC9.Up2Date
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.dll
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\obj\Debug\net8.0-windows\refint\BusinessAccessLayer.dll
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\obj\Debug\net8.0-windows\BusinessAccessLayer.pdb
+D:\DAI_HOC\Nam_Ba\HK1\Dot_2\Do_An_CNTT\current\QuanLyCuaHangTienLoi\BusinessAccessLayer\obj\Debug\net8.0-windows\ref\BusinessAccessLayer.dll

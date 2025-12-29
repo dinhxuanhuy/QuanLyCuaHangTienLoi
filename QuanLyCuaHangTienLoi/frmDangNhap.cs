@@ -48,8 +48,8 @@ namespace QuanLyCuaHangTienLoi
                         txtTenDangNhap.Text.Trim(),
                         txtMatKhau.Text,
                         ref err);
-                    frmTrangChu main = new frmTrangChu();
-                    //main.MaNV = maNV;
+                     frmTrangChu main = new frmTrangChu();
+                    //main.maNV = maNV;
                     //main.CapNhatTenNhanVien(txtTenDangNhap.Text, maNV);
                     this.Hide();
                     main.ShowDialog();
