@@ -56,17 +56,17 @@
             // 
             // gbChiTiet
             // 
-            this.gbChiTiet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.gbChiTiet.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.BackColor = System.Drawing.Color.White;
+            this.gbChiTiet.BorderColor = System.Drawing.Color.White;
             this.gbChiTiet.BorderRadius = 12;
             this.gbChiTiet.Controls.Add(this.btn_thongKe);
             this.gbChiTiet.Controls.Add(this.txt_timKiem);
             this.gbChiTiet.Controls.Add(this.guna2HtmlLabel3);
             this.gbChiTiet.Controls.Add(this.btn_chiPhiTheoThang);
             this.gbChiTiet.Controls.Add(this.btn_quayLai);
-            this.gbChiTiet.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.gbChiTiet.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gbChiTiet.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.FillColor = System.Drawing.Color.White;
             this.gbChiTiet.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbChiTiet.ForeColor = System.Drawing.Color.Black;
             this.gbChiTiet.Location = new System.Drawing.Point(0, 0);
@@ -78,13 +78,13 @@
             // 
             // btn_thongKe
             // 
-            this.btn_thongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_thongKe.BackColor = System.Drawing.Color.White;
             this.btn_thongKe.BorderRadius = 8;
             this.btn_thongKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_thongKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_thongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_thongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_thongKe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_thongKe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_thongKe.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btn_thongKe.ForeColor = System.Drawing.Color.White;
             this.btn_thongKe.Location = new System.Drawing.Point(847, 190);
@@ -97,17 +97,17 @@
             // 
             // txt_timKiem
             // 
-            this.txt_timKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txt_timKiem.BackColor = System.Drawing.Color.White;
             this.txt_timKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_timKiem.DefaultText = "Nhập thời gian bắt đầu (dd/mm/yyyy)";
             this.txt_timKiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_timKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_timKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_timKiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_timKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.txt_timKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_timKiem.ForeColor = System.Drawing.Color.Gray;
-            this.txt_timKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.txt_timKiem.Location = new System.Drawing.Point(204, 164);
             this.txt_timKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_timKiem.Name = "txt_timKiem";
@@ -121,7 +121,7 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.White;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(31, 164);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -132,7 +132,7 @@
             // 
             // btn_chiPhiTheoThang
             // 
-            this.btn_chiPhiTheoThang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_chiPhiTheoThang.BackColor = System.Drawing.Color.White;
             this.btn_chiPhiTheoThang.BorderRadius = 8;
             this.btn_chiPhiTheoThang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_chiPhiTheoThang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -150,13 +150,13 @@
             // 
             // btn_quayLai
             // 
-            this.btn_quayLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_quayLai.BackColor = System.Drawing.Color.White;
             this.btn_quayLai.BorderRadius = 8;
             this.btn_quayLai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_quayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_quayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_quayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_quayLai.FillColor = System.Drawing.Color.Green;
+            this.btn_quayLai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_quayLai.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btn_quayLai.ForeColor = System.Drawing.Color.White;
             this.btn_quayLai.Location = new System.Drawing.Point(847, 73);
@@ -175,9 +175,9 @@
             this.txt_thongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_thongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_thongKe.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_thongKe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_thongKe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.txt_thongKe.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_thongKe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_thongKe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.txt_thongKe.Location = new System.Drawing.Point(603, 249);
             this.txt_thongKe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_thongKe.Multiline = true;

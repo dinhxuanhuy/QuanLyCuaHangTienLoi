@@ -71,6 +71,7 @@
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             guna2Panel_top = new Guna.UI2.WinForms.Guna2Panel();
+            panelContent = new System.Windows.Forms.Panel();
             label1 = new System.Windows.Forms.Label();
             guna2ControlBox4 = new Guna.UI2.WinForms.Guna2ControlBox();
             guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -78,7 +79,6 @@
             guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(components);
             guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(components);
             guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            panelContent = new System.Windows.Forms.Panel();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
@@ -329,17 +329,29 @@
             // 
             // guna2Panel_top
             // 
+            guna2Panel_top.Controls.Add(panelContent);
             guna2Panel_top.Controls.Add(label1);
             guna2Panel_top.Controls.Add(guna2ControlBox4);
             guna2Panel_top.Controls.Add(guna2ControlBox3);
             guna2Panel_top.Controls.Add(guna2ControlBox1);
             guna2Panel_top.CustomizableEdges = customizableEdges25;
-            guna2Panel_top.Dock = System.Windows.Forms.DockStyle.Top;
+            guna2Panel_top.Dock = System.Windows.Forms.DockStyle.Fill;
             guna2Panel_top.Location = new System.Drawing.Point(323, 0);
             guna2Panel_top.Name = "guna2Panel_top";
             guna2Panel_top.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            guna2Panel_top.Size = new System.Drawing.Size(1388, 78);
+            guna2Panel_top.Size = new System.Drawing.Size(1388, 934);
             guna2Panel_top.TabIndex = 1;
+            // 
+            // panelContent
+            // 
+            panelContent.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            panelContent.BackColor = System.Drawing.Color.FromArgb(242, 245, 250);
+            panelContent.Location = new System.Drawing.Point(3, 116);
+            panelContent.Name = "panelContent";
+            panelContent.Padding = new System.Windows.Forms.Padding(10);
+            panelContent.Size = new System.Drawing.Size(1388, 856);
+            panelContent.TabIndex = 2;
+            panelContent.Paint += panelContent_Paint;
             // 
             // label1
             // 
@@ -413,16 +425,6 @@
             guna2ControlBox2.Size = new System.Drawing.Size(0, 0);
             guna2ControlBox2.TabIndex = 1;
             // 
-            // panelContent
-            // 
-            panelContent.BackColor = System.Drawing.Color.FromArgb(242, 245, 250);
-            panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            panelContent.Location = new System.Drawing.Point(323, 78);
-            panelContent.Name = "panelContent";
-            panelContent.Padding = new System.Windows.Forms.Padding(10);
-            panelContent.Size = new System.Drawing.Size(1388, 856);
-            panelContent.TabIndex = 2;
-            // 
             // frmTrangChu
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -430,7 +432,6 @@
             AutoSize = true;
             BackColor = System.Drawing.Color.FromArgb(242, 245, 250);
             ClientSize = new System.Drawing.Size(1711, 934);
-            Controls.Add(panelContent);
             Controls.Add(guna2Panel_top);
             Controls.Add(guna2ControlBox2);
             Controls.Add(guna2Panel1);

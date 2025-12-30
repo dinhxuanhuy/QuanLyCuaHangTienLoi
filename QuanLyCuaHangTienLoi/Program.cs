@@ -8,6 +8,7 @@ namespace QuanLyCuaHangTienLoi
 {
     internal static class Program
     {
+        public static frmTrangChu frmMain;
         public static UC_caLamViec ucCaLamViec;
         public static UCCaLamViecDieuChinh ucCaLamViecDieuChinh;
         public static UCKhuyenMai ucKhuyenMai;
@@ -23,6 +24,7 @@ namespace QuanLyCuaHangTienLoi
         public static UCHoaDonBan ucHoaDonBan;
         public static UCQuanLyHoaDon ucQuanLyHoaDon;
         public static UCQuanLyTaiKhoan ucQuanLyTaiKhoan;
+        public static UCNCC ucNCC;
         public static UCThemHDBanHang ucThemHDBanHang;
         public static UCChatbox ucChatbox;
 
@@ -32,6 +34,7 @@ namespace QuanLyCuaHangTienLoi
         [STAThread]
         static void Main()
         {
+         
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmDangNhap());

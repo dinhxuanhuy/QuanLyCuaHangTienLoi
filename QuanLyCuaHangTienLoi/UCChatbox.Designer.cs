@@ -104,7 +104,7 @@
             btnSend.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btnSend.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btnSend.Dock = System.Windows.Forms.DockStyle.Right;
-            btnSend.FillColor = System.Drawing.Color.FromArgb(59, 130, 246);
+            btnSend.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
             btnSend.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btnSend.ForeColor = System.Drawing.Color.White;
             btnSend.HoverState.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
@@ -129,7 +129,7 @@
             txtMessage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(156, 163, 175);
             txtMessage.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(138, 138, 138);
             txtMessage.Dock = System.Windows.Forms.DockStyle.Left;
-            txtMessage.FocusedState.BorderColor = System.Drawing.Color.FromArgb(59, 130, 246);
+            txtMessage.FocusedState.BorderColor = System.Drawing.Color.FromArgb(12, 83, 251);
             txtMessage.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtMessage.ForeColor = System.Drawing.Color.FromArgb(31, 41, 55);
             txtMessage.HoverState.BorderColor = System.Drawing.Color.FromArgb(59, 130, 246);
@@ -149,7 +149,7 @@
             // 
             // panelHeader
             // 
-            panelHeader.BackColor = System.Drawing.Color.FromArgb(59, 130, 246);
+            panelHeader.BackColor = System.Drawing.Color.FromArgb(12, 83, 251);
             panelHeader.BorderRadius = 8;
             panelHeader.Controls.Add(btnClear);
             panelHeader.Controls.Add(lblTitle);
@@ -178,7 +178,7 @@
             btnClear.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btnClear.ForeColor = System.Drawing.Color.White;
             btnClear.HoverState.BorderColor = System.Drawing.Color.White;
-            btnClear.HoverState.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btnClear.HoverState.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
             btnClear.Location = new System.Drawing.Point(1561, 20);
             btnClear.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             btnClear.Name = "btnClear";

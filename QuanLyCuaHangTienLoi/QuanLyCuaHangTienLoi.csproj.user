@@ -14,6 +14,9 @@
     <Compile Update="UCChatbox.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UcCLV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UCNCC.cs">
       <SubType>UserControl</SubType>
     </Compile>

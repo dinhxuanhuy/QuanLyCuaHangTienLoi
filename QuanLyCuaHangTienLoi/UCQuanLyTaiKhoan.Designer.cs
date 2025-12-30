@@ -107,7 +107,7 @@
             pan_dangNhap.Controls.Add(txt_tenDangNhap);
             pan_dangNhap.Controls.Add(txt_matKhau);
             pan_dangNhap.CustomizableEdges = customizableEdges9;
-            pan_dangNhap.FillColor = System.Drawing.Color.LightSeaGreen;
+            pan_dangNhap.FillColor = System.Drawing.Color.White;
             pan_dangNhap.Location = new System.Drawing.Point(587, 66);
             pan_dangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             pan_dangNhap.Name = "pan_dangNhap";
@@ -127,8 +127,8 @@
             btn_dangNhapHeThong.BorderRadius = 64;
             btn_dangNhapHeThong.CustomizableEdges = customizableEdges1;
             btn_dangNhapHeThong.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            btn_dangNhapHeThong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            btn_dangNhapHeThong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            btn_dangNhapHeThong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            btn_dangNhapHeThong.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             btn_dangNhapHeThong.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_dangNhapHeThong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_dangNhapHeThong.FillColor = System.Drawing.SystemColors.HotTrack;
@@ -171,7 +171,7 @@
             // 
             txt_tenDangNhap.Animated = true;
             txt_tenDangNhap.AutoSize = true;
-            txt_tenDangNhap.BorderColor = System.Drawing.Color.DarkGray;
+            txt_tenDangNhap.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             txt_tenDangNhap.BorderRadius = 15;
             txt_tenDangNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
             txt_tenDangNhap.CustomizableEdges = customizableEdges5;
@@ -199,7 +199,7 @@
             // 
             txt_matKhau.Animated = true;
             txt_matKhau.AutoSize = true;
-            txt_matKhau.BorderColor = System.Drawing.Color.DarkGray;
+            txt_matKhau.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             txt_matKhau.BorderRadius = 15;
             txt_matKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
             txt_matKhau.CustomizableEdges = customizableEdges7;
@@ -230,8 +230,8 @@
             btn_dangKy.BorderRadius = 64;
             btn_dangKy.CustomizableEdges = customizableEdges11;
             btn_dangKy.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            btn_dangKy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            btn_dangKy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            btn_dangKy.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            btn_dangKy.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             btn_dangKy.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_dangKy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_dangKy.FillColor = System.Drawing.SystemColors.HotTrack;
@@ -278,7 +278,7 @@
             // cbb_maNV
             // 
             cbb_maNV.BackColor = System.Drawing.Color.Transparent;
-            cbb_maNV.BorderColor = System.Drawing.Color.DarkGray;
+            cbb_maNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             cbb_maNV.BorderRadius = 15;
             cbb_maNV.CustomizableEdges = customizableEdges13;
             cbb_maNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -299,7 +299,7 @@
             // cbb_vaiTro
             // 
             cbb_vaiTro.BackColor = System.Drawing.Color.Transparent;
-            cbb_vaiTro.BorderColor = System.Drawing.Color.DarkGray;
+            cbb_vaiTro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             cbb_vaiTro.BorderRadius = 15;
             cbb_vaiTro.CustomizableEdges = customizableEdges15;
             cbb_vaiTro.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -320,7 +320,7 @@
             // 
             txt_xacNhanMatKhauDK.Animated = true;
             txt_xacNhanMatKhauDK.AutoSize = true;
-            txt_xacNhanMatKhauDK.BorderColor = System.Drawing.Color.DarkGray;
+            txt_xacNhanMatKhauDK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             txt_xacNhanMatKhauDK.BorderRadius = 15;
             txt_xacNhanMatKhauDK.Cursor = System.Windows.Forms.Cursors.IBeam;
             txt_xacNhanMatKhauDK.CustomizableEdges = customizableEdges17;
@@ -351,11 +351,11 @@
             btn_dangKyHeThong.BorderRadius = 64;
             btn_dangKyHeThong.CustomizableEdges = customizableEdges19;
             btn_dangKyHeThong.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            btn_dangKyHeThong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            btn_dangKyHeThong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            btn_dangKyHeThong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            btn_dangKyHeThong.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             btn_dangKyHeThong.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_dangKyHeThong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_dangKyHeThong.FillColor = System.Drawing.SystemColors.Highlight;
+            btn_dangKyHeThong.FillColor = System.Drawing.SystemColors.HotTrack;
             btn_dangKyHeThong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_dangKyHeThong.ForeColor = System.Drawing.Color.White;
             btn_dangKyHeThong.Location = new System.Drawing.Point(344, 824);
@@ -374,11 +374,11 @@
             btn_QuayLại.BorderRadius = 64;
             btn_QuayLại.CustomizableEdges = customizableEdges21;
             btn_QuayLại.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            btn_QuayLại.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            btn_QuayLại.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            btn_QuayLại.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            btn_QuayLại.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             btn_QuayLại.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_QuayLại.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_QuayLại.FillColor = System.Drawing.SystemColors.Highlight;
+            btn_QuayLại.FillColor = System.Drawing.SystemColors.HotTrack;
             btn_QuayLại.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_QuayLại.ForeColor = System.Drawing.Color.White;
             btn_QuayLại.Location = new System.Drawing.Point(73, 824);
@@ -405,7 +405,7 @@
             // 
             txt_tenDangNhapDK.Animated = true;
             txt_tenDangNhapDK.AutoSize = true;
-            txt_tenDangNhapDK.BorderColor = System.Drawing.Color.DarkGray;
+            txt_tenDangNhapDK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             txt_tenDangNhapDK.BorderRadius = 15;
             txt_tenDangNhapDK.Cursor = System.Windows.Forms.Cursors.IBeam;
             txt_tenDangNhapDK.CustomizableEdges = customizableEdges23;
@@ -432,7 +432,7 @@
             // 
             txt_matKhauDK.Animated = true;
             txt_matKhauDK.AutoSize = true;
-            txt_matKhauDK.BorderColor = System.Drawing.Color.DarkGray;
+            txt_matKhauDK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             txt_matKhauDK.BorderRadius = 15;
             txt_matKhauDK.Cursor = System.Windows.Forms.Cursors.IBeam;
             txt_matKhauDK.CustomizableEdges = customizableEdges25;
@@ -462,7 +462,7 @@
             pan_dangXuat.AutoSize = true;
             pan_dangXuat.BackColor = System.Drawing.Color.Transparent;
             pan_dangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            pan_dangXuat.BorderColor = System.Drawing.Color.Red;
+            pan_dangXuat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             pan_dangXuat.BorderRadius = 50;
             pan_dangXuat.Controls.Add(btn_dangKy);
             pan_dangXuat.Controls.Add(btn_dangXuat);
@@ -490,8 +490,8 @@
             btn_dangXuat.BorderRadius = 68;
             btn_dangXuat.CustomizableEdges = customizableEdges29;
             btn_dangXuat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            btn_dangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            btn_dangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            btn_dangXuat.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            btn_dangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             btn_dangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_dangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_dangXuat.FillColor = System.Drawing.SystemColors.HotTrack;
@@ -534,7 +534,7 @@
             // 
             txt_tenDangXuat.Animated = true;
             txt_tenDangXuat.AutoSize = true;
-            txt_tenDangXuat.BorderColor = System.Drawing.Color.DarkGray;
+            txt_tenDangXuat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             txt_tenDangXuat.BorderRadius = 15;
             txt_tenDangXuat.Cursor = System.Windows.Forms.Cursors.IBeam;
             txt_tenDangXuat.CustomizableEdges = customizableEdges33;

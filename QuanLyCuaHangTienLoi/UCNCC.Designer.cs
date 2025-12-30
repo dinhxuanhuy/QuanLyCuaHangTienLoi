@@ -182,9 +182,9 @@
             label2.Location = new System.Drawing.Point(154, 59);
             label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(112, 34);
+            label2.Size = new System.Drawing.Size(184, 34);
             label2.TabIndex = 1;
-            label2.Text = "Patients";
+            label2.Text = "Nhà Cung Cấp";
             // 
             // label1
             // 

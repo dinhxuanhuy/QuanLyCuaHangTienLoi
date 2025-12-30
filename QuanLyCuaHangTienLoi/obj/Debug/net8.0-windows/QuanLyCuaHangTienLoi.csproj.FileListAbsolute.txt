@@ -409,3 +409,4 @@ C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-manag
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.pdb
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.genruntimeconfig.cache
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\ref\QuanLyCuaHangTienLoi.dll
+C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\QuanLyCuaHangTienLoi\obj\Debug\net8.0-windows\QuanLyCuaHangTienLoi.UcCLV.resources

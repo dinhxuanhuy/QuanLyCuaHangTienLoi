@@ -37,12 +37,12 @@
             // 
             // gbChiTiet
             // 
-            this.gbChiTiet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.gbChiTiet.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.BackColor = System.Drawing.Color.White;
+            this.gbChiTiet.BorderColor = System.Drawing.Color.White;
             this.gbChiTiet.BorderRadius = 12;
-            this.gbChiTiet.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.gbChiTiet.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gbChiTiet.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.FillColor = System.Drawing.Color.White;
             this.gbChiTiet.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbChiTiet.ForeColor = System.Drawing.Color.Black;
             this.gbChiTiet.Location = new System.Drawing.Point(0, 0);
@@ -59,12 +59,14 @@
             this.btn_nhaCungCap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_nhaCungCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_nhaCungCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_nhaCungCap.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_nhaCungCap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
+            this.btn_nhaCungCap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_nhaCungCap.ForeColor = System.Drawing.Color.White;
-            this.btn_nhaCungCap.Location = new System.Drawing.Point(415, 404);
+            this.btn_nhaCungCap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_nhaCungCap.Location = new System.Drawing.Point(630, 340);
             this.btn_nhaCungCap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_nhaCungCap.Name = "btn_nhaCungCap";
-            this.btn_nhaCungCap.Size = new System.Drawing.Size(319, 70);
+            this.btn_nhaCungCap.Size = new System.Drawing.Size(220, 160);
             this.btn_nhaCungCap.TabIndex = 30;
             this.btn_nhaCungCap.Text = "Nhà cung cấp";
             this.btn_nhaCungCap.Click += new System.EventHandler(this.btn_nhaCungCap_Click);
@@ -76,12 +78,14 @@
             this.btn_khuyenMai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_khuyenMai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_khuyenMai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_khuyenMai.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_khuyenMai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
+            this.btn_khuyenMai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_khuyenMai.ForeColor = System.Drawing.Color.White;
-            this.btn_khuyenMai.Location = new System.Drawing.Point(415, 305);
+            this.btn_khuyenMai.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_khuyenMai.Location = new System.Drawing.Point(300, 340);
             this.btn_khuyenMai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_khuyenMai.Name = "btn_khuyenMai";
-            this.btn_khuyenMai.Size = new System.Drawing.Size(319, 70);
+            this.btn_khuyenMai.Size = new System.Drawing.Size(220, 160);
             this.btn_khuyenMai.TabIndex = 29;
             this.btn_khuyenMai.Text = "Khuyến mãi";
             this.btn_khuyenMai.Click += new System.EventHandler(this.btn_khuyenMai_Click);
@@ -93,12 +97,14 @@
             this.btn_sanPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_sanPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_sanPham.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_sanPham.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_sanPham.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
+            this.btn_sanPham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_sanPham.ForeColor = System.Drawing.Color.White;
-            this.btn_sanPham.Location = new System.Drawing.Point(415, 215);
+            this.btn_sanPham.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_sanPham.Location = new System.Drawing.Point(630, 150);
             this.btn_sanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_sanPham.Name = "btn_sanPham";
-            this.btn_sanPham.Size = new System.Drawing.Size(319, 70);
+            this.btn_sanPham.Size = new System.Drawing.Size(220, 160);
             this.btn_sanPham.TabIndex = 28;
             this.btn_sanPham.Text = "Sản Phẩm";
             this.btn_sanPham.Click += new System.EventHandler(this.btn_sanPham_Click);
@@ -110,12 +116,14 @@
             this.btn_quanLyNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_quanLyNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_quanLyNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_quanLyNhanVien.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_quanLyNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
+            this.btn_quanLyNhanVien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_quanLyNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_quanLyNhanVien.Location = new System.Drawing.Point(415, 125);
+            this.btn_quanLyNhanVien.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_quanLyNhanVien.Location = new System.Drawing.Point(300, 150);
             this.btn_quanLyNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_quanLyNhanVien.Name = "btn_quanLyNhanVien";
-            this.btn_quanLyNhanVien.Size = new System.Drawing.Size(319, 70);
+            this.btn_quanLyNhanVien.Size = new System.Drawing.Size(220, 160);
             this.btn_quanLyNhanVien.TabIndex = 27;
             this.btn_quanLyNhanVien.Text = "Nhân viên";
             this.btn_quanLyNhanVien.Click += new System.EventHandler(this.btn_quanLyNhanVien_Click);
@@ -124,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btn_nhaCungCap);
             this.Controls.Add(this.btn_khuyenMai);
             this.Controls.Add(this.btn_sanPham);

@@ -64,7 +64,7 @@
             // 
             // gbChiTiet
             // 
-            this.gbChiTiet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.BackColor = System.Drawing.Color.White;
             this.gbChiTiet.BorderRadius = 12;
             this.gbChiTiet.Controls.Add(this.btn_huy);
             this.gbChiTiet.Controls.Add(this.cbb_tenNV);
@@ -84,9 +84,9 @@
             this.gbChiTiet.Controls.Add(this.txt_maNV);
             this.gbChiTiet.Controls.Add(this.txt_maCa);
             this.gbChiTiet.Controls.Add(this.btn_quayLai);
-            this.gbChiTiet.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.gbChiTiet.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gbChiTiet.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.FillColor = System.Drawing.Color.White;
             this.gbChiTiet.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbChiTiet.ForeColor = System.Drawing.Color.Black;
             this.gbChiTiet.Location = new System.Drawing.Point(0, 0);
@@ -98,8 +98,8 @@
             // 
             // btn_huy
             // 
-            this.btn_huy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btn_huy.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btn_huy.BackColor = System.Drawing.Color.Gray;
+            this.btn_huy.BorderColor = System.Drawing.Color.Gray;
             this.btn_huy.BorderRadius = 8;
             this.btn_huy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_huy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -118,7 +118,7 @@
             // cbb_tenNV
             // 
             this.cbb_tenNV.BackColor = System.Drawing.Color.Transparent;
-            this.cbb_tenNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
+            this.cbb_tenNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.cbb_tenNV.BorderRadius = 6;
             this.cbb_tenNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbb_tenNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -141,7 +141,7 @@
             // 
             // btn_luu
             // 
-            this.btn_luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btn_luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_luu.BorderRadius = 8;
             this.btn_luu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_luu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -182,7 +182,7 @@
             // 
             // btn_sua
             // 
-            this.btn_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btn_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_sua.BorderRadius = 8;
             this.btn_sua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_sua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -212,7 +212,7 @@
             // 
             // btn_xoa
             // 
-            this.btn_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btn_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.btn_xoa.BorderRadius = 8;
             this.btn_xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -236,10 +236,10 @@
             this.txt_timKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_timKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_timKiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_timKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.txt_timKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_timKiem.ForeColor = System.Drawing.Color.Gray;
-            this.txt_timKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.txt_timKiem.Location = new System.Drawing.Point(579, 128);
             this.txt_timKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_timKiem.Name = "txt_timKiem";
@@ -265,7 +265,7 @@
             // 
             // btn_them
             // 
-            this.btn_them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btn_them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_them.BorderRadius = 8;
             this.btn_them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -334,7 +334,7 @@
             // cbb_buoi
             // 
             this.cbb_buoi.BackColor = System.Drawing.Color.Transparent;
-            this.cbb_buoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
+            this.cbb_buoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.cbb_buoi.BorderRadius = 6;
             this.cbb_buoi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbb_buoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -408,7 +408,7 @@
             this.btn_quayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_quayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_quayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_quayLai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_quayLai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.btn_quayLai.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btn_quayLai.ForeColor = System.Drawing.Color.White;
             this.btn_quayLai.Location = new System.Drawing.Point(979, 52);

@@ -36,11 +36,11 @@
             // 
             // gbChiTiet
             // 
-            this.gbChiTiet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.BackColor = System.Drawing.Color.White;
             this.gbChiTiet.BorderRadius = 12;
-            this.gbChiTiet.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.gbChiTiet.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gbChiTiet.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gbChiTiet.FillColor = System.Drawing.Color.White;
             this.gbChiTiet.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbChiTiet.ForeColor = System.Drawing.Color.Black;
             this.gbChiTiet.Location = new System.Drawing.Point(0, 0);
@@ -57,12 +57,13 @@
             this.btn_loiNhuan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_loiNhuan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_loiNhuan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_loiNhuan.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_loiNhuan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_loiNhuan.ForeColor = System.Drawing.Color.White;
-            this.btn_loiNhuan.Location = new System.Drawing.Point(409, 348);
+            this.btn_loiNhuan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_loiNhuan.Location = new System.Drawing.Point(780, 250);
             this.btn_loiNhuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_loiNhuan.Name = "btn_loiNhuan";
-            this.btn_loiNhuan.Size = new System.Drawing.Size(319, 70);
+            this.btn_loiNhuan.Size = new System.Drawing.Size(220, 160);
             this.btn_loiNhuan.TabIndex = 34;
             this.btn_loiNhuan.Text = "Lợi nhuận";
             this.btn_loiNhuan.Click += new System.EventHandler(this.btn_loiNhuan_Click);
@@ -74,12 +75,13 @@
             this.btn_chiPhi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_chiPhi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_chiPhi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_chiPhi.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_chiPhi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_chiPhi.ForeColor = System.Drawing.Color.White;
-            this.btn_chiPhi.Location = new System.Drawing.Point(409, 258);
+            this.btn_chiPhi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_chiPhi.Location = new System.Drawing.Point(480, 250);
             this.btn_chiPhi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_chiPhi.Name = "btn_chiPhi";
-            this.btn_chiPhi.Size = new System.Drawing.Size(319, 70);
+            this.btn_chiPhi.Size = new System.Drawing.Size(220, 160);
             this.btn_chiPhi.TabIndex = 33;
             this.btn_chiPhi.Text = "Chi phí ";
             this.btn_chiPhi.Click += new System.EventHandler(this.btn_chiPhi_Click);
@@ -91,12 +93,13 @@
             this.btn_doanhThu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_doanhThu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_doanhThu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_doanhThu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_doanhThu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_doanhThu.ForeColor = System.Drawing.Color.White;
-            this.btn_doanhThu.Location = new System.Drawing.Point(409, 168);
+            this.btn_doanhThu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_doanhThu.Location = new System.Drawing.Point(180, 250);
             this.btn_doanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_doanhThu.Name = "btn_doanhThu";
-            this.btn_doanhThu.Size = new System.Drawing.Size(319, 70);
+            this.btn_doanhThu.Size = new System.Drawing.Size(220, 160);
             this.btn_doanhThu.TabIndex = 32;
             this.btn_doanhThu.Text = "Doanh thu";
             this.btn_doanhThu.Click += new System.EventHandler(this.btn_doanhThu_Click);
@@ -105,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btn_loiNhuan);
             this.Controls.Add(this.btn_chiPhi);
             this.Controls.Add(this.btn_doanhThu);

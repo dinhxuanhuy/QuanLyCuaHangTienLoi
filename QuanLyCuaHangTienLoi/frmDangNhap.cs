@@ -44,15 +44,14 @@ namespace QuanLyCuaHangTienLoi
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
              
-                    string maNV = dbtk.TimMaNV(
-                        txtTenDangNhap.Text.Trim(),
-                        txtMatKhau.Text,
-                        ref err);
-                    frmTrangChu main = new frmTrangChu();
-                    //main.MaNV = maNV;
-                    //main.CapNhatTenNhanVien(txtTenDangNhap.Text, maNV);
-                    this.Hide();
-                    main.ShowDialog();
+                string maNV = dbtk.TimMaNV(
+                    txtTenDangNhap.Text.Trim(),
+                    txtMatKhau.Text,
+                    ref err);
+                Program.frmMain = new frmTrangChu();
+                Program.frmMain.CapNhatTenNhanVien(txtTenDangNhap.Text, maNV);;
+                this.Hide();
+                Program.frmMain.ShowDialog();
 
 
 

@@ -17,6 +17,7 @@ namespace QuanLyCuaHangTienLoi
         public frmTrangChu()
         {
             InitializeComponent();
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
         public void LoadUserControl(UserControl uc, bool xoa)
         {
@@ -29,11 +30,11 @@ namespace QuanLyCuaHangTienLoi
             }
 
             panelContent.Controls.Clear(); // Xóa nội dung cũ
-            
+
             // Thiết lập UserControl để lấp đầy panel
             uc.Dock = DockStyle.Fill;
             uc.AutoScroll = true; // Cho phép cuộn nếu nội dung lớn hơn
-            
+
             panelContent.Controls.Add(uc); // Thêm vào panel
         }
 
@@ -42,12 +43,11 @@ namespace QuanLyCuaHangTienLoi
             // Thiết lập form hiển thị đẹp hơn
             this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Maximized; // Mở rộng toàn màn hình
-            
+
             // Set encoding for form
             this.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-
-            this.FormBorderStyle = FormBorderStyle.FixedSingle; // Không cho thay đổi kích thước
             this.SizeGripStyle = SizeGripStyle.Hide; // Ẩn dấu kéo giãn góc Form
+            this.AutoSize = true;
 
             Program.ucCaLamViec = new UC_caLamViec();
             Program.ucCaLamViecDieuChinh = new UCCaLamViecDieuChinh();
@@ -65,7 +65,8 @@ namespace QuanLyCuaHangTienLoi
             Program.ucQuanLyHoaDon = new UCQuanLyHoaDon();
             Program.ucQuanLyTaiKhoan = new UCQuanLyTaiKhoan();
             Program.ucThemHDBanHang = new UCThemHDBanHang();
-            Program.ucChatbox = new UCChatbox(); // Initialize chatbox
+            Program.ucChatbox = new UCChatbox();
+            Program.ucNCC = new UCNCC();
 
             // tương tác sự kiện trong module ThongKe
             Program.ucThongKe.NavigateRequest += Uc_NavigateRequest;
@@ -88,14 +89,13 @@ namespace QuanLyCuaHangTienLoi
             Program.ucCaLamViecDieuChinh.NavigateRequest += Uc_NavigateRequest;
             // tương tác với quá trình đăng nhập
             Program.ucQuanLyTaiKhoan.NavigateRequest += Uc_NavigateRequest;
-
+            /*
             btn_quanLyCa.Enabled = false;
             btn_quanLyDuLieu.Enabled = false;
             btn_quanLyHoaDon.Enabled = false;
             btn_quanLyTaiKhoan.Enabled = false;
             btn_thongKe.Enabled = false;
-
-            LoadUserControl(Program.ucQuanLyTaiKhoan, false); // Hiển thị giao diện Trang chủ mặc định
+            */
         }
 
         private void Uc_NavigateRequest(UserControl uc)
@@ -107,7 +107,6 @@ namespace QuanLyCuaHangTienLoi
             // Kiểm tra và cập nhật Label
             if (labTenNV != null)
             {
-                // Sử dụng biến static HoTen vừa được cập nhật sau khi đăng nhập
                 labTenNV.Text = "Nhân viên: " + a;
                 labMaNV.Text = "Mã NV: " + b;
             }
@@ -146,6 +145,11 @@ namespace QuanLyCuaHangTienLoi
         private void btn_quanLyHoaDon_Click_1(object sender, EventArgs e)
         {
             LoadUserControl(Program.ucQuanLyHoaDon, false);
+        }
+
+        private void panelContent_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
