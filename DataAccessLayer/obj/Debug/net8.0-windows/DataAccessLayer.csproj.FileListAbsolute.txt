@@ -226,3 +226,15 @@ C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-manag
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\DataAccessLayer\obj\Debug\net8.0-windows\refint\DataAccessLayer.dll
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.pdb
 C:\Users\ASUS\Downloads\convenience-store-management (1)\convenience-store-management\convenience-store-management\DataAccessLayer\obj\Debug\net8.0-windows\ref\DataAccessLayer.dll
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.dll.config
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.deps.json
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.dll
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.csproj.AssemblyReference.cache
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.sourcelink.json
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.dll
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\obj\Debug\net8.0-windows\refint\DataAccessLayer.dll
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\Subject\Do An CNTT\FinalProject1\QuanLyCuaHangTienLoi\DataAccessLayer\obj\Debug\net8.0-windows\ref\DataAccessLayer.dll
