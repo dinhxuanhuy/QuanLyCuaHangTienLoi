@@ -37,29 +37,60 @@ namespace QuanLyCuaHangTienLoi
         // PHẦN 1: KHỞI TẠO DỮ LIỆU (Giữ nguyên)
         // =================================================================================
 
+        //private void KhoiTaoGioHang()
+        //{
+        //    // 1. Khởi tạo DataTable (Nguồn dữ liệu)
+        //    dtGioHang = new DataTable();
+        //    dtGioHang.Columns.Add("MaSP", typeof(string));
+        //    dtGioHang.Columns.Add("TenSP", typeof(string));
+        //    dtGioHang.Columns.Add("DonGia", typeof(decimal));
+        //    dtGioHang.Columns.Add("SoLuong", typeof(int));
+        //    dtGioHang.Columns.Add("ThanhTien", typeof(decimal));
+
+        //    // 2. TẮT TẠO CỘT TỰ ĐỘNG (RẤT QUAN TRỌNG)
+        //    // Điều này buộc DataGridView chỉ sử dụng các cột đã được thiết lập thủ công trong Designer.
+        //    dgvGioHang.AutoGenerateColumns = false; // <--- DÒNG BỔ SUNG
+
+        //    // 3. Gán nguồn dữ liệu
+        //    dgvGioHang.DataSource = dtGioHang;
+
+        //    // 4. Định dạng cột (Chỉ hoạt động nếu bạn đã thêm cột thủ công trong Designer với NAME: DonGia và ThanhTien)
+        //    if (dgvGioHang.Columns["DonGia"] != null)
+        //        dgvGioHang.Columns["DonGia"].DefaultCellStyle.Format = "N0";
+
+        //    if (dgvGioHang.Columns["ThanhTien"] != null)
+        //        dgvGioHang.Columns["ThanhTien"].DefaultCellStyle.Format = "N0";
+        //}
         private void KhoiTaoGioHang()
         {
-            // 1. Khởi tạo DataTable (Nguồn dữ liệu)
+            // 1. Khởi tạo DataTable
             dtGioHang = new DataTable();
             dtGioHang.Columns.Add("MaSP", typeof(string));
             dtGioHang.Columns.Add("TenSP", typeof(string));
             dtGioHang.Columns.Add("DonGia", typeof(decimal));
             dtGioHang.Columns.Add("SoLuong", typeof(int));
+
+            // --- MỚI: Thêm cột Giảm Giá ---
+            dtGioHang.Columns.Add("GiamGia", typeof(decimal));
+
             dtGioHang.Columns.Add("ThanhTien", typeof(decimal));
 
-            // 2. TẮT TẠO CỘT TỰ ĐỘNG (RẤT QUAN TRỌNG)
-            // Điều này buộc DataGridView chỉ sử dụng các cột đã được thiết lập thủ công trong Designer.
-            dgvGioHang.AutoGenerateColumns = false; // <--- DÒNG BỔ SUNG
+            // 2. Tắt tạo cột tự động
+            dgvGioHang.AutoGenerateColumns = false;
 
             // 3. Gán nguồn dữ liệu
             dgvGioHang.DataSource = dtGioHang;
 
-            // 4. Định dạng cột (Chỉ hoạt động nếu bạn đã thêm cột thủ công trong Designer với NAME: DonGia và ThanhTien)
+            // 4. Định dạng cột số
             if (dgvGioHang.Columns["DonGia"] != null)
                 dgvGioHang.Columns["DonGia"].DefaultCellStyle.Format = "N0";
 
             if (dgvGioHang.Columns["ThanhTien"] != null)
                 dgvGioHang.Columns["ThanhTien"].DefaultCellStyle.Format = "N0";
+
+            // --- MỚI: Định dạng cột Giảm Giá ---
+            if (dgvGioHang.Columns["GiamGia"] != null)
+                dgvGioHang.Columns["GiamGia"].DefaultCellStyle.Format = "N0";
         }
 
         private void LoadDanhSachSanPham()
@@ -80,92 +111,215 @@ namespace QuanLyCuaHangTienLoi
         // PHẦN 2: CÁC NÚT CHỨC NĂNG (Giữ nguyên)
         // =================================================================================
 
+        //private void btnThemVaoGio_Click(object sender, EventArgs e)
+        //{
+        //    // 1. Kiểm tra đã chọn sản phẩm chưa
+        //    if (dgvSanPham.SelectedRows.Count == 0)
+        //    {
+        //        MessageBox.Show("Vui lòng chọn một sản phẩm từ danh sách bên trái!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        return;
+        //    }
+
+        //    // 2. Lấy thông tin dòng đang chọn từ DataGridView Sản Phẩm
+        //    DataGridViewRow row = dgvSanPham.SelectedRows[0];
+        //    string maSP = row.Cells["MaSP"].Value.ToString();
+        //    string tenSP = row.Cells["TenSP"].Value.ToString();
+        //    decimal donGia = Convert.ToDecimal(row.Cells["GiaBan"].Value);
+        //    int soLuongTonKho = Convert.ToInt32(row.Cells["SoLuong"].Value); // Lấy tồn kho
+
+        //    int soLuongThem = (int)numSoLuong.Value; // Lấy số lượng muốn mua thêm
+
+        //    // 2.1. Cấm nhập giá trị âm hoặc bằng 0
+        //    if (soLuongThem <= 0)
+        //    {
+        //        MessageBox.Show("Số lượng mua phải lớn hơn 0!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        return;
+        //    }
+
+        //    // 3. Tính tổng số lượng sản phẩm này ĐÃ CÓ trong giỏ hàng
+        //    int soLuongTrongGio = 0;
+        //    DataRow rowTrongGio = null;
+
+        //    foreach (DataRow dr in dtGioHang.Rows)
+        //    {
+        //        if (dr["MaSP"].ToString() == maSP)
+        //        {
+        //            soLuongTrongGio = Convert.ToInt32(dr["SoLuong"]);
+        //            rowTrongGio = dr;
+        //            break;
+        //        }
+        //    }
+
+        //    // --- LOGIC KIỂM TRA SỐ LƯỢNG TỐI ĐA ---
+
+        //    // Tính số lượng CÒN LẠI có thể mua thêm (Tồn kho - Đã có trong giỏ)
+        //    int soLuongCoTheMuaThem = soLuongTonKho - soLuongTrongGio;
+
+        //    // Nếu người dùng muốn mua thêm nhiều hơn số lượng còn lại
+        //    if (soLuongThem > soLuongCoTheMuaThem)
+        //    {
+        //        if (soLuongCoTheMuaThem <= 0)
+        //        {
+        //            MessageBox.Show($"Bạn đã lấy hết {soLuongTonKho} sản phẩm '{tenSP}' vào giỏ rồi. Không thể thêm nữa.", "Hết hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        }
+        //        else
+        //        {
+        //            // Hiển thị chính xác con số còn lại có thể mua
+        //            MessageBox.Show(
+        //                $"Kho còn {soLuongTonKho}, trong giỏ đã có {soLuongTrongGio}.\nBạn chỉ có thể mua thêm tối đa {soLuongCoTheMuaThem} sản phẩm nữa thôi.",
+        //                "Quá số lượng tồn kho",
+        //                MessageBoxButtons.OK,
+        //                MessageBoxIcon.Warning
+        //            );
+        //        }
+        //        return; // Dừng lại, không thêm
+        //    }
+
+        //    // --- KẾT THÚC KIỂM TRA, TIẾN HÀNH THÊM VÀO GIỎ ---
+
+        //    if (rowTrongGio != null)
+        //    {
+        //        // Nếu đã có -> Cộng dồn
+        //        rowTrongGio["SoLuong"] = soLuongTrongGio + soLuongThem;
+        //        rowTrongGio["ThanhTien"] = (soLuongTrongGio + soLuongThem) * donGia;
+        //    }
+        //    else
+        //    {
+        //        // Nếu chưa có -> Thêm mới
+        //        DataRow newRow = dtGioHang.NewRow();
+        //        newRow["MaSP"] = maSP;
+        //        newRow["TenSP"] = tenSP;
+        //        newRow["DonGia"] = donGia;
+        //        newRow["SoLuong"] = soLuongThem;
+        //        newRow["ThanhTien"] = donGia * soLuongThem;
+        //        dtGioHang.Rows.Add(newRow);
+        //    }
+
+        //    // 4. Cập nhật tổng tiền hiển thị
+        //    CapNhatTongTien();
+        //}
         private void btnThemVaoGio_Click(object sender, EventArgs e)
         {
-            // 1. Kiểm tra đã chọn sản phẩm chưa
+            // ========================================================================
+            // BƯỚC 1: KIỂM TRA ĐẦU VÀO (GIỮ NGUYÊN)
+            // ========================================================================
             if (dgvSanPham.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Vui lòng chọn một sản phẩm từ danh sách bên trái!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // 2. Lấy thông tin dòng đang chọn từ DataGridView Sản Phẩm
-            DataGridViewRow row = dgvSanPham.SelectedRows[0];
-            string maSP = row.Cells["MaSP"].Value.ToString();
-            string tenSP = row.Cells["TenSP"].Value.ToString();
-            decimal donGia = Convert.ToDecimal(row.Cells["GiaBan"].Value);
-            int soLuongTonKho = Convert.ToInt32(row.Cells["SoLuong"].Value); // Lấy tồn kho
-
-            int soLuongThem = (int)numSoLuong.Value; // Lấy số lượng muốn mua thêm
-
-            // 2.1. Cấm nhập giá trị âm hoặc bằng 0
-            if (soLuongThem <= 0)
+            int soLuongMuonMua = (int)numSoLuong.Value;
+            if (soLuongMuonMua <= 0)
             {
                 MessageBox.Show("Số lượng mua phải lớn hơn 0!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // 3. Tính tổng số lượng sản phẩm này ĐÃ CÓ trong giỏ hàng
-            int soLuongTrongGio = 0;
+            // ========================================================================
+            // BƯỚC 2: LẤY THÔNG TIN SẢN PHẨM & TỒN KHO
+            // ========================================================================
+            DataGridViewRow row = dgvSanPham.SelectedRows[0];
+            string maSP = row.Cells["MaSP"].Value.ToString();
+            string tenSP = row.Cells["TenSP"].Value.ToString();
+            decimal donGia = Convert.ToDecimal(row.Cells["GiaBan"].Value);
+            int soLuongTonKho = Convert.ToInt32(row.Cells["SoLuong"].Value);
+
+            // Kiểm tra hàng đã có trong giỏ
+            int soLuongDaCoTrongGio = 0;
             DataRow rowTrongGio = null;
 
             foreach (DataRow dr in dtGioHang.Rows)
             {
                 if (dr["MaSP"].ToString() == maSP)
                 {
-                    soLuongTrongGio = Convert.ToInt32(dr["SoLuong"]);
+                    soLuongDaCoTrongGio = Convert.ToInt32(dr["SoLuong"]);
                     rowTrongGio = dr;
                     break;
                 }
             }
 
-            // --- LOGIC KIỂM TRA SỐ LƯỢNG TỐI ĐA ---
-
-            // Tính số lượng CÒN LẠI có thể mua thêm (Tồn kho - Đã có trong giỏ)
-            int soLuongCoTheMuaThem = soLuongTonKho - soLuongTrongGio;
-
-            // Nếu người dùng muốn mua thêm nhiều hơn số lượng còn lại
-            if (soLuongThem > soLuongCoTheMuaThem)
+            // Kiểm tra tồn kho
+            int soLuongCoTheMuaThem = soLuongTonKho - soLuongDaCoTrongGio;
+            if (soLuongMuonMua > soLuongCoTheMuaThem)
             {
-                if (soLuongCoTheMuaThem <= 0)
+                MessageBox.Show($"Kho chỉ còn {soLuongTonKho}. Bạn đã có {soLuongDaCoTrongGio} trong giỏ.\nChỉ có thể mua thêm {soLuongCoTheMuaThem}.", "Quá tồn kho");
+                return;
+            }
+
+            // ========================================================================
+            // BƯỚC 3: TÍNH TOÁN KHUYẾN MÃI (LOGIC MỚI)
+            // ========================================================================
+
+            // 3.1. Tính TỔNG SỐ LƯỢNG sau khi thêm
+            int tongSoLuong = soLuongDaCoTrongGio + soLuongMuonMua;
+
+            // 3.2. Lấy thông tin khuyến mãi từ BAL
+            decimal tienGiamGia = 0;
+            DataTable dtKM = bal.LayThongTinKhuyenMai(maSP);
+
+            if (dtKM != null && dtKM.Rows.Count > 0)
+            {
+                // Lấy dữ liệu từ dòng đầu tiên tìm được
+                DataRow drKM = dtKM.Rows[0];
+
+                // Mức KM (Số tiền sẽ giảm)
+                decimal mucKM = Convert.ToDecimal(drKM["MucKM"]);
+
+                // Điều kiện (Số lượng tối thiểu để được giảm)
+                int dieuKienSL = Convert.ToInt32(drKM["DieuKien"]);
+
+                // 3.3. So sánh điều kiện
+                if (tongSoLuong >= dieuKienSL)
                 {
-                    MessageBox.Show($"Bạn đã lấy hết {soLuongTonKho} sản phẩm '{tenSP}' vào giỏ rồi. Không thể thêm nữa.", "Hết hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    // Đạt điều kiện -> Áp dụng giảm giá (Trừ thẳng MucKM vào hóa đơn cho dòng này)
+                    tienGiamGia = mucKM;
                 }
                 else
                 {
-                    // Hiển thị chính xác con số còn lại có thể mua
-                    MessageBox.Show(
-                        $"Kho còn {soLuongTonKho}, trong giỏ đã có {soLuongTrongGio}.\nBạn chỉ có thể mua thêm tối đa {soLuongCoTheMuaThem} sản phẩm nữa thôi.",
-                        "Quá số lượng tồn kho",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning
-                    );
+                    // Chưa đủ số lượng -> Không giảm
+                    tienGiamGia = 0;
                 }
-                return; // Dừng lại, không thêm
             }
 
-            // --- KẾT THÚC KIỂM TRA, TIẾN HÀNH THÊM VÀO GIỎ ---
+            // 3.4. Tính Thành Tiền
+            // Công thức: Tổng tiền hàng - Tiền được giảm
+            // Lưu ý: Nếu tiền giảm > Tổng tiền hàng thì Thành tiền = 0 (tránh âm tiền)
+            decimal tongTienHang = donGia * tongSoLuong;
+            decimal thanhTien = tongTienHang - tienGiamGia;
+
+            if (thanhTien < 0) thanhTien = 0;
+
+            // ========================================================================
+            // BƯỚC 4: CẬP NHẬT GIỎ HÀNG
+            // ========================================================================
 
             if (rowTrongGio != null)
             {
-                // Nếu đã có -> Cộng dồn
-                rowTrongGio["SoLuong"] = soLuongTrongGio + soLuongThem;
-                rowTrongGio["ThanhTien"] = (soLuongTrongGio + soLuongThem) * donGia;
+                // Cập nhật dòng cũ
+                rowTrongGio["SoLuong"] = tongSoLuong;
+                rowTrongGio["GiamGia"] = tienGiamGia; // Cập nhật mức giảm giá mới
+                rowTrongGio["ThanhTien"] = thanhTien;
             }
             else
             {
-                // Nếu chưa có -> Thêm mới
+                // Thêm dòng mới
                 DataRow newRow = dtGioHang.NewRow();
                 newRow["MaSP"] = maSP;
                 newRow["TenSP"] = tenSP;
                 newRow["DonGia"] = donGia;
-                newRow["SoLuong"] = soLuongThem;
-                newRow["ThanhTien"] = donGia * soLuongThem;
+                newRow["SoLuong"] = tongSoLuong; // Lúc này tongSoLuong = soLuongMuonMua
+                newRow["GiamGia"] = tienGiamGia;
+                newRow["ThanhTien"] = thanhTien;
+
                 dtGioHang.Rows.Add(newRow);
             }
 
-            // 4. Cập nhật tổng tiền hiển thị
+            // ========================================================================
+            // BƯỚC 5: HOÀN TẤT
+            // ========================================================================
             CapNhatTongTien();
+            numSoLuong.Value = 1;
         }
         private void btnXoaMon_Click(object sender, EventArgs e)
         {

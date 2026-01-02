@@ -44,6 +44,7 @@ namespace QuanLyCuaHangTienLoi
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
              
+<<<<<<< HEAD
                 string maNV = dbtk.TimMaNV(
                     txtTenDangNhap.Text.Trim(),
                     txtMatKhau.Text,
@@ -52,6 +53,17 @@ namespace QuanLyCuaHangTienLoi
                 Program.frmMain.CapNhatTenNhanVien(txtTenDangNhap.Text, maNV);;
                 this.Hide();
                 Program.frmMain.ShowDialog();
+=======
+                    string maNV = dbtk.TimMaNV(
+                        txtTenDangNhap.Text.Trim(),
+                        txtMatKhau.Text,
+                        ref err);
+                     frmTrangChu main = new frmTrangChu();
+                    //main.maNV = maNV;
+                    //main.CapNhatTenNhanVien(txtTenDangNhap.Text, maNV);
+                    this.Hide();
+                    main.ShowDialog();
+>>>>>>> origin/Additional-Features
 
 
 
