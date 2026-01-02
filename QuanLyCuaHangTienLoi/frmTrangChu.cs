@@ -49,6 +49,7 @@ namespace QuanLyCuaHangTienLoi
             this.SizeGripStyle = SizeGripStyle.Hide; // Ẩn dấu kéo giãn góc Form
             this.AutoSize = true;
 
+            // Khởi tạo tất cả UserControls
             Program.ucCaLamViec = new UC_caLamViec();
             Program.ucCaLamViecDieuChinh = new UCCaLamViecDieuChinh();
             Program.ucKhuyenMai = new UCKhuyenMai();
@@ -65,13 +66,9 @@ namespace QuanLyCuaHangTienLoi
             Program.ucQuanLyHoaDon = new UCQuanLyHoaDon();
             Program.ucQuanLyTaiKhoan = new UCQuanLyTaiKhoan();
             Program.ucThemHDBanHang = new UCThemHDBanHang();
-<<<<<<< HEAD
-            Program.ucChatbox = new UCChatbox();
-            Program.ucNCC = new UCNCC();
-=======
             Program.ucChatbox = new UCChatbox(); // Initialize chatbox
+            Program.ucNCC = new UCNCC();
             Program.ucKhuyenMaiAD = new UCKhuyenMaiAD();
->>>>>>> origin/Additional-Features
 
             // tương tác sự kiện trong module ThongKe
             Program.ucThongKe.NavigateRequest += Uc_NavigateRequest;
@@ -94,30 +91,23 @@ namespace QuanLyCuaHangTienLoi
             Program.ucCaLamViecDieuChinh.NavigateRequest += Uc_NavigateRequest;
             // tương tác với quá trình đăng nhập
             Program.ucQuanLyTaiKhoan.NavigateRequest += Uc_NavigateRequest;
-<<<<<<< HEAD
-            /*
-            btn_quanLyCa.Enabled = false;
-            btn_quanLyDuLieu.Enabled = false;
-            btn_quanLyHoaDon.Enabled = false;
-            btn_quanLyTaiKhoan.Enabled = false;
-            btn_thongKe.Enabled = false;
-            */
-=======
 
+            // Bật tất cả các nút menu
             btn_quanLyCa.Enabled = true;
             btn_quanLyDuLieu.Enabled = true;
             btn_quanLyHoaDon.Enabled = true;
             btn_quanLyTaiKhoan.Enabled = true;
             btn_thongKe.Enabled = true;
+            btn_chatBox.Enabled = true;
 
-            LoadUserControl(Program.ucQuanLyTaiKhoan, false); // Hiển thị giao diện Trang chủ mặc định
->>>>>>> origin/Additional-Features
+            LoadUserControl(Program.ucQuanLyHoaDon, false); // Hiển thị giao diện mặc định
         }
 
         private void Uc_NavigateRequest(UserControl uc)
         {
             LoadUserControl(uc, false);
         }
+        
         public void CapNhatTenNhanVien(string a, string b)
         {
             // Kiểm tra và cập nhật Label
