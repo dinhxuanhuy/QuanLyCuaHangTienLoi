@@ -241,27 +241,27 @@
             dgvNhaCungCap.RowTemplate.Height = 40;
             dgvNhaCungCap.Size = new System.Drawing.Size(2138, 1413);
             dgvNhaCungCap.TabIndex = 4;
-            dgvNhaCungCap.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            dgvNhaCungCap.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(248, 250, 252);
             dgvNhaCungCap.ThemeStyle.AlternatingRowsStyle.Font = null;
             dgvNhaCungCap.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             dgvNhaCungCap.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             dgvNhaCungCap.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            dgvNhaCungCap.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(242, 245, 250);
-            dgvNhaCungCap.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(242, 245, 250);
-            dgvNhaCungCap.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(242, 245, 250);
+            dgvNhaCungCap.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(248, 250, 252);
+            dgvNhaCungCap.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(226, 232, 240);
+            dgvNhaCungCap.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
             dgvNhaCungCap.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dgvNhaCungCap.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 8F);
-            dgvNhaCungCap.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.DimGray;
+            dgvNhaCungCap.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            dgvNhaCungCap.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             dgvNhaCungCap.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dgvNhaCungCap.ThemeStyle.HeaderStyle.Height = 40;
+            dgvNhaCungCap.ThemeStyle.HeaderStyle.Height = 45;
             dgvNhaCungCap.ThemeStyle.ReadOnly = false;
             dgvNhaCungCap.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             dgvNhaCungCap.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dgvNhaCungCap.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dgvNhaCungCap.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(71, 69, 94);
+            dgvNhaCungCap.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dgvNhaCungCap.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             dgvNhaCungCap.ThemeStyle.RowsStyle.Height = 40;
-            dgvNhaCungCap.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(0, 0, 192);
-            dgvNhaCungCap.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            dgvNhaCungCap.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(219, 234, 254);
+            dgvNhaCungCap.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             dgvNhaCungCap.CellClick += dgvNhaCungCap_CellClick;
             // 
             // Column1
@@ -317,39 +317,45 @@
             // 
             // guna2Button5
             // 
-            guna2Button5.BorderColor = System.Drawing.Color.FromArgb(0, 0, 192);
-            guna2Button5.BorderRadius = 5;
-            guna2Button5.BorderThickness = 1;
+            guna2Button5.BorderColor = System.Drawing.Color.FromArgb(239, 68, 68);
+            guna2Button5.BorderRadius = 10;
+            guna2Button5.BorderThickness = 2;
+            guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
             guna2Button5.CustomizableEdges = customizableEdges11;
             guna2Button5.FillColor = System.Drawing.Color.Transparent;
-            guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            guna2Button5.ForeColor = System.Drawing.Color.FromArgb(0, 0, 192);
-            guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(0, 0, 192);
+            guna2Button5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            guna2Button5.ForeColor = System.Drawing.Color.FromArgb(239, 68, 68);
+            guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(239, 68, 68);
             guna2Button5.HoverState.ForeColor = System.Drawing.Color.White;
             guna2Button5.Location = new System.Drawing.Point(1759, 1435);
             guna2Button5.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             guna2Button5.Name = "guna2Button5";
             guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button5.Size = new System.Drawing.Size(182, 74);
+            guna2Button5.ShadowDecoration.Enabled = true;
+            guna2Button5.ShadowDecoration.Depth = 8;
+            guna2Button5.Size = new System.Drawing.Size(170, 60);
             guna2Button5.TabIndex = 6;
             guna2Button5.Text = "Delete";
             // 
             // guna2Button4
             // 
-            guna2Button4.BorderColor = System.Drawing.Color.FromArgb(0, 0, 192);
-            guna2Button4.BorderRadius = 5;
-            guna2Button4.BorderThickness = 1;
+            guna2Button4.BorderColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            guna2Button4.BorderRadius = 10;
+            guna2Button4.BorderThickness = 2;
+            guna2Button4.Cursor = System.Windows.Forms.Cursors.Hand;
             guna2Button4.CustomizableEdges = customizableEdges13;
             guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            guna2Button4.ForeColor = System.Drawing.Color.FromArgb(0, 0, 192);
-            guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(0, 0, 192);
+            guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            guna2Button4.ForeColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
             guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
             guna2Button4.Location = new System.Drawing.Point(1954, 1435);
             guna2Button4.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             guna2Button4.Name = "guna2Button4";
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button4.Size = new System.Drawing.Size(182, 74);
+            guna2Button4.ShadowDecoration.Enabled = true;
+            guna2Button4.ShadowDecoration.Depth = 8;
+            guna2Button4.Size = new System.Drawing.Size(170, 60);
             guna2Button4.TabIndex = 5;
             guna2Button4.Text = "Edit";
             // 

@@ -126,20 +126,27 @@
             // 
             // btn_huy
             // 
-            btn_huy.BackColor = System.Drawing.Color.Gray;
-            btn_huy.BorderColor = System.Drawing.Color.Gray;
-            btn_huy.BorderRadius = 8;
+            btn_huy.BackColor = System.Drawing.Color.White;
+            btn_huy.BorderColor = System.Drawing.Color.FromArgb(148, 163, 184);
+            btn_huy.BorderRadius = 10;
+            btn_huy.BorderThickness = 2;
+            btn_huy.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_huy.CustomizableEdges = customizableEdges1;
             btn_huy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_huy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_huy.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_huy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_huy.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            btn_huy.ForeColor = System.Drawing.Color.White;
+            btn_huy.FillColor = System.Drawing.Color.White;
+            btn_huy.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btn_huy.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            btn_huy.HoverState.BorderColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_huy.HoverState.FillColor = System.Drawing.Color.FromArgb(248, 250, 252);
             btn_huy.Location = new System.Drawing.Point(1500, 390);
             btn_huy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btn_huy.Name = "btn_huy";
             btn_huy.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btn_huy.ShadowDecoration.Enabled = true;
+            btn_huy.ShadowDecoration.Depth = 8;
             btn_huy.Size = new System.Drawing.Size(160, 88);
             btn_huy.TabIndex = 49;
             btn_huy.Text = "Hủy";
@@ -174,19 +181,24 @@
             // btn_luu
             // 
             btn_luu.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btn_luu.BackColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btn_luu.BorderRadius = 8;
+            btn_luu.BackColor = System.Drawing.Color.FromArgb(34, 197, 94);
+            btn_luu.BorderRadius = 10;
+            btn_luu.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_luu.CustomizableEdges = customizableEdges5;
             btn_luu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_luu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_luu.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_luu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_luu.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btn_luu.FillColor = System.Drawing.Color.FromArgb(34, 197, 94);
+            btn_luu.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_luu.ForeColor = System.Drawing.Color.White;
+            btn_luu.HoverState.FillColor = System.Drawing.Color.FromArgb(22, 163, 74);
             btn_luu.Location = new System.Drawing.Point(1340, 390);
             btn_luu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btn_luu.Name = "btn_luu";
             btn_luu.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btn_luu.ShadowDecoration.Enabled = true;
+            btn_luu.ShadowDecoration.Depth = 8;
             btn_luu.Size = new System.Drawing.Size(154, 88);
             btn_luu.TabIndex = 46;
             btn_luu.Text = "Lưu";
@@ -220,19 +232,24 @@
             // btn_sua
             // 
             btn_sua.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btn_sua.BackColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btn_sua.BorderRadius = 8;
+            btn_sua.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_sua.BorderRadius = 10;
+            btn_sua.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_sua.CustomizableEdges = customizableEdges9;
             btn_sua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_sua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_sua.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_sua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_sua.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btn_sua.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_sua.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_sua.ForeColor = System.Drawing.Color.White;
+            btn_sua.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
             btn_sua.Location = new System.Drawing.Point(1006, 390);
             btn_sua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btn_sua.Name = "btn_sua";
             btn_sua.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btn_sua.ShadowDecoration.Enabled = true;
+            btn_sua.ShadowDecoration.Depth = 8;
             btn_sua.Size = new System.Drawing.Size(160, 88);
             btn_sua.TabIndex = 48;
             btn_sua.Text = "Sửa";
@@ -255,18 +272,23 @@
             // 
             btn_xoa.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             btn_xoa.BackColor = System.Drawing.Color.FromArgb(220, 53, 69);
-            btn_xoa.BorderRadius = 8;
+            btn_xoa.BorderRadius = 10;
+            btn_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_xoa.CustomizableEdges = customizableEdges11;
             btn_xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_xoa.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btn_xoa.FillColor = System.Drawing.Color.FromArgb(220, 53, 69);
+            btn_xoa.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_xoa.ForeColor = System.Drawing.Color.White;
+            btn_xoa.HoverState.FillColor = System.Drawing.Color.FromArgb(185, 28, 28);
             btn_xoa.Location = new System.Drawing.Point(1173, 390);
             btn_xoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btn_xoa.Name = "btn_xoa";
             btn_xoa.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btn_xoa.ShadowDecoration.Enabled = true;
+            btn_xoa.ShadowDecoration.Depth = 8;
             btn_xoa.Size = new System.Drawing.Size(160, 88);
             btn_xoa.TabIndex = 47;
             btn_xoa.Text = "Xóa";
@@ -312,19 +334,24 @@
             // btn_them
             // 
             btn_them.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btn_them.BackColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btn_them.BorderRadius = 8;
+            btn_them.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_them.BorderRadius = 10;
+            btn_them.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_them.CustomizableEdges = customizableEdges15;
             btn_them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_them.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_them.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btn_them.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_them.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_them.ForeColor = System.Drawing.Color.White;
+            btn_them.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
             btn_them.Location = new System.Drawing.Point(840, 390);
             btn_them.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btn_them.Name = "btn_them";
             btn_them.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btn_them.ShadowDecoration.Enabled = true;
+            btn_them.ShadowDecoration.Depth = 8;
             btn_them.Size = new System.Drawing.Size(160, 88);
             btn_them.TabIndex = 45;
             btn_them.Text = "Thêm";
@@ -455,19 +482,23 @@
             // btn_quayLai
             // 
             btn_quayLai.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btn_quayLai.BorderRadius = 8;
+            btn_quayLai.BorderRadius = 10;
+            btn_quayLai.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_quayLai.CustomizableEdges = customizableEdges23;
             btn_quayLai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_quayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_quayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_quayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_quayLai.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btn_quayLai.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            btn_quayLai.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_quayLai.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             btn_quayLai.ForeColor = System.Drawing.Color.White;
+            btn_quayLai.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
             btn_quayLai.Location = new System.Drawing.Point(1468, 98);
             btn_quayLai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             btn_quayLai.Name = "btn_quayLai";
             btn_quayLai.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btn_quayLai.ShadowDecoration.Enabled = true;
+            btn_quayLai.ShadowDecoration.Depth = 8;
             btn_quayLai.Size = new System.Drawing.Size(232, 86);
             btn_quayLai.TabIndex = 9;
             btn_quayLai.Text = "Quay Lại";
@@ -492,10 +523,10 @@
             dgv_caLamViec.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dgv_caLamViec.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(33, 150, 242);
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(29, 78, 216);
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             dgv_caLamViec.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -527,9 +558,9 @@
             dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             dgv_caLamViec.ThemeStyle.BackColor = System.Drawing.Color.White;
             dgv_caLamViec.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(187, 222, 251);
-            dgv_caLamViec.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(33, 150, 242);
+            dgv_caLamViec.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
             dgv_caLamViec.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dgv_caLamViec.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dgv_caLamViec.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             dgv_caLamViec.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             dgv_caLamViec.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgv_caLamViec.ThemeStyle.HeaderStyle.Height = 66;

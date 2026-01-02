@@ -75,80 +75,95 @@
             guna2PictureBox1.TabIndex = 1;
             guna2PictureBox1.TabStop = false;
             // 
-            // txtTenDangNhap
+            // txtTenDangNhap - Modern Style
             // 
             txtTenDangNhap.BackColor = System.Drawing.Color.Transparent;
-            txtTenDangNhap.BorderRadius = 15;
+            txtTenDangNhap.BorderRadius = 10;
+            txtTenDangNhap.BorderColor = System.Drawing.Color.FromArgb(226, 232, 240);
+            txtTenDangNhap.BorderThickness = 2;
             txtTenDangNhap.CustomizableEdges = customizableEdges5;
             txtTenDangNhap.DefaultText = "";
             txtTenDangNhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(208, 208, 208);
             txtTenDangNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(226, 226, 226);
             txtTenDangNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(138, 138, 138);
             txtTenDangNhap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(138, 138, 138);
-            txtTenDangNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
-            txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 9F);
-            txtTenDangNhap.ForeColor = System.Drawing.Color.Black;
-            txtTenDangNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
-            txtTenDangNhap.Location = new System.Drawing.Point(69, 277);
+            txtTenDangNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 11F);
+            txtTenDangNhap.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+            txtTenDangNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(59, 130, 246);
+            txtTenDangNhap.Location = new System.Drawing.Point(69, 290);
             txtTenDangNhap.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             txtTenDangNhap.Name = "txtTenDangNhap";
             txtTenDangNhap.PlaceholderText = "Tên Đăng Nhập";
+            txtTenDangNhap.PlaceholderForeColor = System.Drawing.Color.FromArgb(148, 163, 184);
             txtTenDangNhap.SelectedText = "";
             txtTenDangNhap.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtTenDangNhap.Size = new System.Drawing.Size(349, 53);
+            txtTenDangNhap.Size = new System.Drawing.Size(320, 55);
             txtTenDangNhap.TabIndex = 2;
             // 
-            // txtMatKhau
+            // txtMatKhau - Modern Style
             // 
-            txtMatKhau.BorderRadius = 15;
+            txtMatKhau.BorderRadius = 10;
+            txtMatKhau.BorderColor = System.Drawing.Color.FromArgb(226, 232, 240);
+            txtMatKhau.BorderThickness = 2;
             txtMatKhau.CustomizableEdges = customizableEdges7;
             txtMatKhau.DefaultText = "";
             txtMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(208, 208, 208);
             txtMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(226, 226, 226);
             txtMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(138, 138, 138);
             txtMatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(138, 138, 138);
-            txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
-            txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            txtMatKhau.ForeColor = System.Drawing.Color.Black;
-            txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
-            txtMatKhau.Location = new System.Drawing.Point(69, 379);
+            txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 11F);
+            txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+            txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(59, 130, 246);
+            txtMatKhau.Location = new System.Drawing.Point(69, 370);
             txtMatKhau.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             txtMatKhau.Name = "txtMatKhau";
             txtMatKhau.PlaceholderText = "Mật Khẩu";
+            txtMatKhau.PlaceholderForeColor = System.Drawing.Color.FromArgb(148, 163, 184);
             txtMatKhau.SelectedText = "";
+            txtMatKhau.UseSystemPasswordChar = true;
             txtMatKhau.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtMatKhau.Size = new System.Drawing.Size(349, 53);
+            txtMatKhau.Size = new System.Drawing.Size(320, 55);
             txtMatKhau.TabIndex = 3;
             // 
-            // txtLogin
+            // txtLogin - Modern Style
             // 
-            txtLogin.BorderColor = System.Drawing.Color.Navy;
-            txtLogin.BorderRadius = 20;
+            txtLogin.Animated = true;
+            txtLogin.BorderColor = System.Drawing.Color.Transparent;
+            txtLogin.BorderRadius = 10;
             txtLogin.CustomizableEdges = customizableEdges9;
             txtLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             txtLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             txtLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             txtLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            txtLogin.FillColor = System.Drawing.Color.Navy;
-            txtLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            txtLogin.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            txtLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             txtLogin.ForeColor = System.Drawing.Color.White;
-            txtLogin.Location = new System.Drawing.Point(221, 492);
+            txtLogin.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
+            txtLogin.HoverState.ForeColor = System.Drawing.Color.White;
+            txtLogin.Location = new System.Drawing.Point(69, 465);
             txtLogin.Name = "txtLogin";
             txtLogin.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtLogin.Size = new System.Drawing.Size(197, 59);
+            txtLogin.ShadowDecoration.Enabled = true;
+            txtLogin.ShadowDecoration.Color = System.Drawing.Color.FromArgb(30, 37, 99, 235);
+            txtLogin.ShadowDecoration.Depth = 8;
+            txtLogin.Size = new System.Drawing.Size(320, 55);
             txtLogin.TabIndex = 0;
             txtLogin.Text = "Đăng nhập";
+            txtLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             txtLogin.Click += txtLogin_Click;
             // 
-            // lblName
+            // lblName - Modern Style
             // 
             lblName.AutoSize = true;
-            lblName.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            lblName.Location = new System.Drawing.Point(69, 219);
+            lblName.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            lblName.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+            lblName.Location = new System.Drawing.Point(69, 220);
             lblName.Name = "lblName";
-            lblName.Size = new System.Drawing.Size(165, 40);
+            lblName.Size = new System.Drawing.Size(200, 50);
             lblName.TabIndex = 4;
-            lblName.Text = "ITPROJECT";
+            lblName.Text = "CHÀO MẪNg TRỞ LẠI";
             // 
             // frmDangNhap
             // 

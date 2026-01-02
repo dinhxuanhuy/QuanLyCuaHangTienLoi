@@ -1,4 +1,6 @@
 # ===== Visual Studio & Cache =====
+ui-ux-pro-max.prompt.md
+./ui-ux-pro-max
 .vs/
 *.user
 *.suo

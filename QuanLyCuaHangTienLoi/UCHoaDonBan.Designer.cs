@@ -122,46 +122,57 @@
             gbChiTiet.TabIndex = 30;
             gbChiTiet.Text = "Hóa đơn bán";
             // 
-            // btnLamMoi
+            // btnLamMoi - Modern Secondary Style
             // 
             btnLamMoi.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btnLamMoi.BorderRadius = 8;
+            btnLamMoi.BorderRadius = 10;
+            btnLamMoi.BorderThickness = 2;
+            btnLamMoi.BorderColor = System.Drawing.Color.FromArgb(148, 163, 184);
             btnLamMoi.CustomizableEdges = customizableEdges3;
             btnLamMoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btnLamMoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btnLamMoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btnLamMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btnLamMoi.FillColor = System.Drawing.Color.Gray;
-            btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            btnLamMoi.ForeColor = System.Drawing.Color.White;
+            btnLamMoi.FillColor = System.Drawing.Color.White;
+            btnLamMoi.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            btnLamMoi.ForeColor = System.Drawing.Color.FromArgb(71, 85, 105);
+            btnLamMoi.HoverState.FillColor = System.Drawing.Color.FromArgb(241, 245, 249);
+            btnLamMoi.HoverState.ForeColor = System.Drawing.Color.FromArgb(51, 65, 85);
             btnLamMoi.Location = new System.Drawing.Point(1448, 444);
             btnLamMoi.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnLamMoi.Size = new System.Drawing.Size(196, 88);
+            btnLamMoi.Size = new System.Drawing.Size(180, 60);
             btnLamMoi.TabIndex = 60;
-            btnLamMoi.Text = "Làm mới";
+            btnLamMoi.Text = "↻ Làm mới";
+            btnLamMoi.Cursor = System.Windows.Forms.Cursors.Hand;
             btnLamMoi.Click += btnLamMoi_Click;
             // 
-            // btn_quayLai
+            // btn_quayLai - Modern Primary Style
             // 
             btn_quayLai.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btn_quayLai.BorderRadius = 8;
+            btn_quayLai.BorderRadius = 10;
             btn_quayLai.CustomizableEdges = customizableEdges5;
             btn_quayLai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_quayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_quayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_quayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_quayLai.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btn_quayLai.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btn_quayLai.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_quayLai.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             btn_quayLai.ForeColor = System.Drawing.Color.White;
+            btn_quayLai.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
+            btn_quayLai.HoverState.ForeColor = System.Drawing.Color.White;
             btn_quayLai.Location = new System.Drawing.Point(1448, 118);
             btn_quayLai.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btn_quayLai.Name = "btn_quayLai";
             btn_quayLai.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btn_quayLai.Size = new System.Drawing.Size(196, 88);
+            btn_quayLai.ShadowDecoration.Enabled = true;
+            btn_quayLai.ShadowDecoration.Color = System.Drawing.Color.FromArgb(30, 37, 99, 235);
+            btn_quayLai.ShadowDecoration.Depth = 8;
+            btn_quayLai.Size = new System.Drawing.Size(180, 60);
             btn_quayLai.TabIndex = 49;
-            btn_quayLai.Text = "Quay Lại";
+            btn_quayLai.Text = "← Quay Lại";
+            btn_quayLai.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_quayLai.Click += btn_quayLai_Click;
             // 
             // label11
@@ -176,24 +187,30 @@
             label11.TabIndex = 48;
             label11.Text = "Tìm Kiếm: ";
             // 
-            // btnThem
+            // btnThem - Modern Primary Style
             // 
-            btnThem.BorderRadius = 8;
+            btnThem.BorderRadius = 10;
             btnThem.CustomizableEdges = customizableEdges7;
             btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btnThem.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btnThem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnThem.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btnThem.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             btnThem.ForeColor = System.Drawing.Color.White;
+            btnThem.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
+            btnThem.HoverState.ForeColor = System.Drawing.Color.White;
             btnThem.Location = new System.Drawing.Point(69, 159);
             btnThem.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btnThem.Name = "btnThem";
             btnThem.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnThem.Size = new System.Drawing.Size(435, 88);
+            btnThem.ShadowDecoration.Enabled = true;
+            btnThem.ShadowDecoration.Color = System.Drawing.Color.FromArgb(30, 37, 99, 235);
+            btnThem.ShadowDecoration.Depth = 8;
+            btnThem.Size = new System.Drawing.Size(300, 60);
             btnThem.TabIndex = 51;
-            btnThem.Text = "Thêm hóa đơn";
+            btnThem.Text = "+ Thêm hóa đơn";
+            btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             btnThem.Click += btnThem_Click;
             // 
             // dtpThoiGianBatDau

@@ -103,28 +103,27 @@
             guna2DataGridView1.RowTemplate.Height = 50;
             guna2DataGridView1.Size = new System.Drawing.Size(1720, 366);
             guna2DataGridView1.TabIndex = 10;
-            guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(189, 223, 251);
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(248, 250, 252);
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(187, 222, 251);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(33, 150, 242);
+            guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(226, 232, 240);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
             guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 66;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 50;
             guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(211, 233, 252);
+            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 50;
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(107, 185, 246);
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
+            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 45;
+            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(219, 234, 254);
+            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             // 
             // panelDanhSach
             // 
@@ -162,20 +161,28 @@
             // btnLamMoi
             // 
             btnLamMoi.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btnLamMoi.BorderRadius = 8;
+            btnLamMoi.BorderColor = System.Drawing.Color.FromArgb(148, 163, 184);
+            btnLamMoi.BorderRadius = 10;
+            btnLamMoi.BorderThickness = 2;
+            btnLamMoi.Cursor = System.Windows.Forms.Cursors.Hand;
             btnLamMoi.CustomizableEdges = customizableEdges5;
             btnLamMoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btnLamMoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btnLamMoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btnLamMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btnLamMoi.FillColor = System.Drawing.Color.Gray;
-            btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            btnLamMoi.ForeColor = System.Drawing.Color.White;
+            btnLamMoi.FillColor = System.Drawing.Color.White;
+            btnLamMoi.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnLamMoi.ForeColor = System.Drawing.Color.FromArgb(148, 163, 184);
+            btnLamMoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(100, 116, 139);
+            btnLamMoi.HoverState.FillColor = System.Drawing.Color.FromArgb(248, 250, 252);
+            btnLamMoi.HoverState.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
             btnLamMoi.Location = new System.Drawing.Point(1490, 354);
             btnLamMoi.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnLamMoi.Size = new System.Drawing.Size(196, 88);
+            btnLamMoi.ShadowDecoration.Enabled = true;
+            btnLamMoi.ShadowDecoration.Depth = 8;
+            btnLamMoi.Size = new System.Drawing.Size(170, 60);
             btnLamMoi.TabIndex = 49;
             btnLamMoi.Text = "Làm mới";
             btnLamMoi.Click += btnLamMoi_Click;
@@ -183,20 +190,24 @@
             // btn_quayLai
             // 
             btn_quayLai.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btn_quayLai.BorderRadius = 8;
+            btn_quayLai.BorderRadius = 10;
+            btn_quayLai.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_quayLai.CustomizableEdges = customizableEdges7;
             btn_quayLai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_quayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_quayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_quayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_quayLai.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btn_quayLai.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btn_quayLai.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_quayLai.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_quayLai.ForeColor = System.Drawing.Color.White;
+            btn_quayLai.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
             btn_quayLai.Location = new System.Drawing.Point(1490, 111);
             btn_quayLai.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btn_quayLai.Name = "btn_quayLai";
             btn_quayLai.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btn_quayLai.Size = new System.Drawing.Size(196, 88);
+            btn_quayLai.ShadowDecoration.Enabled = true;
+            btn_quayLai.ShadowDecoration.Depth = 8;
+            btn_quayLai.Size = new System.Drawing.Size(170, 60);
             btn_quayLai.TabIndex = 48;
             btn_quayLai.Text = "Quay Lại";
             btn_quayLai.Click += btn_quayLai_Click;

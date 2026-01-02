@@ -73,12 +73,13 @@
             // 
             // btn_themAD
             // 
-            btn_themAD.BorderColor = System.Drawing.Color.Gray;
-            btn_themAD.BorderThickness = 1;
+            btn_themAD.BorderRadius = 10;
+            btn_themAD.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_themAD.CustomizableEdges = customizableEdges3;
-            btn_themAD.FillColor = System.Drawing.Color.Transparent;
-            btn_themAD.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            btn_themAD.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            btn_themAD.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_themAD.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            btn_themAD.ForeColor = System.Drawing.Color.White;
+            btn_themAD.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
             btn_themAD.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             btn_themAD.ImageOffset = new System.Drawing.Point(3, 0);
             btn_themAD.ImageSize = new System.Drawing.Size(12, 12);
@@ -86,6 +87,8 @@
             btn_themAD.Margin = new System.Windows.Forms.Padding(4);
             btn_themAD.Name = "btn_themAD";
             btn_themAD.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btn_themAD.ShadowDecoration.Enabled = true;
+            btn_themAD.ShadowDecoration.Depth = 8;
             btn_themAD.Size = new System.Drawing.Size(132, 43);
             btn_themAD.TabIndex = 5;
             btn_themAD.Text = "Thêm áp dụng";
@@ -93,16 +96,19 @@
             // 
             // btn_luu
             // 
-            btn_luu.BorderColor = System.Drawing.Color.Gray;
-            btn_luu.BorderThickness = 1;
+            btn_luu.BorderRadius = 10;
+            btn_luu.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_luu.CustomizableEdges = customizableEdges5;
-            btn_luu.FillColor = System.Drawing.Color.Transparent;
-            btn_luu.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            btn_luu.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            btn_luu.FillColor = System.Drawing.Color.FromArgb(34, 197, 94);
+            btn_luu.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            btn_luu.ForeColor = System.Drawing.Color.White;
+            btn_luu.HoverState.FillColor = System.Drawing.Color.FromArgb(22, 163, 74);
             btn_luu.Location = new System.Drawing.Point(1145, 670);
             btn_luu.Margin = new System.Windows.Forms.Padding(4);
             btn_luu.Name = "btn_luu";
             btn_luu.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btn_luu.ShadowDecoration.Enabled = true;
+            btn_luu.ShadowDecoration.Depth = 8;
             btn_luu.Size = new System.Drawing.Size(132, 43);
             btn_luu.TabIndex = 4;
             btn_luu.Text = "Lưu";
@@ -209,16 +215,19 @@
             // 
             // btn_xoaAD
             // 
-            btn_xoaAD.BorderColor = System.Drawing.Color.Gray;
-            btn_xoaAD.BorderThickness = 1;
+            btn_xoaAD.BorderRadius = 10;
+            btn_xoaAD.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_xoaAD.CustomizableEdges = customizableEdges11;
-            btn_xoaAD.FillColor = System.Drawing.Color.Transparent;
-            btn_xoaAD.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            btn_xoaAD.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            btn_xoaAD.FillColor = System.Drawing.Color.FromArgb(220, 53, 69);
+            btn_xoaAD.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            btn_xoaAD.ForeColor = System.Drawing.Color.White;
+            btn_xoaAD.HoverState.FillColor = System.Drawing.Color.FromArgb(185, 28, 28);
             btn_xoaAD.Location = new System.Drawing.Point(167, 312);
             btn_xoaAD.Margin = new System.Windows.Forms.Padding(4);
             btn_xoaAD.Name = "btn_xoaAD";
             btn_xoaAD.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btn_xoaAD.ShadowDecoration.Enabled = true;
+            btn_xoaAD.ShadowDecoration.Depth = 8;
             btn_xoaAD.Size = new System.Drawing.Size(132, 43);
             btn_xoaAD.TabIndex = 10;
             btn_xoaAD.Text = "Xóa áp dụng";
@@ -226,16 +235,22 @@
             // 
             // btn_huy
             // 
-            btn_huy.BorderColor = System.Drawing.Color.Gray;
-            btn_huy.BorderThickness = 1;
+            btn_huy.BorderColor = System.Drawing.Color.FromArgb(148, 163, 184);
+            btn_huy.BorderRadius = 10;
+            btn_huy.BorderThickness = 2;
+            btn_huy.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_huy.CustomizableEdges = customizableEdges13;
-            btn_huy.FillColor = System.Drawing.Color.Transparent;
-            btn_huy.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            btn_huy.FillColor = System.Drawing.Color.White;
+            btn_huy.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             btn_huy.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            btn_huy.HoverState.BorderColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_huy.HoverState.FillColor = System.Drawing.Color.FromArgb(248, 250, 252);
             btn_huy.Location = new System.Drawing.Point(352, 312);
             btn_huy.Margin = new System.Windows.Forms.Padding(4);
             btn_huy.Name = "btn_huy";
             btn_huy.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btn_huy.ShadowDecoration.Enabled = true;
+            btn_huy.ShadowDecoration.Depth = 8;
             btn_huy.Size = new System.Drawing.Size(132, 43);
             btn_huy.TabIndex = 11;
             btn_huy.Text = "Hủy";

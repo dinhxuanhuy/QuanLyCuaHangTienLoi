@@ -529,49 +529,49 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             dgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgvNhanVien.ColumnHeadersHeight = 66;
+            dgvNhanVien.ColumnHeadersHeight = 50;
             dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colMaNV, colHoTen, colNgaySinh, colGioiTinh, colDiaChi, colSĐT, colChucVu, colNgayTD });
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(211, 233, 252);
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(107, 185, 246);
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(239, 246, 255);
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             dgvNhanVien.DefaultCellStyle = dataGridViewCellStyle3;
             dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            dgvNhanVien.GridColor = System.Drawing.Color.LightGray;
+            dgvNhanVien.GridColor = System.Drawing.Color.FromArgb(226, 232, 240);
             dgvNhanVien.Location = new System.Drawing.Point(0, 0);
             dgvNhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             dgvNhanVien.Name = "dgvNhanVien";
             dgvNhanVien.RowHeadersVisible = false;
             dgvNhanVien.RowHeadersWidth = 72;
-            dgvNhanVien.RowTemplate.Height = 50;
+            dgvNhanVien.RowTemplate.Height = 48;
             dgvNhanVien.Size = new System.Drawing.Size(1719, 289);
             dgvNhanVien.TabIndex = 38;
-            dgvNhanVien.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.Font = null;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            dgvNhanVien.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(248, 250, 252);
+            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(239, 246, 255);
+            dgvNhanVien.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
             dgvNhanVien.ThemeStyle.BackColor = System.Drawing.Color.White;
-            dgvNhanVien.ThemeStyle.GridColor = System.Drawing.Color.LightGray;
-            dgvNhanVien.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(33, 150, 242);
-            dgvNhanVien.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dgvNhanVien.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dgvNhanVien.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(226, 232, 240);
+            dgvNhanVien.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            dgvNhanVien.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dgvNhanVien.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             dgvNhanVien.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             dgvNhanVien.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dgvNhanVien.ThemeStyle.HeaderStyle.Height = 66;
+            dgvNhanVien.ThemeStyle.HeaderStyle.Height = 50;
             dgvNhanVien.ThemeStyle.ReadOnly = false;
-            dgvNhanVien.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(211, 233, 252);
+            dgvNhanVien.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             dgvNhanVien.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dgvNhanVien.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            dgvNhanVien.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
-            dgvNhanVien.ThemeStyle.RowsStyle.Height = 50;
-            dgvNhanVien.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(107, 185, 246);
-            dgvNhanVien.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dgvNhanVien.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular);
+            dgvNhanVien.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+            dgvNhanVien.ThemeStyle.RowsStyle.Height = 48;
+            dgvNhanVien.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(239, 246, 255);
+            dgvNhanVien.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
             dgvNhanVien.CellClick += dgvNhanVien_CellClick;
             // 
             // colMaNV
@@ -660,87 +660,112 @@
             btnHuy.Text = "Hủy";
             btnHuy.Click += btnHuy_Click;
             // 
-            // btnSua
+            // btnSua - Modern Secondary Style
             // 
             btnSua.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
-            btnSua.BorderRadius = 8;
+            btnSua.BorderRadius = 10;
+            btnSua.BorderThickness = 2;
+            btnSua.BorderColor = System.Drawing.Color.FromArgb(37, 99, 235);
             btnSua.CustomizableEdges = customizableEdges27;
             btnSua.DisabledState.BorderColor = System.Drawing.Color.Gray;
             btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.Gray;
             btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btnSua.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btnSua.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            btnSua.ForeColor = System.Drawing.Color.White;
-            btnSua.Location = new System.Drawing.Point(278, 828);
+            btnSua.FillColor = System.Drawing.Color.White;
+            btnSua.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            btnSua.ForeColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btnSua.HoverState.FillColor = System.Drawing.Color.FromArgb(239, 246, 255);
+            btnSua.HoverState.ForeColor = System.Drawing.Color.FromArgb(29, 78, 216);
+            btnSua.HoverState.BorderColor = System.Drawing.Color.FromArgb(29, 78, 216);
+            btnSua.Location = new System.Drawing.Point(218, 828);
             btnSua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnSua.Name = "btnSua";
             btnSua.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            btnSua.Size = new System.Drawing.Size(196, 88);
+            btnSua.Size = new System.Drawing.Size(170, 60);
             btnSua.TabIndex = 41;
-            btnSua.Text = "Sửa";
+            btnSua.Text = "✏ Sửa";
+            btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             btnSua.Click += btnSua_Click;
             // 
-            // btnXoa
+            // btnXoa - Modern Danger Style
             // 
             btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
-            btnXoa.BorderRadius = 8;
+            btnXoa.BorderRadius = 10;
             btnXoa.CustomizableEdges = customizableEdges29;
             btnXoa.DisabledState.BorderColor = System.Drawing.Color.Gray;
             btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.Gray;
             btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btnXoa.FillColor = System.Drawing.Color.Red;
-            btnXoa.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnXoa.FillColor = System.Drawing.Color.FromArgb(239, 68, 68);
+            btnXoa.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             btnXoa.ForeColor = System.Drawing.Color.White;
-            btnXoa.Location = new System.Drawing.Point(525, 828);
+            btnXoa.HoverState.FillColor = System.Drawing.Color.FromArgb(220, 38, 38);
+            btnXoa.HoverState.ForeColor = System.Drawing.Color.White;
+            btnXoa.Location = new System.Drawing.Point(408, 828);
             btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnXoa.Name = "btnXoa";
             btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            btnXoa.Size = new System.Drawing.Size(196, 88);
+            btnXoa.ShadowDecoration.Enabled = true;
+            btnXoa.ShadowDecoration.Color = System.Drawing.Color.FromArgb(30, 239, 68, 68);
+            btnXoa.ShadowDecoration.Depth = 8;
+            btnXoa.Size = new System.Drawing.Size(170, 60);
             btnXoa.TabIndex = 40;
-            btnXoa.Text = "Xóa";
+            btnXoa.Text = "🗑 Xóa";
+            btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             btnXoa.Click += btnXoa_Click;
             // 
-            // btnThem
+            // btnThem - Modern Primary Style
             // 
             btnThem.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
-            btnThem.BorderRadius = 8;
+            btnThem.BorderRadius = 10;
             btnThem.CustomizableEdges = customizableEdges31;
             btnThem.DisabledState.BorderColor = System.Drawing.Color.Gray;
             btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.Gray;
             btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btnThem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnThem.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btnThem.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             btnThem.ForeColor = System.Drawing.Color.White;
+            btnThem.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
+            btnThem.HoverState.ForeColor = System.Drawing.Color.White;
             btnThem.Location = new System.Drawing.Point(28, 828);
             btnThem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnThem.Name = "btnThem";
             btnThem.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            btnThem.Size = new System.Drawing.Size(196, 88);
+            btnThem.ShadowDecoration.Enabled = true;
+            btnThem.ShadowDecoration.Color = System.Drawing.Color.FromArgb(30, 37, 99, 235);
+            btnThem.ShadowDecoration.Depth = 8;
+            btnThem.Size = new System.Drawing.Size(170, 60);
             btnThem.TabIndex = 38;
-            btnThem.Text = "Thêm";
+            btnThem.Text = "+ Thêm";
+            btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             btnThem.Click += btnThem_Click;
             // 
-            // btnLuu
+            // btnLuu - Modern Success Style
             // 
             btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
-            btnLuu.BorderRadius = 8;
+            btnLuu.BorderRadius = 10;
             btnLuu.CustomizableEdges = customizableEdges33;
             btnLuu.DisabledState.BorderColor = System.Drawing.Color.Gray;
             btnLuu.DisabledState.CustomBorderColor = System.Drawing.Color.Gray;
             btnLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btnLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btnLuu.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btnLuu.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnLuu.FillColor = System.Drawing.Color.FromArgb(34, 197, 94);
+            btnLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             btnLuu.ForeColor = System.Drawing.Color.White;
-            btnLuu.Location = new System.Drawing.Point(1216, 828);
+            btnLuu.HoverState.FillColor = System.Drawing.Color.FromArgb(22, 163, 74);
+            btnLuu.HoverState.ForeColor = System.Drawing.Color.White;
+            btnLuu.Location = new System.Drawing.Point(1350, 828);
             btnLuu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnLuu.Name = "btnLuu";
             btnLuu.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            btnLuu.Size = new System.Drawing.Size(196, 88);
+            btnLuu.ShadowDecoration.Enabled = true;
+            btnLuu.ShadowDecoration.Color = System.Drawing.Color.FromArgb(30, 34, 197, 94);
+            btnLuu.ShadowDecoration.Depth = 8;
+            btnLuu.Size = new System.Drawing.Size(170, 60);
             btnLuu.TabIndex = 39;
-            btnLuu.Text = "Lưu";
+            btnLuu.Text = "✔ Lưu";
+            btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
             btnLuu.Click += btnLuu_Click;
             // 
             // UCNhanVien

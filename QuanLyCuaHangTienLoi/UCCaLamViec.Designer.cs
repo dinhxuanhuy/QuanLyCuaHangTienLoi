@@ -87,25 +87,31 @@
             txt_timKiem.Click += txt_timKiem_Click;
             txt_timKiem.Leave += txt_timKiem_Leave;
             // 
-            // btn_dieuChinh
+            // btn_dieuChinh - Modern Primary Style
             // 
             btn_dieuChinh.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btn_dieuChinh.BorderRadius = 8;
+            btn_dieuChinh.BorderRadius = 10;
             btn_dieuChinh.CustomizableEdges = customizableEdges3;
             btn_dieuChinh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_dieuChinh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_dieuChinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_dieuChinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_dieuChinh.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
-            btn_dieuChinh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            btn_dieuChinh.FillColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btn_dieuChinh.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             btn_dieuChinh.ForeColor = System.Drawing.Color.White;
-            btn_dieuChinh.Location = new System.Drawing.Point(1318, 120);
+            btn_dieuChinh.HoverState.FillColor = System.Drawing.Color.FromArgb(29, 78, 216);
+            btn_dieuChinh.HoverState.ForeColor = System.Drawing.Color.White;
+            btn_dieuChinh.Location = new System.Drawing.Point(1380, 120);
             btn_dieuChinh.Margin = new System.Windows.Forms.Padding(4);
             btn_dieuChinh.Name = "btn_dieuChinh";
             btn_dieuChinh.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btn_dieuChinh.Size = new System.Drawing.Size(324, 118);
+            btn_dieuChinh.ShadowDecoration.Enabled = true;
+            btn_dieuChinh.ShadowDecoration.Color = System.Drawing.Color.FromArgb(30, 37, 99, 235);
+            btn_dieuChinh.ShadowDecoration.Depth = 8;
+            btn_dieuChinh.Size = new System.Drawing.Size(250, 60);
             btn_dieuChinh.TabIndex = 52;
-            btn_dieuChinh.Text = "Chỉnh sửa";
+            btn_dieuChinh.Text = "✏ Chỉnh sửa";
+            btn_dieuChinh.Cursor = System.Windows.Forms.Cursors.Hand;
             btn_dieuChinh.Click += btn_dieuChinh_Click;
             // 
             // gbChiTiet
@@ -128,25 +134,30 @@
             gbChiTiet.TabIndex = 57;
             gbChiTiet.Text = "Ca Làm Việc";
             // 
-            // btnLamMoi
+            // btnLamMoi - Modern Secondary Style
             // 
             btnLamMoi.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            btnLamMoi.BorderRadius = 8;
+            btnLamMoi.BorderRadius = 10;
+            btnLamMoi.BorderThickness = 2;
+            btnLamMoi.BorderColor = System.Drawing.Color.FromArgb(148, 163, 184);
             btnLamMoi.CustomizableEdges = customizableEdges5;
             btnLamMoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btnLamMoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btnLamMoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btnLamMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btnLamMoi.FillColor = System.Drawing.Color.Gray;
-            btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            btnLamMoi.ForeColor = System.Drawing.Color.White;
-            btnLamMoi.Location = new System.Drawing.Point(1318, 248);
+            btnLamMoi.FillColor = System.Drawing.Color.White;
+            btnLamMoi.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            btnLamMoi.ForeColor = System.Drawing.Color.FromArgb(71, 85, 105);
+            btnLamMoi.HoverState.FillColor = System.Drawing.Color.FromArgb(241, 245, 249);
+            btnLamMoi.HoverState.ForeColor = System.Drawing.Color.FromArgb(51, 65, 85);
+            btnLamMoi.Location = new System.Drawing.Point(1380, 200);
             btnLamMoi.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnLamMoi.Size = new System.Drawing.Size(324, 88);
+            btnLamMoi.Size = new System.Drawing.Size(250, 60);
             btnLamMoi.TabIndex = 59;
-            btnLamMoi.Text = "Làm mới";
+            btnLamMoi.Text = "↻ Làm mới";
+            btnLamMoi.Cursor = System.Windows.Forms.Cursors.Hand;
             btnLamMoi.Click += btnLamMoi_Click;
             // 
             // guna2HtmlLabel1
@@ -199,37 +210,37 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             dgv_caLamViec.DefaultCellStyle = dataGridViewCellStyle3;
             dgv_caLamViec.Dock = System.Windows.Forms.DockStyle.Fill;
-            dgv_caLamViec.GridColor = System.Drawing.Color.FromArgb(187, 222, 251);
+            dgv_caLamViec.GridColor = System.Drawing.Color.FromArgb(226, 232, 240);
             dgv_caLamViec.Location = new System.Drawing.Point(0, 0);
             dgv_caLamViec.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             dgv_caLamViec.Name = "dgv_caLamViec";
             dgv_caLamViec.RowHeadersVisible = false;
             dgv_caLamViec.RowHeadersWidth = 72;
-            dgv_caLamViec.RowTemplate.Height = 50;
+            dgv_caLamViec.RowTemplate.Height = 48;
             dgv_caLamViec.Size = new System.Drawing.Size(1722, 365);
             dgv_caLamViec.TabIndex = 58;
-            dgv_caLamViec.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
-            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(189, 223, 251);
-            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.Font = null;
-            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            dgv_caLamViec.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(248, 250, 252);
+            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(239, 246, 255);
+            dgv_caLamViec.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
             dgv_caLamViec.ThemeStyle.BackColor = System.Drawing.Color.White;
-            dgv_caLamViec.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(187, 222, 251);
-            dgv_caLamViec.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(33, 150, 242);
-            dgv_caLamViec.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dgv_caLamViec.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dgv_caLamViec.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(226, 232, 240);
+            dgv_caLamViec.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            dgv_caLamViec.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dgv_caLamViec.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             dgv_caLamViec.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             dgv_caLamViec.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dgv_caLamViec.ThemeStyle.HeaderStyle.Height = 66;
+            dgv_caLamViec.ThemeStyle.HeaderStyle.Height = 50;
             dgv_caLamViec.ThemeStyle.ReadOnly = false;
-            dgv_caLamViec.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(211, 233, 252);
+            dgv_caLamViec.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             dgv_caLamViec.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dgv_caLamViec.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dgv_caLamViec.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
-            dgv_caLamViec.ThemeStyle.RowsStyle.Height = 50;
-            dgv_caLamViec.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(107, 185, 246);
-            dgv_caLamViec.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dgv_caLamViec.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dgv_caLamViec.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+            dgv_caLamViec.ThemeStyle.RowsStyle.Height = 48;
+            dgv_caLamViec.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(239, 246, 255);
+            dgv_caLamViec.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
             // 
             // Column1
             // 
