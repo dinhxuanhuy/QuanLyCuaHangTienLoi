@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B6E42F0D-570D-46AC-BDE7-00BB67A2F61F}|QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj|C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\quanlycuahangtienloi\\frmtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6E42F0D-570D-46AC-BDE7-00BB67A2F61F}|QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj|solutionrelative:quanlycuahangtienloi\\frmtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B6E42F0D-570D-46AC-BDE7-00BB67A2F61F}|QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj|c:\\users\\asus\\downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\quanlycuahangtienloi\\ucquanlydulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B6E42F0D-570D-46AC-BDE7-00BB67A2F61F}|QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj|solutionrelative:quanlycuahangtienloi\\ucquanlydulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B6E42F0D-570D-46AC-BDE7-00BB67A2F61F}|QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj|C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\quanlycuahangtienloi\\uccalamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B6E42F0D-570D-46AC-BDE7-00BB67A2F61F}|QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj|solutionrelative:quanlycuahangtienloi\\uccalamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6E42F0D-570D-46AC-BDE7-00BB67A2F61F}|QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj|C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\quanlycuahangtienloi\\frmtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B6E42F0D-570D-46AC-BDE7-00BB67A2F61F}|QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj|solutionrelative:quanlycuahangtienloi\\frmtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6E42F0D-570D-46AC-BDE7-00BB67A2F61F}|QuanLyCuaHangTienLoi\\QuanLyCuaHangTienLoi.csproj|c:\\users\\asus\\downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\quanlycuahangtienloi\\frmtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,7 +77,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -109,18 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UCCaLamViec.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\UCCaLamViec.cs",
-              "RelativeDocumentMoniker": "QuanLyCuaHangTienLoi\\UCCaLamViec.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\UCCaLamViec.cs [Design]",
-              "RelativeToolTip": "QuanLyCuaHangTienLoi\\UCCaLamViec.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T15:54:12.559Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UCNhanVien.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\UCNhanVien.cs",
               "RelativeDocumentMoniker": "QuanLyCuaHangTienLoi\\UCNhanVien.cs",
@@ -131,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UCQuanLyDuLieu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\UCQuanLyDuLieu.cs",
               "RelativeDocumentMoniker": "QuanLyCuaHangTienLoi\\UCQuanLyDuLieu.cs",
@@ -143,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UCQuanLyHoaDon.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\UCQuanLyHoaDon.cs",
               "RelativeDocumentMoniker": "QuanLyCuaHangTienLoi\\UCQuanLyHoaDon.cs",
@@ -154,14 +143,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "frmTrangChu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\frmTrangChu.cs",
               "RelativeDocumentMoniker": "QuanLyCuaHangTienLoi\\frmTrangChu.cs",
               "ToolTip": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\frmTrangChu.cs [Design]",
               "RelativeToolTip": "QuanLyCuaHangTienLoi\\frmTrangChu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T17:28:32.088Z"
+              "WhenOpened": "2025-12-28T17:28:32.088Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UCCaLamViec.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\UCCaLamViec.cs",
+              "RelativeDocumentMoniker": "QuanLyCuaHangTienLoi\\UCCaLamViec.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\convenience-store-management (1)\\convenience-store-management\\convenience-store-management\\QuanLyCuaHangTienLoi\\UCCaLamViec.cs [Design]",
+              "RelativeToolTip": "QuanLyCuaHangTienLoi\\UCCaLamViec.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T15:54:12.559Z"
             },
             {
               "$type": "Document",
@@ -173,7 +174,8 @@
               "RelativeToolTip": "QuanLyCuaHangTienLoi\\frmTrangChu.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAN4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T17:54:04.209Z"
+              "WhenOpened": "2025-12-28T17:54:04.209Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
