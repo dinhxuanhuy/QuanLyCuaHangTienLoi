@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,34 +22,34 @@ namespace QuanLyCuaHangTienLoi
         public void LoadUserControl(UserControl uc, bool xoa)
         {
             if (panelContent.Controls.Count > 0 && panelContent.Controls[0] == uc)
-                return; // Đã hiện rồi, không làm gì cả
+                return; // ?� hi?n r?i, kh�ng l�m g� c?
             if (xoa && panelContent.Controls.Count > 0)
             {
                 var oldUC = panelContent.Controls[0];
-                oldUC.Dispose(); // Giải phóng bộ nhớ
+                oldUC.Dispose(); // Gi?i ph�ng b? nh?
             }
 
-            panelContent.Controls.Clear(); // Xóa nội dung cũ
+            panelContent.Controls.Clear(); // X�a n?i dung c?
 
-            // Thiết lập UserControl để lấp đầy panel
+            // Thi?t l?p UserControl ?? l?p ??y panel
             uc.Dock = DockStyle.Fill;
-            uc.AutoScroll = true; // Cho phép cuộn nếu nội dung lớn hơn
+            uc.AutoScroll = true; // Cho ph�p cu?n n?u n?i dung l?n h?n
 
-            panelContent.Controls.Add(uc); // Thêm vào panel
+            panelContent.Controls.Add(uc); // Th�m v�o panel
         }
 
         private void frmTrangChu_Load(object sender, EventArgs e)
         {
-            // Thiết lập form hiển thị đẹp hơn
+            // Thi?t l?p form hi?n th? ??p h?n
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.WindowState = FormWindowState.Maximized; // Mở rộng toàn màn hình
+            this.WindowState = FormWindowState.Maximized; // M? r?ng to�n m�n h�nh
 
             // Set encoding for form
             this.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.SizeGripStyle = SizeGripStyle.Hide; // Ẩn dấu kéo giãn góc Form
+            this.SizeGripStyle = SizeGripStyle.Hide; // ?n d?u k�o gi�n g�c Form
             this.AutoSize = true;
 
-            // Khởi tạo tất cả UserControls
+            // Kh?i t?o t?t c? UserControls
             Program.ucCaLamViec = new UC_caLamViec();
             Program.ucCaLamViecDieuChinh = new UCCaLamViecDieuChinh();
             Program.ucKhuyenMai = new UCKhuyenMai();
@@ -70,29 +70,34 @@ namespace QuanLyCuaHangTienLoi
             Program.ucNCC = new UCNCC();
             Program.ucKhuyenMaiAD = new UCKhuyenMaiAD();
 
-            // tương tác sự kiện trong module ThongKe
+            // C?p nh?t tr?ng th�i ??ng nh?p cho UCQuanLyTaiKhoan
+            Program.ucQuanLyTaiKhoan.CapNhatTrangThaiDangNhap(
+                UCQuanLyTaiKhoan.TenDangNhapHienTai, 
+                UCQuanLyTaiKhoan.VaiTroHienTai);
+
+            // t??ng t�c s? ki?n trong module ThongKe
             Program.ucThongKe.NavigateRequest += Uc_NavigateRequest;
             Program.ucThongKeChiPhi.NavigateRequest += Uc_NavigateRequest;
             Program.ucThongKeDoanhThu.NavigateRequest += Uc_NavigateRequest;
             Program.ucThongKeLoiNhuan.NavigateRequest += Uc_NavigateRequest;
-            // tương tác sự kiện trong module QuanLyDuLieu
+            // t??ng t�c s? ki?n trong module QuanLyDuLieu
             Program.ucQuanLyDuLieu.NavigateRequest += Uc_NavigateRequest;
             Program.ucNhanVien.NavigateRequest += Uc_NavigateRequest;
             Program.ucKhuyenMai.NavigateRequest += Uc_NavigateRequest;
             Program.ucNhaCungCap.NavigateRequest += Uc_NavigateRequest;
             Program.ucSanPham.NavigateRequest += Uc_NavigateRequest;
-            // tương tác sự kiện trong module QuanLyHoaDon
+            // t??ng t�c s? ki?n trong module QuanLyHoaDon
             Program.ucQuanLyHoaDon.NavigateRequest += Uc_NavigateRequest;
             Program.ucHoaDonBan.NavigateRequest += Uc_NavigateRequest;
             Program.ucThemHDBanHang.NavigateRequest += Uc_NavigateRequest;
             Program.ucHoaDonNhap.NavigateRequest += Uc_NavigateRequest;
-            // tương tác sự kiện trong module CaLamViec
+            // t??ng t�c s? ki?n trong module CaLamViec
             Program.ucCaLamViec.NavigateRequest += Uc_NavigateRequest;
             Program.ucCaLamViecDieuChinh.NavigateRequest += Uc_NavigateRequest;
-            // tương tác với quá trình đăng nhập
+            // t??ng t�c v?i qu� tr�nh ??ng nh?p
             Program.ucQuanLyTaiKhoan.NavigateRequest += Uc_NavigateRequest;
 
-            // Bật tất cả các nút menu
+            // B?t t?t c? c�c n�t menu
             btn_quanLyCa.Enabled = true;
             btn_quanLyDuLieu.Enabled = true;
             btn_quanLyHoaDon.Enabled = true;
@@ -100,7 +105,7 @@ namespace QuanLyCuaHangTienLoi
             btn_thongKe.Enabled = true;
             btn_chatBox.Enabled = true;
 
-            LoadUserControl(Program.ucQuanLyHoaDon, false); // Hiển thị giao diện mặc định
+            LoadUserControl(Program.ucQuanLyHoaDon, false); // Hi?n th? giao di?n m?c ??nh
         }
 
         private void Uc_NavigateRequest(UserControl uc)
@@ -110,11 +115,11 @@ namespace QuanLyCuaHangTienLoi
         
         public void CapNhatTenNhanVien(string a, string b)
         {
-            // Kiểm tra và cập nhật Label
+            // Ki?m tra v� c?p nh?t Label
             if (labTenNV != null)
             {
-                labTenNV.Text = "Nhân viên: " + a;
-                labMaNV.Text = "Mã NV: " + b;
+                labTenNV.Text = "Nh�n vi�n: " + a;
+                labMaNV.Text = "M� NV: " + b;
             }
         }
 

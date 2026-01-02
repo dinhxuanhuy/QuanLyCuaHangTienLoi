@@ -24,16 +24,30 @@ namespace QuanLyCuaHangTienLoi
         public event NavigateRequestEventHandler NavigateRequest;
         // ----- KẾT THÚC THÊM MỚI -----
         BALTaiKhoan dbtk = null;
+        
+        // Biến static để lưu tên đăng nhập từ frmDangNhap
+        public static string TenDangNhapHienTai = "";
+        public static string VaiTroHienTai = "";
+        
         public UCQuanLyTaiKhoan()
         {
             InitializeComponent();
             dbtk = new BALTaiKhoan();
             pan_dangKy.Hide();
-            pan_dangNhap.Show();
-            pan_dangXuat.Hide();
+            pan_dangNhap.Hide(); // Ẩn panel đăng nhập vì đã đăng nhập từ frmDangNhap
+            pan_dangXuat.Show(); // Hiển thị panel đăng xuất (đã đăng nhập)
         }
         bool checkAdmin = false;
-    
+
+        // Phương thức để cập nhật trạng thái đã đăng nhập
+        public void CapNhatTrangThaiDangNhap(string tenDangNhap, string vaiTro)
+        {
+            TenDangNhapHienTai = tenDangNhap;
+            VaiTroHienTai = vaiTro;
+            txt_tenDangXuat.Text = tenDangNhap;
+            checkAdmin = (vaiTro == "Quản lý");
+        }
+
         // Xử lý Panel đăng ký
         private void btn_dangNhap_Click(object sender, EventArgs e)
         {
@@ -135,90 +149,26 @@ namespace QuanLyCuaHangTienLoi
                 MessageBox.Show("Đăng ký thất bại. Lỗi: " + err, "Lỗi Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
         private void btn_dangNhapHeThong_Click(object sender, EventArgs e)
         {
-            frmTrangChu formCha = this.ParentForm as frmTrangChu;
-
-            // 1. Kiểm tra dữ liệu nhập
-            if (string.IsNullOrWhiteSpace(txt_tenDangNhap.Text) || txt_tenDangNhap.Text == "Tên đăng nhập")
-            {
-                MessageBox.Show("Vui lòng nhập aa tên đăng nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(txt_matKhau.Text) || txt_matKhau.Text == "Mật khẩu")
-            {
-                MessageBox.Show("Vui lòng nhập mật khẩu đăng nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // 2. Gọi BAL để xác thực và lấy vai trò
-            string err = "";
-            string maVaiTro = "";
-            // HÀM BAL NÀY PHẢI TỰ HASH MẬT KHẨU NHẬP VÀO RỒI MỚI SO SÁNH VỚI DB
-            bool dangNhapThanhCong = dbtk.KiemTraDangNhap(txt_tenDangNhap.Text.Trim(), txt_matKhau.Text, out maVaiTro, ref err);
-            
-            if (dangNhapThanhCong)
-            {
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                if (formCha != null)
-                {
-                    if (maVaiTro == "Nhân viên")
-                    {
-                        checkAdmin = false;
-                        formCha.btn_quanLyCa.Enabled = false;
-                        formCha.btn_quanLyDuLieu.Enabled = false;
-                        formCha.btn_quanLyHoaDon.Enabled = true;
-                        formCha.btn_quanLyTaiKhoan.Enabled = true;
-                        formCha.btn_thongKe.Enabled = false;
-                    }
-                    else if (maVaiTro == "Quản lý")
-                    {
-                        checkAdmin = true;
-                        formCha.btn_quanLyCa.Enabled = true;
-                        formCha.btn_quanLyDuLieu.Enabled = true;
-                        formCha.btn_quanLyHoaDon.Enabled = true;
-                        formCha.btn_quanLyTaiKhoan.Enabled = true;
-                        formCha.btn_thongKe.Enabled = true;
-                    }
-                    // 2. Gọi hàm TimMaNV với đầy đủ tham số
-                    string maNV = dbtk.TimMaNV(
-                        txt_tenDangNhap.Text.Trim(),
-                        txt_matKhau.Text, 
-                        ref err);
-                    frmTrangChu.MaNV = maNV;
-                    formCha.CapNhatTenNhanVien(txt_tenDangNhap.Text, maNV);
-                    // Chuyển sang UC mong muốn
-                    NavigateRequest?.Invoke(Program.ucQuanLyHoaDon);
-                    txt_tenDangXuat.Text = txt_tenDangNhap.Text;
-                    pan_dangKy.Hide();
-                    pan_dangNhap.Hide();
-                    pan_dangXuat.Show();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng. Lỗi: " + err, "Lỗi Đăng Nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            // Không còn sử dụng - đã đăng nhập từ frmDangNhap
         }
 
         // Xử lý Panel đăng xuất
         private void btn_dangXuat_Click(object sender, EventArgs e)
         {
-            frmTrangChu formCha = this.ParentForm as frmTrangChu; // Khai báo formCha
+            // Đóng frmTrangChu và quay về frmDangNhap
+            frmTrangChu formCha = this.ParentForm as frmTrangChu;
             if (formCha != null)
             {
-                formCha.btn_quanLyCa.Enabled = false; 
-                formCha.btn_quanLyDuLieu.Enabled = false;
-                formCha.btn_quanLyHoaDon.Enabled = false;
-                formCha.btn_quanLyTaiKhoan.Enabled = false;
-                formCha.btn_thongKe.Enabled = false;
+                // Reset các biến static
+                TenDangNhapHienTai = "";
+                VaiTroHienTai = "";
+                frmTrangChu.MaNV = "";
+                
+                formCha.Close(); // Đóng form trang chủ, sẽ quay về frmDangNhap
             }
-            pan_dangKy.Hide();
-            pan_dangNhap.Show();
-            pan_dangXuat.Hide();
-            txt_tenDangNhap.Text = "";
-            txt_matKhau.Text = "";
         }
 
         private void btn_dangKy_Click(object sender, EventArgs e)

@@ -47,6 +47,10 @@ namespace QuanLyCuaHangTienLoi
                     txtMatKhau.Text,
                     ref err);
                 
+                // Lưu thông tin đăng nhập vào UCQuanLyTaiKhoan
+                UCQuanLyTaiKhoan.TenDangNhapHienTai = txtTenDangNhap.Text.Trim();
+                UCQuanLyTaiKhoan.VaiTroHienTai = maVaiTro;
+                
                 // Tạo và hiển thị form trang chủ
                 Program.frmMain = new frmTrangChu();
                 frmTrangChu.MaNV = maNV;
