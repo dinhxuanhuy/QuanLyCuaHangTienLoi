@@ -20,13 +20,20 @@ namespace QuanLyCuaHangTienLoi
         private DataGridView dgvHoaDon;
         private BALHoaDon dbhd = null;
 
+        //// Định nghĩa tên cột (PHẢI KHỚP VỚI VIEW SQL view_HoaDonBanHang)
+        //private const string COL_MA_HD = "MaHD";
+        //private const string COL_NV_BAN_HANG_ID = "MaNVBanHang"; // ID Mã NV bán hàng (Cho DoubleClick)
+        //private const string COL_TEN_NV = "TenNVBanHang";     // Tên NV bán hàng (Dùng cho hiển thị và lọc)
+        //private const string COL_TONG_GIA_TRI = "TongGiaTri";
+        //private const string COL_NGAY_LAP = "NgayLap"; // Tên cột Ngày Bán/Lập trong VIEW SQL
         // Định nghĩa tên cột (PHẢI KHỚP VỚI VIEW SQL view_HoaDonBanHang)
-        private const string COL_MA_HD = "MaHD";
-        private const string COL_NV_BAN_HANG_ID = "MaNVBanHang"; // ID Mã NV bán hàng (Cho DoubleClick)
-        private const string COL_TEN_NV = "TenNVBanHang";     // Tên NV bán hàng (Dùng cho hiển thị và lọc)
-        private const string COL_TONG_GIA_TRI = "TongGiaTri";
-        private const string COL_NGAY_LAP = "NgayLap"; // Tên cột Ngày Bán/Lập trong VIEW SQL
-
+        private const string COL_MA_HD = "Column1";
+        
+        private const string COL_TEN_NV = "Column2";     // Tên NV bán hàng (Dùng cho hiển thị và lọc)
+        
+        private const string COL_NGAY_LAP = "Column3"; // Tên cột Ngày Bán/Lập trong VIEW SQL
+        private const string COL_TONG_GIA_TRI = "Column4";
+        private const string COL_NV_BAN_HANG_ID = "Column5"; // ID Mã NV bán hàng (Cho DoubleClick)
         public UCHoaDonBan()
         {
             InitializeComponent();
@@ -94,19 +101,43 @@ namespace QuanLyCuaHangTienLoi
         // 2. XỬ LÝ HIỂN THỊ DỮ LIỆU CƠ BẢN KHI CLICK DGV (Sử dụng DataRow an toàn)
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //if (e.RowIndex < 0 || e.RowIndex >= dgvHoaDon.Rows.Count) return;
+
+            //try
+            //{
+            //    DataRowView rowView = dgvHoaDon.Rows[e.RowIndex].DataBoundItem as DataRowView;
+            //    if (rowView == null) return;
+
+            //    DataRow row = rowView.Row;
+
+            //    // FIX: Dùng tên cột đã định nghĩa để truy cập DataRow
+            //    txtTongGiaTri.Text = row[COL_TONG_GIA_TRI]?.ToString() ?? "";
+            //    txtMaHD.Text = row[COL_MA_HD]?.ToString() ?? "";
+            //    txtNVBanHang.Text = row[COL_TEN_NV]?.ToString() ?? ""; // Hiển thị Tên NV
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Lỗi hiển thị chi tiết hóa đơn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            // Kiểm tra dòng hợp lệ (không click vào tiêu đề)
             if (e.RowIndex < 0 || e.RowIndex >= dgvHoaDon.Rows.Count) return;
 
             try
             {
-                DataRowView rowView = dgvHoaDon.Rows[e.RowIndex].DataBoundItem as DataRowView;
-                if (rowView == null) return;
+                // Lấy dòng hiện tại trên giao diện
+                DataGridViewRow row = dgvHoaDon.Rows[e.RowIndex];
 
-                DataRow row = rowView.Row;
+                // --- SỬA ĐỔI: Dùng .Cells[Tên_Cột].Value thay vì DataRow[...] ---
+                // Cách này an toàn nhất vì nó dùng chung tên cột "Column..." mà bạn vừa khai báo
 
-                // FIX: Dùng tên cột đã định nghĩa để truy cập DataRow
-                txtTongGiaTri.Text = row[COL_TONG_GIA_TRI]?.ToString() ?? "";
-                txtMaHD.Text = row[COL_MA_HD]?.ToString() ?? "";
-                txtNVBanHang.Text = row[COL_TEN_NV]?.ToString() ?? ""; // Hiển thị Tên NV
+                // 1. Lấy Tổng giá trị
+                txtTongGiaTri.Text = row.Cells[COL_TONG_GIA_TRI].Value?.ToString() ?? "";
+
+                // 2. Lấy Mã Hóa Đơn
+                txtMaHD.Text = row.Cells[COL_MA_HD].Value?.ToString() ?? "";
+
+                // 3. Lấy Tên NV
+                txtNVBanHang.Text = row.Cells[COL_TEN_NV].Value?.ToString() ?? "";
             }
             catch (Exception ex)
             {
@@ -130,7 +161,7 @@ namespace QuanLyCuaHangTienLoi
                 string nvBanHangID = row[COL_NV_BAN_HANG_ID]?.ToString() ?? ""; // ⬅️ Lấy ID NV
 
                 if (string.IsNullOrEmpty(maHD)) return;
-;
+                ;
 
             }
             catch (Exception ex)
@@ -165,6 +196,62 @@ namespace QuanLyCuaHangTienLoi
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void btn_in_Click(object sender, EventArgs e)
+        {
+            // 1. Kiểm tra chọn dòng
+            if (dgvHoaDon.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn hóa đơn cần xem!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                // 2. Lấy dòng đang chọn
+                DataGridViewRow row = dgvHoaDon.SelectedRows[0];
+
+                // 3. Lấy dữ liệu từ các cột (Sử dụng các hằng số tên cột bạn đã khai báo ở đầu class)
+                // Lưu ý: Đảm bảo tên cột khớp với View SQL hoặc Design DataGridView của bạn
+                string maHD = row.Cells[COL_MA_HD].Value?.ToString() ?? "";
+
+                // Lấy Tên NV (hoặc Mã NV tùy ý bạn, ở đây mình lấy Tên cho đẹp)
+                string tenNV = row.Cells[COL_TEN_NV].Value?.ToString() ?? "";
+
+                // Lấy ngày và format gọn lại (chỉ lấy ngày tháng năm)
+                string ngayRaw = row.Cells[COL_NGAY_LAP].Value?.ToString() ?? "";
+                string ngayLap = "";
+                if (DateTime.TryParse(ngayRaw, out DateTime dateValue))
+                {
+                    ngayLap = dateValue.ToString("dd/MM/yyyy HH:mm");
+                }
+                else
+                {
+                    ngayLap = ngayRaw;
+                }
+
+                // Lấy tổng tiền và format có dấu phẩy
+                string tienRaw = row.Cells[COL_TONG_GIA_TRI].Value?.ToString() ?? "0";
+                string tongTien = "";
+                if (decimal.TryParse(tienRaw, out decimal tienValue))
+                {
+                    tongTien = tienValue.ToString("N0") + " VNĐ";
+                }
+                else
+                {
+                    tongTien = tienRaw;
+                }
+
+                // 4. KHỞI TẠO FORM VỚI NHIỀU THAM SỐ
+                frmChiTietHD frm = new frmChiTietHD(maHD, tenNV, ngayLap, tongTien);
+
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi mở form: " + ex.Message);
+            }
         }
     }
 }

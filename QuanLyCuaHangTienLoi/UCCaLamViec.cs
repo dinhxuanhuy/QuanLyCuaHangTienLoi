@@ -29,6 +29,7 @@ namespace QuanLyCuaHangTienLoi
             dbcl = new BALQuanLyCa();
             DataTable dt = dbcl.CaLamViec();
             dgv_caLamViec.DataSource = dt;
+            dgv_caLamViec.Columns["Column2"].DefaultCellStyle.Format = "dd/MM/yyyy";
         }
 
         private void btn_dieuChinh_Click(object sender, EventArgs e)
@@ -87,6 +88,7 @@ namespace QuanLyCuaHangTienLoi
         {
             DataTable dt = dbcl.CaLamViec();
             dgv_caLamViec.DataSource = dt;
+            dgv_caLamViec.Columns["Column2"].DefaultCellStyle.Format = "dd/MM/yyyy";
         }
     }
 }

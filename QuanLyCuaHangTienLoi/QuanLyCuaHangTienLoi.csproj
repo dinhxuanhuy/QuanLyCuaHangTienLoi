@@ -91,9 +91,7 @@
     <Compile Update="UCSanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UCThemHDBanHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UCThemHDBanHang.cs" />
     <Compile Update="UCThongKe.cs">
       <SubType>UserControl</SubType>
     </Compile>

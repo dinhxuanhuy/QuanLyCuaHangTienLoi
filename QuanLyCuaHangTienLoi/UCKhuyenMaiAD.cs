@@ -7,7 +7,8 @@ namespace QuanLyCuaHangTienLoi
     public partial class UCKhuyenMaiAD : UserControl
     {
         BALKhuyenMaiAD dbkmad = null;
-
+        public delegate void NavigateRequestEventHandler(UserControl uc);
+        public event NavigateRequestEventHandler NavigateRequest;
         public UCKhuyenMaiAD()
         {
             InitializeComponent();
@@ -17,7 +18,7 @@ namespace QuanLyCuaHangTienLoi
             LoadComboBoxMaSP();
             LoadComboBoxMaKM();
             LoadGridSPKM(); // Gọi hàm load bảng
-
+            Dock = DockStyle.Fill;
             // Vào màn hình -> Chế độ xem (Khóa nhập liệu)
             DoiTrangThai(false);
         }
@@ -224,6 +225,12 @@ namespace QuanLyCuaHangTienLoi
                 }
                 catch { }
             }
+        }
+
+        private void btn_quayLai_Click(object sender, EventArgs e)
+        {
+            UserControl ucCanChuyenToi = Program.ucKhuyenMai;
+            NavigateRequest?.Invoke(ucCanChuyenToi);
         }
     }
 }

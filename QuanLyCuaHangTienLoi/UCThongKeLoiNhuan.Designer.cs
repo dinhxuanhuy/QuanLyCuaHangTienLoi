@@ -52,14 +52,14 @@
             btn_chiPhiTheoThang = new Guna.UI2.WinForms.Guna2Button();
             btn_quayLai = new Guna.UI2.WinForms.Guna2Button();
             dgv_doanhThuTheoThang = new Guna.UI2.WinForms.Guna2DataGridView();
+            txt_thongKe = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             DoanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            txt_thongKe = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             gbChiTiet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_doanhThuTheoThang).BeginInit();
             guna2Panel1.SuspendLayout();
@@ -241,64 +241,6 @@
             dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(107, 185, 246);
             dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewTextBoxColumn1.DataPropertyName = "MaDT";
-            dataGridViewTextBoxColumn1.FillWeight = 39.62784F;
-            dataGridViewTextBoxColumn1.HeaderText = "Mã DT";
-            dataGridViewTextBoxColumn1.MinimumWidth = 9;
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewTextBoxColumn2.DataPropertyName = "ThoiGianBatDau";
-            dataGridViewTextBoxColumn2.FillWeight = 245.9336F;
-            dataGridViewTextBoxColumn2.HeaderText = "Thời Gian Bắt Đầu";
-            dataGridViewTextBoxColumn2.MinimumWidth = 9;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.ReadOnly = true;
-            dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewTextBoxColumn3.DataPropertyName = "ThoiGianKetThuc";
-            dataGridViewTextBoxColumn3.FillWeight = 14.4385F;
-            dataGridViewTextBoxColumn3.HeaderText = "Thời Gian Kết Thúc";
-            dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Width = 150;
-            // 
-            // Column1
-            // 
-            Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            Column1.DataPropertyName = "ChiPhiNhapHang";
-            Column1.HeaderText = "Chi Phí Nhập Hàng";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 150;
-            // 
-            // DoanhThu
-            // 
-            DoanhThu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            DoanhThu.DataPropertyName = "DoanhThu";
-            DoanhThu.HeaderText = "Doanh Thu";
-            DoanhThu.MinimumWidth = 6;
-            DoanhThu.Name = "DoanhThu";
-            DoanhThu.Width = 150;
-            // 
-            // Column3
-            // 
-            Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            Column3.DataPropertyName = "LoiNhuan";
-            Column3.HeaderText = "Lợi Nhuận";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 150;
-            // 
             // txt_thongKe
             // 
             txt_thongKe.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -329,11 +271,69 @@
             guna2Panel1.Controls.Add(dgv_doanhThuTheoThang);
             guna2Panel1.CustomizableEdges = customizableEdges13;
             guna2Panel1.Location = new System.Drawing.Point(0, 309);
-            guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2Panel1.Size = new System.Drawing.Size(1147, 155);
             guna2Panel1.TabIndex = 65;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewTextBoxColumn1.DataPropertyName = "MaDT";
+            dataGridViewTextBoxColumn1.FillWeight = 39.62784F;
+            dataGridViewTextBoxColumn1.HeaderText = "Mã DT";
+            dataGridViewTextBoxColumn1.MinimumWidth = 9;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewTextBoxColumn2.DataPropertyName = "ThoiGianBatDau";
+            dataGridViewTextBoxColumn2.FillWeight = 245.9336F;
+            dataGridViewTextBoxColumn2.HeaderText = "Thời Gian Bắt Đầu";
+            dataGridViewTextBoxColumn2.MinimumWidth = 9;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            dataGridViewTextBoxColumn2.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewTextBoxColumn3.DataPropertyName = "ThoiGianKetThuc";
+            dataGridViewTextBoxColumn3.FillWeight = 14.4385F;
+            dataGridViewTextBoxColumn3.HeaderText = "Thời Gian Kết Thúc";
+            dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.Width = 250;
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            Column1.DataPropertyName = "ChiPhiNhapHang";
+            Column1.HeaderText = "Chi Phí Nhập Hàng";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.Width = 150;
+            // 
+            // DoanhThu
+            // 
+            DoanhThu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            DoanhThu.DataPropertyName = "DoanhThu";
+            DoanhThu.HeaderText = "Doanh Thu";
+            DoanhThu.MinimumWidth = 6;
+            DoanhThu.Name = "DoanhThu";
+            DoanhThu.Width = 150;
+            // 
+            // Column3
+            // 
+            Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            Column3.DataPropertyName = "LoiNhuan";
+            Column3.HeaderText = "Lợi Nhuận";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 150;
             // 
             // UCThongKeLoiNhuan
             // 

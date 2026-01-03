@@ -60,7 +60,8 @@ namespace QuanLyCuaHangTienLoi
 
                 DataTable dtKhuyenMai = dbkm.LayKhuyenMai();
                 dgvKhuyenMai.DataSource = dtKhuyenMai;
-
+                dgvKhuyenMai.Columns["colDiaChi"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                dgvKhuyenMai.Columns["colSĐT"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 ResetText();
 
                 // Cấu hình trạng thái nút

@@ -53,6 +53,8 @@ namespace QuanLyCuaHangTienLoi
                 DataTable dt = dbtk.DoanhThuTheoThang();
                 dgv_doanhThuTheoThang.DataSource = dt;
                 txt_thongKe.Text = PhanTichChiPhiTheoThang(dt);
+                dgv_doanhThuTheoThang.Columns["dataGridViewTextBoxColumn2"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                dgv_doanhThuTheoThang.Columns["dataGridViewTextBoxColumn3"].DefaultCellStyle.Format = "dd/MM/yyyy";
             }
             catch (Exception ex)
             {
