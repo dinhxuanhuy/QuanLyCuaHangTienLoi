@@ -108,8 +108,8 @@
             pan_dangNhap.Controls.Add(txt_matKhau);
             pan_dangNhap.CustomizableEdges = customizableEdges9;
             pan_dangNhap.FillColor = System.Drawing.Color.White;
-            pan_dangNhap.Location = new System.Drawing.Point(587, 66);
-            pan_dangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            pan_dangNhap.Location = new System.Drawing.Point(361, 41);
+            pan_dangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             pan_dangNhap.Name = "pan_dangNhap";
             pan_dangNhap.ShadowDecoration.BorderRadius = 15;
             pan_dangNhap.ShadowDecoration.Color = System.Drawing.Color.Silver;
@@ -117,29 +117,28 @@
             pan_dangNhap.ShadowDecoration.Depth = 5;
             pan_dangNhap.ShadowDecoration.Enabled = true;
             pan_dangNhap.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(10, 10, 5, 5);
-            pan_dangNhap.Size = new System.Drawing.Size(679, 1050);
+            pan_dangNhap.Size = new System.Drawing.Size(418, 656);
             pan_dangNhap.TabIndex = 3;
             // 
             // btn_dangNhapHeThong
             // 
             btn_dangNhapHeThong.Animated = true;
             btn_dangNhapHeThong.AutoRoundedCorners = true;
-            btn_dangNhapHeThong.BorderRadius = 15;
-            btn_dangNhapHeThong.FillColor = System.Drawing.Color.FromArgb(94, 148, 255);
+            btn_dangNhapHeThong.BorderRadius = 39;
             btn_dangNhapHeThong.CustomizableEdges = customizableEdges1;
             btn_dangNhapHeThong.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            btn_dangNhapHeThong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            btn_dangNhapHeThong.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            btn_dangNhapHeThong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
+            btn_dangNhapHeThong.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
             btn_dangNhapHeThong.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
             btn_dangNhapHeThong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
             btn_dangNhapHeThong.FillColor = System.Drawing.SystemColors.HotTrack;
             btn_dangNhapHeThong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_dangNhapHeThong.ForeColor = System.Drawing.Color.White;
-            btn_dangNhapHeThong.Location = new System.Drawing.Point(203, 824);
-            btn_dangNhapHeThong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btn_dangNhapHeThong.Location = new System.Drawing.Point(125, 515);
+            btn_dangNhapHeThong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             btn_dangNhapHeThong.Name = "btn_dangNhapHeThong";
             btn_dangNhapHeThong.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btn_dangNhapHeThong.Size = new System.Drawing.Size(292, 130);
+            btn_dangNhapHeThong.Size = new System.Drawing.Size(180, 81);
             btn_dangNhapHeThong.TabIndex = 28;
             btn_dangNhapHeThong.Text = "Đăng nhập";
             btn_dangNhapHeThong.Click += btn_dangNhapHeThong_Click;
@@ -148,11 +147,11 @@
             // 
             guna2PictureBox1.CustomizableEdges = customizableEdges3;
             guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new System.Drawing.Point(177, 196);
-            guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            guna2PictureBox1.Location = new System.Drawing.Point(109, 122);
+            guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             guna2PictureBox1.Name = "guna2PictureBox1";
             guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2PictureBox1.Size = new System.Drawing.Size(354, 266);
+            guna2PictureBox1.Size = new System.Drawing.Size(218, 166);
             guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             guna2PictureBox1.TabIndex = 27;
             guna2PictureBox1.TabStop = false;
@@ -162,9 +161,10 @@
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             label3.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
-            label3.Location = new System.Drawing.Point(206, 68);
+            label3.Location = new System.Drawing.Point(127, 42);
+            label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(284, 65);
+            label3.Size = new System.Drawing.Size(178, 41);
             label3.TabIndex = 26;
             label3.Text = "Đăng Nhập";
             // 
@@ -186,14 +186,14 @@
             txt_tenDangNhap.ForeColor = System.Drawing.Color.Black;
             txt_tenDangNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
             txt_tenDangNhap.IconLeft = (System.Drawing.Image)resources.GetObject("txt_tenDangNhap.IconLeft");
-            txt_tenDangNhap.Location = new System.Drawing.Point(132, 512);
-            txt_tenDangNhap.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            txt_tenDangNhap.Location = new System.Drawing.Point(81, 320);
+            txt_tenDangNhap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             txt_tenDangNhap.Name = "txt_tenDangNhap";
             txt_tenDangNhap.PlaceholderForeColor = System.Drawing.Color.Black;
             txt_tenDangNhap.PlaceholderText = "Tên đăng nhập";
             txt_tenDangNhap.SelectedText = "";
             txt_tenDangNhap.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txt_tenDangNhap.Size = new System.Drawing.Size(458, 82);
+            txt_tenDangNhap.Size = new System.Drawing.Size(282, 51);
             txt_tenDangNhap.TabIndex = 24;
             // 
             // txt_matKhau
@@ -213,14 +213,14 @@
             txt_matKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
             txt_matKhau.ForeColor = System.Drawing.Color.Black;
             txt_matKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
-            txt_matKhau.Location = new System.Drawing.Point(132, 606);
-            txt_matKhau.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            txt_matKhau.Location = new System.Drawing.Point(81, 379);
+            txt_matKhau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             txt_matKhau.Name = "txt_matKhau";
             txt_matKhau.PlaceholderForeColor = System.Drawing.Color.Black;
             txt_matKhau.PlaceholderText = "Mật khẩu";
             txt_matKhau.SelectedText = "";
             txt_matKhau.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txt_matKhau.Size = new System.Drawing.Size(458, 82);
+            txt_matKhau.Size = new System.Drawing.Size(282, 51);
             txt_matKhau.TabIndex = 25;
             txt_matKhau.UseSystemPasswordChar = true;
             // 
@@ -228,15 +228,15 @@
             // 
             btn_dangKy.Animated = true;
             btn_dangKy.AutoRoundedCorners = true;
-            btn_dangKy.BorderRadius = 15;
-            btn_dangKy.FillColor = System.Drawing.Color.FromArgb(94, 148, 255);
+            btn_dangKy.BorderRadius = 39;
+            btn_dangKy.CustomizableEdges = customizableEdges11;
             btn_dangKy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_dangKy.ForeColor = System.Drawing.Color.White;
-            btn_dangKy.Location = new System.Drawing.Point(154, 824);
-            btn_dangKy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btn_dangKy.Location = new System.Drawing.Point(95, 515);
+            btn_dangKy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             btn_dangKy.Name = "btn_dangKy";
             btn_dangKy.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btn_dangKy.Size = new System.Drawing.Size(354, 130);
+            btn_dangKy.Size = new System.Drawing.Size(218, 81);
             btn_dangKy.TabIndex = 29;
             btn_dangKy.Text = "Đăng Ký";
             btn_dangKy.Click += btn_dangKy_Click;
@@ -258,8 +258,8 @@
             pan_dangKy.Controls.Add(txt_matKhauDK);
             pan_dangKy.CustomizableEdges = customizableEdges27;
             pan_dangKy.FillColor = System.Drawing.Color.White;
-            pan_dangKy.Location = new System.Drawing.Point(587, 66);
-            pan_dangKy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            pan_dangKy.Location = new System.Drawing.Point(794, 71);
+            pan_dangKy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             pan_dangKy.Name = "pan_dangKy";
             pan_dangKy.ShadowDecoration.BorderRadius = 15;
             pan_dangKy.ShadowDecoration.Color = System.Drawing.Color.Silver;
@@ -267,13 +267,13 @@
             pan_dangKy.ShadowDecoration.Depth = 5;
             pan_dangKy.ShadowDecoration.Enabled = true;
             pan_dangKy.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(10, 10, 5, 5);
-            pan_dangKy.Size = new System.Drawing.Size(679, 1050);
+            pan_dangKy.Size = new System.Drawing.Size(418, 656);
             pan_dangKy.TabIndex = 50;
             // 
             // cbb_maNV
             // 
             cbb_maNV.BackColor = System.Drawing.Color.Transparent;
-            cbb_maNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            cbb_maNV.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
             cbb_maNV.BorderRadius = 15;
             cbb_maNV.CustomizableEdges = customizableEdges13;
             cbb_maNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -283,18 +283,18 @@
             cbb_maNV.Font = new System.Drawing.Font("Segoe UI", 10F);
             cbb_maNV.ForeColor = System.Drawing.Color.Black;
             cbb_maNV.ItemHeight = 30;
-            cbb_maNV.Location = new System.Drawing.Point(99, 340);
-            cbb_maNV.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            cbb_maNV.Location = new System.Drawing.Point(61, 212);
+            cbb_maNV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             cbb_maNV.MaxDropDownItems = 15;
             cbb_maNV.Name = "cbb_maNV";
             cbb_maNV.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            cbb_maNV.Size = new System.Drawing.Size(482, 36);
+            cbb_maNV.Size = new System.Drawing.Size(298, 36);
             cbb_maNV.TabIndex = 33;
             // 
             // cbb_vaiTro
             // 
             cbb_vaiTro.BackColor = System.Drawing.Color.Transparent;
-            cbb_vaiTro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            cbb_vaiTro.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
             cbb_vaiTro.BorderRadius = 15;
             cbb_vaiTro.CustomizableEdges = customizableEdges15;
             cbb_vaiTro.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -304,11 +304,11 @@
             cbb_vaiTro.Font = new System.Drawing.Font("Segoe UI", 10F);
             cbb_vaiTro.ForeColor = System.Drawing.Color.Black;
             cbb_vaiTro.ItemHeight = 30;
-            cbb_vaiTro.Location = new System.Drawing.Point(99, 238);
-            cbb_vaiTro.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            cbb_vaiTro.Location = new System.Drawing.Point(61, 149);
+            cbb_vaiTro.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             cbb_vaiTro.Name = "cbb_vaiTro";
             cbb_vaiTro.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            cbb_vaiTro.Size = new System.Drawing.Size(478, 36);
+            cbb_vaiTro.Size = new System.Drawing.Size(296, 36);
             cbb_vaiTro.TabIndex = 32;
             // 
             // txt_xacNhanMatKhauDK
@@ -328,14 +328,14 @@
             txt_xacNhanMatKhauDK.Font = new System.Drawing.Font("Segoe UI", 9F);
             txt_xacNhanMatKhauDK.ForeColor = System.Drawing.Color.Black;
             txt_xacNhanMatKhauDK.HoverState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
-            txt_xacNhanMatKhauDK.Location = new System.Drawing.Point(99, 642);
-            txt_xacNhanMatKhauDK.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            txt_xacNhanMatKhauDK.Location = new System.Drawing.Point(61, 401);
+            txt_xacNhanMatKhauDK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             txt_xacNhanMatKhauDK.Name = "txt_xacNhanMatKhauDK";
             txt_xacNhanMatKhauDK.PlaceholderForeColor = System.Drawing.Color.Black;
             txt_xacNhanMatKhauDK.PlaceholderText = "Xác nhận mật khẩu";
             txt_xacNhanMatKhauDK.SelectedText = "";
             txt_xacNhanMatKhauDK.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            txt_xacNhanMatKhauDK.Size = new System.Drawing.Size(481, 82);
+            txt_xacNhanMatKhauDK.Size = new System.Drawing.Size(296, 51);
             txt_xacNhanMatKhauDK.TabIndex = 30;
             txt_xacNhanMatKhauDK.UseSystemPasswordChar = true;
             // 
@@ -343,15 +343,15 @@
             // 
             btn_dangKyHeThong.Animated = true;
             btn_dangKyHeThong.AutoRoundedCorners = true;
-            btn_dangKyHeThong.BorderRadius = 15;
-            btn_dangKyHeThong.FillColor = System.Drawing.Color.FromArgb(94, 148, 255);
+            btn_dangKyHeThong.BorderRadius = 39;
+            btn_dangKyHeThong.CustomizableEdges = customizableEdges19;
             btn_dangKyHeThong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_dangKyHeThong.ForeColor = System.Drawing.Color.White;
-            btn_dangKyHeThong.Location = new System.Drawing.Point(344, 824);
-            btn_dangKyHeThong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btn_dangKyHeThong.Location = new System.Drawing.Point(212, 515);
+            btn_dangKyHeThong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             btn_dangKyHeThong.Name = "btn_dangKyHeThong";
             btn_dangKyHeThong.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btn_dangKyHeThong.Size = new System.Drawing.Size(254, 130);
+            btn_dangKyHeThong.Size = new System.Drawing.Size(156, 81);
             btn_dangKyHeThong.TabIndex = 29;
             btn_dangKyHeThong.Text = "Đăng Ký";
             btn_dangKyHeThong.Click += btn_dangKyHeThong_Click;
@@ -360,15 +360,16 @@
             // 
             btn_QuayLại.Animated = true;
             btn_QuayLại.AutoRoundedCorners = true;
-            btn_QuayLại.BorderRadius = 15;
+            btn_QuayLại.BorderRadius = 39;
+            btn_QuayLại.CustomizableEdges = customizableEdges21;
             btn_QuayLại.FillColor = System.Drawing.Color.Gray;
             btn_QuayLại.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_QuayLại.ForeColor = System.Drawing.Color.White;
-            btn_QuayLại.Location = new System.Drawing.Point(73, 824);
-            btn_QuayLại.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btn_QuayLại.Location = new System.Drawing.Point(45, 515);
+            btn_QuayLại.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             btn_QuayLại.Name = "btn_QuayLại";
             btn_QuayLại.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            btn_QuayLại.Size = new System.Drawing.Size(265, 130);
+            btn_QuayLại.Size = new System.Drawing.Size(163, 81);
             btn_QuayLại.TabIndex = 28;
             btn_QuayLại.Text = "Quay Lại";
             btn_QuayLại.Click += btn_dangNhap_Click;
@@ -378,9 +379,10 @@
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             label2.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
-            label2.Location = new System.Drawing.Point(226, 68);
+            label2.Location = new System.Drawing.Point(139, 42);
+            label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(216, 65);
+            label2.Size = new System.Drawing.Size(135, 41);
             label2.TabIndex = 26;
             label2.Text = "Đăng Ký";
             // 
@@ -401,14 +403,14 @@
             txt_tenDangNhapDK.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txt_tenDangNhapDK.ForeColor = System.Drawing.Color.Black;
             txt_tenDangNhapDK.HoverState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
-            txt_tenDangNhapDK.Location = new System.Drawing.Point(99, 454);
-            txt_tenDangNhapDK.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            txt_tenDangNhapDK.Location = new System.Drawing.Point(61, 284);
+            txt_tenDangNhapDK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             txt_tenDangNhapDK.Name = "txt_tenDangNhapDK";
             txt_tenDangNhapDK.PlaceholderForeColor = System.Drawing.Color.Black;
             txt_tenDangNhapDK.PlaceholderText = "Tên đăng nhập";
             txt_tenDangNhapDK.SelectedText = "";
             txt_tenDangNhapDK.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            txt_tenDangNhapDK.Size = new System.Drawing.Size(481, 82);
+            txt_tenDangNhapDK.Size = new System.Drawing.Size(296, 51);
             txt_tenDangNhapDK.TabIndex = 24;
             // 
             // txt_matKhauDK
@@ -428,14 +430,14 @@
             txt_matKhauDK.Font = new System.Drawing.Font("Segoe UI", 9F);
             txt_matKhauDK.ForeColor = System.Drawing.Color.Black;
             txt_matKhauDK.HoverState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
-            txt_matKhauDK.Location = new System.Drawing.Point(99, 548);
-            txt_matKhauDK.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            txt_matKhauDK.Location = new System.Drawing.Point(61, 342);
+            txt_matKhauDK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             txt_matKhauDK.Name = "txt_matKhauDK";
             txt_matKhauDK.PlaceholderForeColor = System.Drawing.Color.Black;
             txt_matKhauDK.PlaceholderText = "Mật khẩu";
             txt_matKhauDK.SelectedText = "";
             txt_matKhauDK.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            txt_matKhauDK.Size = new System.Drawing.Size(481, 82);
+            txt_matKhauDK.Size = new System.Drawing.Size(296, 51);
             txt_matKhauDK.TabIndex = 25;
             txt_matKhauDK.UseSystemPasswordChar = true;
             // 
@@ -445,7 +447,7 @@
             pan_dangXuat.AutoSize = true;
             pan_dangXuat.BackColor = System.Drawing.Color.Transparent;
             pan_dangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            pan_dangXuat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            pan_dangXuat.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
             pan_dangXuat.BorderRadius = 20;
             pan_dangXuat.Controls.Add(btn_dangKy);
             pan_dangXuat.Controls.Add(btn_dangXuat);
@@ -454,8 +456,8 @@
             pan_dangXuat.Controls.Add(txt_tenDangXuat);
             pan_dangXuat.CustomizableEdges = customizableEdges35;
             pan_dangXuat.FillColor = System.Drawing.Color.White;
-            pan_dangXuat.Location = new System.Drawing.Point(587, 66);
-            pan_dangXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            pan_dangXuat.Location = new System.Drawing.Point(361, 41);
+            pan_dangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             pan_dangXuat.Name = "pan_dangXuat";
             pan_dangXuat.ShadowDecoration.BorderRadius = 15;
             pan_dangXuat.ShadowDecoration.Color = System.Drawing.Color.Silver;
@@ -463,22 +465,22 @@
             pan_dangXuat.ShadowDecoration.Depth = 5;
             pan_dangXuat.ShadowDecoration.Enabled = true;
             pan_dangXuat.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(10, 10, 5, 5);
-            pan_dangXuat.Size = new System.Drawing.Size(679, 1050);
+            pan_dangXuat.Size = new System.Drawing.Size(418, 656);
             pan_dangXuat.TabIndex = 50;
             // 
             // btn_dangXuat
             // 
             btn_dangXuat.Animated = true;
             btn_dangXuat.AutoRoundedCorners = true;
-            btn_dangXuat.BorderRadius = 15;
-            btn_dangXuat.FillColor = System.Drawing.Color.FromArgb(94, 148, 255);
+            btn_dangXuat.BorderRadius = 42;
+            btn_dangXuat.CustomizableEdges = customizableEdges29;
             btn_dangXuat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_dangXuat.ForeColor = System.Drawing.Color.White;
-            btn_dangXuat.Location = new System.Drawing.Point(154, 678);
-            btn_dangXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btn_dangXuat.Location = new System.Drawing.Point(95, 424);
+            btn_dangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             btn_dangXuat.Name = "btn_dangXuat";
             btn_dangXuat.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            btn_dangXuat.Size = new System.Drawing.Size(354, 138);
+            btn_dangXuat.Size = new System.Drawing.Size(218, 86);
             btn_dangXuat.TabIndex = 28;
             btn_dangXuat.Text = "Đăng Xuất";
             btn_dangXuat.Click += btn_dangXuat_Click;
@@ -487,11 +489,11 @@
             // 
             guna2PictureBox2.CustomizableEdges = customizableEdges31;
             guna2PictureBox2.ImageRotate = 0F;
-            guna2PictureBox2.Location = new System.Drawing.Point(166, 196);
-            guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            guna2PictureBox2.Location = new System.Drawing.Point(102, 122);
+            guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             guna2PictureBox2.Name = "guna2PictureBox2";
             guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            guna2PictureBox2.Size = new System.Drawing.Size(354, 266);
+            guna2PictureBox2.Size = new System.Drawing.Size(218, 166);
             guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             guna2PictureBox2.TabIndex = 27;
             guna2PictureBox2.TabStop = false;
@@ -501,9 +503,10 @@
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             label1.ForeColor = System.Drawing.Color.FromArgb(45, 55, 72);
-            label1.Location = new System.Drawing.Point(200, 68);
+            label1.Location = new System.Drawing.Point(123, 42);
+            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(266, 65);
+            label1.Size = new System.Drawing.Size(167, 41);
             label1.TabIndex = 26;
             label1.Text = "Đăng Xuất";
             // 
@@ -525,27 +528,27 @@
             txt_tenDangXuat.ForeColor = System.Drawing.Color.Black;
             txt_tenDangXuat.HoverState.BorderColor = System.Drawing.Color.FromArgb(94, 148, 255);
             txt_tenDangXuat.IconLeft = (System.Drawing.Image)resources.GetObject("txt_tenDangXuat.IconLeft");
-            txt_tenDangXuat.Location = new System.Drawing.Point(119, 492);
-            txt_tenDangXuat.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            txt_tenDangXuat.Location = new System.Drawing.Point(73, 308);
+            txt_tenDangXuat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             txt_tenDangXuat.Name = "txt_tenDangXuat";
             txt_tenDangXuat.PlaceholderForeColor = System.Drawing.Color.Black;
             txt_tenDangXuat.PlaceholderText = "Tên đăng nhập";
             txt_tenDangXuat.SelectedText = "";
             txt_tenDangXuat.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            txt_tenDangXuat.Size = new System.Drawing.Size(440, 82);
+            txt_tenDangXuat.Size = new System.Drawing.Size(271, 51);
             txt_tenDangXuat.TabIndex = 24;
             // 
             // UCQuanLyTaiKhoan
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(240, 242, 245);
             Controls.Add(pan_dangKy);
             Controls.Add(pan_dangXuat);
             Controls.Add(pan_dangNhap);
-            Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             Name = "UCQuanLyTaiKhoan";
-            Size = new System.Drawing.Size(1869, 1200);
+            Size = new System.Drawing.Size(1150, 750);
             pan_dangNhap.ResumeLayout(false);
             pan_dangNhap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
