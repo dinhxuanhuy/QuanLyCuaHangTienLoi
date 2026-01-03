@@ -89,7 +89,7 @@
             gbChiTiet.Location = new System.Drawing.Point(0, 0);
             gbChiTiet.Name = "gbChiTiet";
             gbChiTiet.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            gbChiTiet.Size = new System.Drawing.Size(1150, 304);
+            gbChiTiet.Size = new System.Drawing.Size(1150, 282);
             gbChiTiet.TabIndex = 26;
             gbChiTiet.Text = "Thống Kê Doanh Thu";
             // 
@@ -126,7 +126,7 @@
             txt_timKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             txt_timKiem.ForeColor = System.Drawing.Color.Gray;
             txt_timKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
-            txt_timKiem.Location = new System.Drawing.Point(198, 230);
+            txt_timKiem.Location = new System.Drawing.Point(198, 211);
             txt_timKiem.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             txt_timKiem.Name = "txt_timKiem";
             txt_timKiem.PlaceholderText = "";
@@ -162,7 +162,7 @@
             guna2HtmlLabel3.AutoSize = false;
             guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            guna2HtmlLabel3.Location = new System.Drawing.Point(25, 230);
+            guna2HtmlLabel3.Location = new System.Drawing.Point(25, 211);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new System.Drawing.Size(167, 35);
             guna2HtmlLabel3.TabIndex = 44;
@@ -212,7 +212,7 @@
             dgv_doanhThuTheoNgay.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(33, 150, 242);
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -223,7 +223,7 @@
             dgv_doanhThuTheoNgay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { maDT, ngay, tongTien });
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(211, 233, 252);
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(107, 185, 246);
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
@@ -231,13 +231,13 @@
             dgv_doanhThuTheoNgay.DefaultCellStyle = dataGridViewCellStyle3;
             dgv_doanhThuTheoNgay.Dock = System.Windows.Forms.DockStyle.Fill;
             dgv_doanhThuTheoNgay.GridColor = System.Drawing.Color.LightGray;
-            dgv_doanhThuTheoNgay.Location = new System.Drawing.Point(0, 304);
+            dgv_doanhThuTheoNgay.Location = new System.Drawing.Point(0, 0);
             dgv_doanhThuTheoNgay.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             dgv_doanhThuTheoNgay.Name = "dgv_doanhThuTheoNgay";
             dgv_doanhThuTheoNgay.RowHeadersVisible = false;
             dgv_doanhThuTheoNgay.RowHeadersWidth = 72;
             dgv_doanhThuTheoNgay.RowTemplate.Height = 50;
-            dgv_doanhThuTheoNgay.Size = new System.Drawing.Size(1150, 446);
+            dgv_doanhThuTheoNgay.Size = new System.Drawing.Size(1150, 750);
             dgv_doanhThuTheoNgay.TabIndex = 46;
             dgv_doanhThuTheoNgay.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
             dgv_doanhThuTheoNgay.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -249,14 +249,14 @@
             dgv_doanhThuTheoNgay.ThemeStyle.GridColor = System.Drawing.Color.LightGray;
             dgv_doanhThuTheoNgay.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(33, 150, 242);
             dgv_doanhThuTheoNgay.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dgv_doanhThuTheoNgay.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dgv_doanhThuTheoNgay.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
             dgv_doanhThuTheoNgay.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             dgv_doanhThuTheoNgay.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgv_doanhThuTheoNgay.ThemeStyle.HeaderStyle.Height = 66;
             dgv_doanhThuTheoNgay.ThemeStyle.ReadOnly = false;
             dgv_doanhThuTheoNgay.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(211, 233, 252);
             dgv_doanhThuTheoNgay.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dgv_doanhThuTheoNgay.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dgv_doanhThuTheoNgay.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
             dgv_doanhThuTheoNgay.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
             dgv_doanhThuTheoNgay.ThemeStyle.RowsStyle.Height = 50;
             dgv_doanhThuTheoNgay.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(107, 185, 246);
@@ -282,7 +282,7 @@
             ngay.MinimumWidth = 9;
             ngay.Name = "ngay";
             ngay.ReadOnly = true;
-            ngay.Width = 270;
+            ngay.Width = 370;
             // 
             // tongTien
             // 
@@ -292,7 +292,7 @@
             tongTien.HeaderText = "Tổng Tiền";
             tongTien.MinimumWidth = 6;
             tongTien.Name = "tongTien";
-            tongTien.Width = 270;
+            tongTien.Width = 370;
             // 
             // dgv_doanhThuTheoThang
             // 
@@ -303,7 +303,7 @@
             dgv_doanhThuTheoThang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(33, 150, 242);
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -314,21 +314,21 @@
             dgv_doanhThuTheoThang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, Column1, DoanhThu, Column3 });
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(211, 233, 252);
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(107, 185, 246);
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             dgv_doanhThuTheoThang.DefaultCellStyle = dataGridViewCellStyle6;
             dgv_doanhThuTheoThang.Dock = System.Windows.Forms.DockStyle.Fill;
             dgv_doanhThuTheoThang.GridColor = System.Drawing.Color.LightGray;
-            dgv_doanhThuTheoThang.Location = new System.Drawing.Point(0, 304);
+            dgv_doanhThuTheoThang.Location = new System.Drawing.Point(0, 282);
             dgv_doanhThuTheoThang.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             dgv_doanhThuTheoThang.Name = "dgv_doanhThuTheoThang";
             dgv_doanhThuTheoThang.RowHeadersVisible = false;
             dgv_doanhThuTheoThang.RowHeadersWidth = 72;
             dgv_doanhThuTheoThang.RowTemplate.Height = 50;
-            dgv_doanhThuTheoThang.Size = new System.Drawing.Size(1150, 446);
+            dgv_doanhThuTheoThang.Size = new System.Drawing.Size(1150, 468);
             dgv_doanhThuTheoThang.TabIndex = 47;
             dgv_doanhThuTheoThang.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
             dgv_doanhThuTheoThang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -340,15 +340,15 @@
             dgv_doanhThuTheoThang.ThemeStyle.GridColor = System.Drawing.Color.LightGray;
             dgv_doanhThuTheoThang.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(33, 150, 242);
             dgv_doanhThuTheoThang.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dgv_doanhThuTheoThang.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dgv_doanhThuTheoThang.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             dgv_doanhThuTheoThang.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             dgv_doanhThuTheoThang.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgv_doanhThuTheoThang.ThemeStyle.HeaderStyle.Height = 66;
             dgv_doanhThuTheoThang.ThemeStyle.ReadOnly = false;
             dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(211, 233, 252);
             dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
+            dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
             dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.Height = 50;
             dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(107, 185, 246);
             dgv_doanhThuTheoThang.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
@@ -372,7 +372,7 @@
             dataGridViewTextBoxColumn2.MinimumWidth = 9;
             dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             dataGridViewTextBoxColumn2.ReadOnly = true;
-            dataGridViewTextBoxColumn2.Width = 150;
+            dataGridViewTextBoxColumn2.Width = 250;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -382,7 +382,7 @@
             dataGridViewTextBoxColumn3.HeaderText = "Thời Gian Kết Thúc";
             dataGridViewTextBoxColumn3.MinimumWidth = 6;
             dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Width = 150;
+            dataGridViewTextBoxColumn3.Width = 250;
             // 
             // Column1
             // 
@@ -424,14 +424,14 @@
             txt_thongKe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
             txt_thongKe.Font = new System.Drawing.Font("Segoe UI", 9F);
             txt_thongKe.HoverState.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
-            txt_thongKe.Location = new System.Drawing.Point(0, 304);
+            txt_thongKe.Location = new System.Drawing.Point(0, 282);
             txt_thongKe.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             txt_thongKe.Multiline = true;
             txt_thongKe.Name = "txt_thongKe";
             txt_thongKe.PlaceholderText = "";
             txt_thongKe.SelectedText = "";
             txt_thongKe.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txt_thongKe.Size = new System.Drawing.Size(1150, 446);
+            txt_thongKe.Size = new System.Drawing.Size(1150, 468);
             txt_thongKe.TabIndex = 49;
             txt_thongKe.Visible = false;
             // 
@@ -441,8 +441,8 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(txt_thongKe);
             Controls.Add(dgv_doanhThuTheoThang);
-            Controls.Add(dgv_doanhThuTheoNgay);
             Controls.Add(gbChiTiet);
+            Controls.Add(dgv_doanhThuTheoNgay);
             Name = "UCThongKeDoanhThu";
             Size = new System.Drawing.Size(1150, 750);
             gbChiTiet.ResumeLayout(false);

@@ -41,7 +41,7 @@ namespace QuanLyCuaHangTienLoi
 
                 DataTable dt = dbcl.CaLamViec();
                 dgv_caLamViec.DataSource = dt;
-
+                dgv_caLamViec.Columns["Column2"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 if (dgv_caLamViec.Rows.Count > 0)
                 {
                     dgv_caLamViec_CellClick(dgv_caLamViec, new DataGridViewCellEventArgs(0, 0));

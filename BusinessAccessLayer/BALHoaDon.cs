@@ -151,5 +151,29 @@ namespace BusinessAccessLayer
                 return null;
             }
         }
+        public DataTable LayChiTietHDBanHang(string maHD)
+        {
+            // Câu truy vấn JOIN bảng ChiTiet với SanPham để lấy tên SP hiển thị
+            string query = @"
+        SELECT 
+            ct.MaSP AS [Mã SP],
+            sp.TenSP AS [Tên Sản Phẩm],
+            ct.SoLuong AS [Số Lượng],
+            ct.DonGia AS [Đơn Giá],
+            ct.TongKhuyenMai AS [Tiền Giảm],
+            ct.ThanhTien AS [Thành Tiền]
+        FROM ChiTietHDBanHang ct
+        INNER JOIN SanPham sp ON ct.MaSP = sp.MaSP
+        WHERE ct.MaHD = @MaHD";
+
+            // Tạo tham số để truyền vào truy vấn (tránh lỗi SQL Injection)
+            SqlParameter[] param = new SqlParameter[]
+            {
+        new SqlParameter("@MaHD", maHD)
+            };
+
+            // Gọi hàm MyExecuteQuery có sẵn bên DAL
+            return dp.MyExecuteQuery(query, param);
+        }
     }
 }

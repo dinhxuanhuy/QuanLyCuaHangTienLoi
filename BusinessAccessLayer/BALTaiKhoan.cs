@@ -92,63 +92,64 @@ namespace BusinessAccessLayer
                 return sb.ToString(); // Trả về chuỗi MD5 in hoa (ví dụ: E10ADC...)
             }
         }
-        public bool KiemTraDangNhap(string tenDN, string matKhauTho, out string maVaiTro, ref string err)
+        public bool KiemTraDangNhap(string tenDN, string matKhauTho, out string maVaiTro, out string maNV, ref string err)
         {
+            // Bước 1: Dùng quyền Admin để đọc dữ liệu (QUAN TRỌNG)
             dp.AdminConn();
+
             maVaiTro = "";
+            maNV = ""; // Khởi tạo giá trị rỗng để trả về
             err = "";
 
-            // 1. Hash mật khẩu thô mà người dùng nhập vào
+            // Hash mật khẩu nhập vào
             string matKhauNhapHash = HashPassword(matKhauTho);
 
-            // 2. Gọi DAL để lấy Mật khẩu Hash (đã lưu) và Vai Trò từ DB
+            // Lấy dữ liệu từ DB (bao gồm cả MaNV)
             DataTable dt;
             try
             {
-                dt = LayDuLieuTaiKhoan(tenDN, ref err); // err sẽ được dùng để gán lỗi nếu có
+                dt = LayDuLieuTaiKhoan(tenDN, ref err);
             }
             catch (Exception ex)
             {
-                // Bắt lỗi từ DAL (do DAL dùng throw)
                 err = "Lỗi DAL: " + ex.Message;
                 return false;
             }
 
             if (dt == null || dt.Rows.Count == 0)
             {
-                // err đã có thể được gán ở LayDuLieuTaiKhoan nếu có lỗi, nếu không thì báo lỗi không tìm thấy
-                if (string.IsNullOrEmpty(err))
-                {
-                    err = "Tên đăng nhập không tồn tại.";
-                }
+                if (string.IsNullOrEmpty(err)) err = "Tên đăng nhập không tồn tại.";
                 return false;
             }
 
-            // 3. Lấy dữ liệu từ DataTable
-            // Lưu ý: Cột trong DB là VaiTro, không phải MaVaiTro
+            // Lấy dữ liệu từ dòng đầu tiên
             string matKhauDBHash = dt.Rows[0]["MatKhauHash"].ToString();
-            string vaiTroDB = dt.Rows[0]["VaiTro"].ToString(); // Dùng "VaiTro" (theo cấu trúc DB của bạn)
+            string vaiTroDB = dt.Rows[0]["VaiTro"].ToString();
+            string maNV_DB = dt.Rows[0]["MaNV"].ToString(); // LẤY MÃ NV TỪ DB
 
-            // 4. So sánh Mật khẩu Hash
+            // So sánh mật khẩu
             if (matKhauNhapHash == matKhauDBHash)
             {
+                // Gán dữ liệu ra biến out
                 maVaiTro = vaiTroDB;
-                dp.SetConn(tenDN, matKhauTho); // Cập nhật kết nối với thông tin đăng nhập đúng
-                return true; // Thành công
+                maNV = maNV_DB; // TRẢ MÃ NV RA NGOÀI
+
+                // Bước 2: Sau khi lấy xong hết dữ liệu thì mới chuyển kết nối sang User (SetConn)
+                dp.SetConn(tenDN, matKhauTho);
+                return true;
             }
             else
             {
                 err = "Mật khẩu không đúng.";
-                return false; // Thất bại
+                return false;
             }
         }
 
         // Hàm hỗ trợ: Lấy dữ liệu tài khoản theo Tên Đăng Nhập
         private DataTable LayDuLieuTaiKhoan(string tenDangNhap, ref string err)
         {
-            // Dùng lệnh SELECT trực tiếp thay vì EXEC Stored Procedure
-            // Phải đảm bảo không có SQL Injection (đã dùng Parameterized Query)
-            string query = "SELECT MatKhauHash, VaiTro FROM TaiKhoan WHERE TenDangNhap = @TenDangNhap";
+            // THÊM ", MaNV" VÀO CÂU TRUY VẤN
+            string query = "SELECT MatKhauHash, VaiTro, MaNV FROM TaiKhoan WHERE TenDangNhap = @TenDangNhap";
 
             SqlParameter[] param = new SqlParameter[]
             {
@@ -157,7 +158,6 @@ namespace BusinessAccessLayer
 
             try
             {
-                // dp.MyExecuteQuery(query, param) sẽ chạy lệnh SELECT trên.
                 return dp.MyExecuteQuery(query, param);
             }
             catch (Exception ex)
@@ -166,55 +166,5 @@ namespace BusinessAccessLayer
                 return null;
             }
         }
-        // Trong BALTaiKhoan.cs
-
-        public string TimMaNV(string tenDN, string matKhauTho, ref string err)
-        {
-            // 1. Hash mật khẩu (Giả định hàm HashPassword đã tồn tại trong class này)
-            string matKhauNhapHash = HashPassword(matKhauTho);
-
-            // 2. Lấy dữ liệu tài khoản từ DB (Cần MaNV và MatKhauHash để so sánh)
-            // Query chỉ cần lấy MatKhauHash và MaNV
-            string query = "SELECT MatKhauHash, MaNV FROM TaiKhoan WHERE TenDangNhap = @TenDangNhap";
-
-            SqlParameter[] param = new SqlParameter[]
-            {
-        new SqlParameter("@TenDangNhap", tenDN)
-            };
-
-            DataTable dt;
-            try
-            {
-                // Gọi hàm thực thi truy vấn của DAL (Giả định dp là đối tượng DAL)
-                dt = dp.MyExecuteQuery(query, param);
-            }
-            catch (Exception ex)
-            {
-                err = "Lỗi truy vấn: " + ex.Message;
-                return null; // Trả về null nếu có lỗi kết nối/truy vấn
-            }
-
-            // 3. Kiểm tra kết quả
-            if (dt == null || dt.Rows.Count == 0)
-            {
-                err = "Tên đăng nhập không tồn tại.";
-                return null; // Không tìm thấy tài khoản
-            }
-
-            // 4. So sánh mật khẩu hash
-            string matKhauDBHash = dt.Rows[0]["MatKhauHash"].ToString();
-
-            if (matKhauNhapHash == matKhauDBHash)
-            {
-                // Mật khẩu đúng -> Trả về Mã Nhân Viên
-                return dt.Rows[0]["MaNV"].ToString();
-            }
-            else
-            {
-                err = "Mật khẩu không đúng.";
-                return null; // Sai mật khẩu
-            }
-        }
-        // --- KẾT THÚC THÊM HÀM ĐĂNG NHẬP ---
     }
 }

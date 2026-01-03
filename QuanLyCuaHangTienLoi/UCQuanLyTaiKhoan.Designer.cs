@@ -109,7 +109,7 @@
             pan_dangNhap.CustomizableEdges = customizableEdges9;
             pan_dangNhap.FillColor = System.Drawing.Color.White;
             pan_dangNhap.Location = new System.Drawing.Point(361, 41);
-            pan_dangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            pan_dangNhap.Margin = new System.Windows.Forms.Padding(2);
             pan_dangNhap.Name = "pan_dangNhap";
             pan_dangNhap.ShadowDecoration.BorderRadius = 15;
             pan_dangNhap.ShadowDecoration.Color = System.Drawing.Color.Silver;
@@ -135,7 +135,7 @@
             btn_dangNhapHeThong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_dangNhapHeThong.ForeColor = System.Drawing.Color.White;
             btn_dangNhapHeThong.Location = new System.Drawing.Point(125, 515);
-            btn_dangNhapHeThong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btn_dangNhapHeThong.Margin = new System.Windows.Forms.Padding(2);
             btn_dangNhapHeThong.Name = "btn_dangNhapHeThong";
             btn_dangNhapHeThong.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btn_dangNhapHeThong.Size = new System.Drawing.Size(180, 81);
@@ -148,7 +148,7 @@
             guna2PictureBox1.CustomizableEdges = customizableEdges3;
             guna2PictureBox1.ImageRotate = 0F;
             guna2PictureBox1.Location = new System.Drawing.Point(109, 122);
-            guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             guna2PictureBox1.Name = "guna2PictureBox1";
             guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2PictureBox1.Size = new System.Drawing.Size(218, 166);
@@ -233,7 +233,7 @@
             btn_dangKy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_dangKy.ForeColor = System.Drawing.Color.White;
             btn_dangKy.Location = new System.Drawing.Point(95, 515);
-            btn_dangKy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btn_dangKy.Margin = new System.Windows.Forms.Padding(2);
             btn_dangKy.Name = "btn_dangKy";
             btn_dangKy.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btn_dangKy.Size = new System.Drawing.Size(218, 81);
@@ -258,8 +258,8 @@
             pan_dangKy.Controls.Add(txt_matKhauDK);
             pan_dangKy.CustomizableEdges = customizableEdges27;
             pan_dangKy.FillColor = System.Drawing.Color.White;
-            pan_dangKy.Location = new System.Drawing.Point(794, 71);
-            pan_dangKy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            pan_dangKy.Location = new System.Drawing.Point(361, 41);
+            pan_dangKy.Margin = new System.Windows.Forms.Padding(2);
             pan_dangKy.Name = "pan_dangKy";
             pan_dangKy.ShadowDecoration.BorderRadius = 15;
             pan_dangKy.ShadowDecoration.Color = System.Drawing.Color.Silver;
@@ -348,7 +348,7 @@
             btn_dangKyHeThong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_dangKyHeThong.ForeColor = System.Drawing.Color.White;
             btn_dangKyHeThong.Location = new System.Drawing.Point(212, 515);
-            btn_dangKyHeThong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btn_dangKyHeThong.Margin = new System.Windows.Forms.Padding(2);
             btn_dangKyHeThong.Name = "btn_dangKyHeThong";
             btn_dangKyHeThong.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btn_dangKyHeThong.Size = new System.Drawing.Size(156, 81);
@@ -366,7 +366,7 @@
             btn_QuayLại.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_QuayLại.ForeColor = System.Drawing.Color.White;
             btn_QuayLại.Location = new System.Drawing.Point(45, 515);
-            btn_QuayLại.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btn_QuayLại.Margin = new System.Windows.Forms.Padding(2);
             btn_QuayLại.Name = "btn_QuayLại";
             btn_QuayLại.ShadowDecoration.CustomizableEdges = customizableEdges22;
             btn_QuayLại.Size = new System.Drawing.Size(163, 81);
@@ -457,7 +457,7 @@
             pan_dangXuat.CustomizableEdges = customizableEdges35;
             pan_dangXuat.FillColor = System.Drawing.Color.White;
             pan_dangXuat.Location = new System.Drawing.Point(361, 41);
-            pan_dangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            pan_dangXuat.Margin = new System.Windows.Forms.Padding(2);
             pan_dangXuat.Name = "pan_dangXuat";
             pan_dangXuat.ShadowDecoration.BorderRadius = 15;
             pan_dangXuat.ShadowDecoration.Color = System.Drawing.Color.Silver;
@@ -477,7 +477,7 @@
             btn_dangXuat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btn_dangXuat.ForeColor = System.Drawing.Color.White;
             btn_dangXuat.Location = new System.Drawing.Point(95, 424);
-            btn_dangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btn_dangXuat.Margin = new System.Windows.Forms.Padding(2);
             btn_dangXuat.Name = "btn_dangXuat";
             btn_dangXuat.ShadowDecoration.CustomizableEdges = customizableEdges30;
             btn_dangXuat.Size = new System.Drawing.Size(218, 86);
@@ -490,7 +490,7 @@
             guna2PictureBox2.CustomizableEdges = customizableEdges31;
             guna2PictureBox2.ImageRotate = 0F;
             guna2PictureBox2.Location = new System.Drawing.Point(102, 122);
-            guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2);
             guna2PictureBox2.Name = "guna2PictureBox2";
             guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges32;
             guna2PictureBox2.Size = new System.Drawing.Size(218, 166);

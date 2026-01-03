@@ -96,7 +96,7 @@ namespace QuanLyCuaHangTienLoi
             Program.ucCaLamViecDieuChinh.NavigateRequest += Uc_NavigateRequest;
             // t??ng tác v?i quá trình ??ng nh?p
             Program.ucQuanLyTaiKhoan.NavigateRequest += Uc_NavigateRequest;
-
+            Program.ucKhuyenMaiAD.NavigateRequest += Uc_NavigateRequest;
             // B?t t?t c? các nút menu
             btn_quanLyCa.Enabled = true;
             btn_quanLyDuLieu.Enabled = true;

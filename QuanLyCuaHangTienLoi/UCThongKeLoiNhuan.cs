@@ -65,9 +65,9 @@ namespace QuanLyCuaHangTienLoi
                 DataTable dt = dbtk.DoanhThuTheoThang();
 
                 // 2. Reset DataSource
-                dgv_doanhThuTheoThang.DataSource = null;
                 dgv_doanhThuTheoThang.DataSource = dt;
-
+                dgv_doanhThuTheoThang.Columns["dataGridViewTextBoxColumn2"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                dgv_doanhThuTheoThang.Columns["dataGridViewTextBoxColumn3"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 // 3. Cập nhật giao diện
                 dgv_doanhThuTheoThang.Visible = true;
                 txt_thongKe.Visible = false;

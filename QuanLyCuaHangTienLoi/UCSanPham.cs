@@ -75,7 +75,8 @@ namespace QuanLyCuaHangTienLoi
                 // Lấy dữ liệu từ View (Không có Giá Nhập)
                 DataTable dtSanPham = dbsp.LaySanPham();
                 dgvSanPham.DataSource = dtSanPham;
-
+                dgvSanPham.Columns["colDiaChi"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                dgvSanPham.Columns["colSĐT"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 ResetText();
 
                 // Khóa các control mặc định

@@ -82,7 +82,8 @@ namespace QuanLyCuaHangTienLoi
 
                 DataTable dtNhanVien = dbnv.LayNhanVien();
                 dgvNhanVien.DataSource = dtNhanVien;
-
+                dgvNhanVien.Columns["colNgaySinh"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                dgvNhanVien.Columns["colNgayTD"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 ResetText();
 
                 cboGioiTinh.Enabled = false;

@@ -69,9 +69,8 @@ namespace QuanLyCuaHangTienLoi
                 DataTable dt = dbtk.DoanhThuTheoNgay();
 
                 // 2. Reset DataSource để ép vẽ lại lưới
-                dgv_doanhThuTheoNgay.DataSource = null;
                 dgv_doanhThuTheoNgay.DataSource = dt;
-
+                dgv_doanhThuTheoNgay.Columns["ngay"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 // 3. Cập nhật giao diện
                 dgv_doanhThuTheoNgay.Visible = true;
                 dgv_doanhThuTheoThang.Visible = false;
@@ -117,9 +116,9 @@ namespace QuanLyCuaHangTienLoi
                 DataTable dt = dbtk.DoanhThuTheoThang();
 
                 // 2. Reset DataSource
-                dgv_doanhThuTheoThang.DataSource = null;
                 dgv_doanhThuTheoThang.DataSource = dt;
-
+                dgv_doanhThuTheoThang.Columns["dataGridViewTextBoxColumn2"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                dgv_doanhThuTheoThang.Columns["dataGridViewTextBoxColumn3"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 // 3. Cập nhật giao diện
                 dgv_doanhThuTheoThang.Visible = true;
                 dgv_doanhThuTheoNgay.Visible = false;
@@ -188,7 +187,8 @@ namespace QuanLyCuaHangTienLoi
         {
             if (dt == null || dt.Rows.Count == 0) return "⚠️ Không có dữ liệu.";
 
-            var data = dt.AsEnumerable().Select(row => new {
+            var data = dt.AsEnumerable().Select(row => new
+            {
                 ThoiGian = row.Field<DateTime>("ngay"),
                 Tien = row.Field<decimal>("tongTien")
             }).OrderBy(x => x.ThoiGian).ToList();
@@ -201,7 +201,8 @@ namespace QuanLyCuaHangTienLoi
         {
             if (dt == null || dt.Rows.Count == 0) return "⚠️ Không có dữ liệu.";
 
-            var data = dt.AsEnumerable().Select(row => new {
+            var data = dt.AsEnumerable().Select(row => new
+            {
                 ThoiGian = row.Field<DateTime>("ThoiGianBatDau"),
                 Tien = row.Field<decimal>("DoanhThu")
             }).OrderBy(x => x.ThoiGian).ToList();
