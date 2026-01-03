@@ -118,8 +118,8 @@ namespace DataAccessLayer
         // Thiết lập Connection String sử dụng Windows Authentication (Integrated Security).
         public void AdminConn()
         {
-            //connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=QuanLyCuaHangTienLoi;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-            connectionString = "Data Source=localhost;Initial Catalog=QuanLyCuaHangTienLoi;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+            connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=QuanLyCuaHangTienLoi;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+            //connectionString = "Data Source=localhost;Initial Catalog=QuanLyCuaHangTienLoi;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
             conn = new SqlConnection(connectionString);
             comm = conn.CreateCommand();

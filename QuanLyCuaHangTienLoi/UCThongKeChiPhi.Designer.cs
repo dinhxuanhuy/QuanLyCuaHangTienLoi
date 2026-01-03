@@ -46,10 +46,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             gbChiTiet = new Guna.UI2.WinForms.Guna2GroupBox();
+            btn_chiPhiTheoThang = new Guna.UI2.WinForms.Guna2Button();
             btn_thongKe = new Guna.UI2.WinForms.Guna2Button();
             txt_timKiem = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            btn_chiPhiTheoThang = new Guna.UI2.WinForms.Guna2Button();
             btn_quayLai = new Guna.UI2.WinForms.Guna2Button();
             txt_thongKe = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -70,29 +70,47 @@
             gbChiTiet.BackColor = System.Drawing.Color.White;
             gbChiTiet.BorderColor = System.Drawing.Color.White;
             gbChiTiet.BorderRadius = 12;
+            gbChiTiet.Controls.Add(btn_chiPhiTheoThang);
             gbChiTiet.Controls.Add(btn_thongKe);
             gbChiTiet.Controls.Add(txt_timKiem);
             gbChiTiet.Controls.Add(guna2HtmlLabel3);
-            gbChiTiet.Controls.Add(btn_chiPhiTheoThang);
             gbChiTiet.Controls.Add(btn_quayLai);
             gbChiTiet.CustomizableEdges = customizableEdges9;
             gbChiTiet.Dock = System.Windows.Forms.DockStyle.Top;
             gbChiTiet.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             gbChiTiet.ForeColor = System.Drawing.Color.Black;
             gbChiTiet.Location = new System.Drawing.Point(0, 0);
-            gbChiTiet.Margin = new System.Windows.Forms.Padding(4);
             gbChiTiet.Name = "gbChiTiet";
             gbChiTiet.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            gbChiTiet.Size = new System.Drawing.Size(1725, 456);
+            gbChiTiet.Size = new System.Drawing.Size(1150, 304);
             gbChiTiet.TabIndex = 30;
             gbChiTiet.Text = "Thống Kê Chi Phí";
+            // 
+            // btn_chiPhiTheoThang
+            // 
+            btn_chiPhiTheoThang.BackColor = System.Drawing.Color.White;
+            btn_chiPhiTheoThang.BorderRadius = 8;
+            btn_chiPhiTheoThang.CustomizableEdges = customizableEdges1;
+            btn_chiPhiTheoThang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            btn_chiPhiTheoThang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            btn_chiPhiTheoThang.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
+            btn_chiPhiTheoThang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
+            btn_chiPhiTheoThang.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            btn_chiPhiTheoThang.ForeColor = System.Drawing.Color.White;
+            btn_chiPhiTheoThang.Location = new System.Drawing.Point(32, 91);
+            btn_chiPhiTheoThang.Name = "btn_chiPhiTheoThang";
+            btn_chiPhiTheoThang.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btn_chiPhiTheoThang.Size = new System.Drawing.Size(234, 85);
+            btn_chiPhiTheoThang.TabIndex = 53;
+            btn_chiPhiTheoThang.Text = "Cập Nhật Thống Kê";
+            btn_chiPhiTheoThang.Click += btn_chiPhiTheoThang_Click;
             // 
             // btn_thongKe
             // 
             btn_thongKe.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             btn_thongKe.BackColor = System.Drawing.Color.White;
             btn_thongKe.BorderRadius = 8;
-            btn_thongKe.CustomizableEdges = customizableEdges1;
+            btn_thongKe.CustomizableEdges = customizableEdges3;
             btn_thongKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             btn_thongKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             btn_thongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
@@ -100,11 +118,10 @@
             btn_thongKe.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
             btn_thongKe.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             btn_thongKe.ForeColor = System.Drawing.Color.White;
-            btn_thongKe.Location = new System.Drawing.Point(1270, 356);
-            btn_thongKe.Margin = new System.Windows.Forms.Padding(4);
+            btn_thongKe.Location = new System.Drawing.Point(847, 206);
             btn_thongKe.Name = "btn_thongKe";
-            btn_thongKe.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btn_thongKe.Size = new System.Drawing.Size(330, 79);
+            btn_thongKe.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btn_thongKe.Size = new System.Drawing.Size(220, 53);
             btn_thongKe.TabIndex = 52;
             btn_thongKe.Text = "Thống Kê";
             btn_thongKe.Click += btn_thongKe_Click;
@@ -113,7 +130,7 @@
             // 
             txt_timKiem.BackColor = System.Drawing.Color.White;
             txt_timKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txt_timKiem.CustomizableEdges = customizableEdges3;
+            txt_timKiem.CustomizableEdges = customizableEdges5;
             txt_timKiem.DefaultText = "Nhập thời gian bắt đầu (dd/mm/yyyy)";
             txt_timKiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(208, 208, 208);
             txt_timKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(226, 226, 226);
@@ -123,13 +140,13 @@
             txt_timKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             txt_timKiem.ForeColor = System.Drawing.Color.Gray;
             txt_timKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
-            txt_timKiem.Location = new System.Drawing.Point(306, 308);
-            txt_timKiem.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            txt_timKiem.Location = new System.Drawing.Point(204, 205);
+            txt_timKiem.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             txt_timKiem.Name = "txt_timKiem";
             txt_timKiem.PlaceholderText = "";
             txt_timKiem.SelectedText = "";
-            txt_timKiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txt_timKiem.Size = new System.Drawing.Size(530, 81);
+            txt_timKiem.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txt_timKiem.Size = new System.Drawing.Size(353, 54);
             txt_timKiem.TabIndex = 51;
             txt_timKiem.TextChanged += txt_timKiem_TextChanged;
             txt_timKiem.MouseClick += txt_timKiem_MouseClick;
@@ -139,32 +156,11 @@
             guna2HtmlLabel3.AutoSize = false;
             guna2HtmlLabel3.BackColor = System.Drawing.Color.White;
             guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            guna2HtmlLabel3.Location = new System.Drawing.Point(48, 323);
-            guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4);
+            guna2HtmlLabel3.Location = new System.Drawing.Point(32, 215);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new System.Drawing.Size(250, 52);
+            guna2HtmlLabel3.Size = new System.Drawing.Size(167, 35);
             guna2HtmlLabel3.TabIndex = 50;
             guna2HtmlLabel3.Text = "Tìm kiếm";
-            // 
-            // btn_chiPhiTheoThang
-            // 
-            btn_chiPhiTheoThang.BackColor = System.Drawing.Color.White;
-            btn_chiPhiTheoThang.BorderRadius = 8;
-            btn_chiPhiTheoThang.CustomizableEdges = customizableEdges5;
-            btn_chiPhiTheoThang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            btn_chiPhiTheoThang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            btn_chiPhiTheoThang.DisabledState.FillColor = System.Drawing.Color.FromArgb(169, 169, 169);
-            btn_chiPhiTheoThang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(141, 141, 141);
-            btn_chiPhiTheoThang.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            btn_chiPhiTheoThang.ForeColor = System.Drawing.Color.White;
-            btn_chiPhiTheoThang.Location = new System.Drawing.Point(46, 120);
-            btn_chiPhiTheoThang.Margin = new System.Windows.Forms.Padding(4);
-            btn_chiPhiTheoThang.Name = "btn_chiPhiTheoThang";
-            btn_chiPhiTheoThang.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btn_chiPhiTheoThang.Size = new System.Drawing.Size(390, 128);
-            btn_chiPhiTheoThang.TabIndex = 49;
-            btn_chiPhiTheoThang.Text = "Cập Nhật Thống Kê";
-            btn_chiPhiTheoThang.Click += btn_chiPhiTheoThang_Click;
             // 
             // btn_quayLai
             // 
@@ -179,11 +175,10 @@
             btn_quayLai.FillColor = System.Drawing.Color.FromArgb(12, 83, 251);
             btn_quayLai.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             btn_quayLai.ForeColor = System.Drawing.Color.White;
-            btn_quayLai.Location = new System.Drawing.Point(1270, 137);
-            btn_quayLai.Margin = new System.Windows.Forms.Padding(4);
+            btn_quayLai.Location = new System.Drawing.Point(847, 91);
             btn_quayLai.Name = "btn_quayLai";
             btn_quayLai.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btn_quayLai.Size = new System.Drawing.Size(330, 128);
+            btn_quayLai.Size = new System.Drawing.Size(220, 85);
             btn_quayLai.TabIndex = 38;
             btn_quayLai.Text = "Quay lại";
             btn_quayLai.Click += btn_quayLai_Click;
@@ -197,29 +192,31 @@
             txt_thongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(226, 226, 226);
             txt_thongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(138, 138, 138);
             txt_thongKe.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(138, 138, 138);
+            txt_thongKe.Dock = System.Windows.Forms.DockStyle.Fill;
             txt_thongKe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
             txt_thongKe.Font = new System.Drawing.Font("Segoe UI", 9F);
             txt_thongKe.HoverState.BorderColor = System.Drawing.Color.FromArgb(213, 218, 223);
-            txt_thongKe.Location = new System.Drawing.Point(904, 467);
-            txt_thongKe.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            txt_thongKe.Location = new System.Drawing.Point(0, 0);
+            txt_thongKe.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             txt_thongKe.Multiline = true;
             txt_thongKe.Name = "txt_thongKe";
             txt_thongKe.PlaceholderText = "";
             txt_thongKe.SelectedText = "";
             txt_thongKe.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txt_thongKe.Size = new System.Drawing.Size(820, 656);
+            txt_thongKe.Size = new System.Drawing.Size(1148, 437);
             txt_thongKe.TabIndex = 53;
-            txt_thongKe.Visible = false;
             // 
             // guna2Panel1
             // 
             guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             guna2Panel1.Controls.Add(dgv_doanhThuTheoThang);
+            guna2Panel1.Controls.Add(txt_thongKe);
             guna2Panel1.CustomizableEdges = customizableEdges13;
-            guna2Panel1.Location = new System.Drawing.Point(3, 467);
+            guna2Panel1.Location = new System.Drawing.Point(2, 311);
+            guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Panel1.Size = new System.Drawing.Size(1722, 188);
+            guna2Panel1.Size = new System.Drawing.Size(1148, 437);
             guna2Panel1.TabIndex = 56;
             // 
             // dgv_doanhThuTheoThang
@@ -250,12 +247,12 @@
             dgv_doanhThuTheoThang.Dock = System.Windows.Forms.DockStyle.Fill;
             dgv_doanhThuTheoThang.GridColor = System.Drawing.Color.LightGray;
             dgv_doanhThuTheoThang.Location = new System.Drawing.Point(0, 0);
-            dgv_doanhThuTheoThang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            dgv_doanhThuTheoThang.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             dgv_doanhThuTheoThang.Name = "dgv_doanhThuTheoThang";
             dgv_doanhThuTheoThang.RowHeadersVisible = false;
             dgv_doanhThuTheoThang.RowHeadersWidth = 72;
             dgv_doanhThuTheoThang.RowTemplate.Height = 50;
-            dgv_doanhThuTheoThang.Size = new System.Drawing.Size(1722, 188);
+            dgv_doanhThuTheoThang.Size = new System.Drawing.Size(1148, 437);
             dgv_doanhThuTheoThang.TabIndex = 38;
             dgv_doanhThuTheoThang.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
             dgv_doanhThuTheoThang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -299,7 +296,7 @@
             dataGridViewTextBoxColumn2.MinimumWidth = 9;
             dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             dataGridViewTextBoxColumn2.ReadOnly = true;
-            dataGridViewTextBoxColumn2.Width = 150;
+            dataGridViewTextBoxColumn2.Width = 250;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -309,7 +306,7 @@
             dataGridViewTextBoxColumn3.HeaderText = "Thời Gian Kết Thúc";
             dataGridViewTextBoxColumn3.MinimumWidth = 6;
             dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Width = 150;
+            dataGridViewTextBoxColumn3.Width = 250;
             // 
             // Column1
             // 
@@ -340,14 +337,12 @@
             // 
             // UCThongKeChiPhi
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(guna2Panel1);
-            Controls.Add(txt_thongKe);
             Controls.Add(gbChiTiet);
-            Margin = new System.Windows.Forms.Padding(4);
             Name = "UCThongKeChiPhi";
-            Size = new System.Drawing.Size(1725, 1125);
+            Size = new System.Drawing.Size(1150, 750);
             gbChiTiet.ResumeLayout(false);
             guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_doanhThuTheoThang).EndInit();
@@ -360,7 +355,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_quayLai;
         private Guna.UI2.WinForms.Guna2TextBox txt_timKiem;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2Button btn_chiPhiTheoThang;
         private Guna.UI2.WinForms.Guna2TextBox txt_thongKe;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private Guna.UI2.WinForms.Guna2Button btn_thongKe;
@@ -372,5 +366,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn DoanhThu;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private Guna.UI2.WinForms.Guna2Button btn_chiPhiTheoThang;
     }
 }

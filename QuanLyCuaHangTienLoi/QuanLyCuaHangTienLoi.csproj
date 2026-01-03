@@ -100,9 +100,7 @@
     <Compile Update="UCThongKeChiPhi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UCThongKeDoanhThu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UCThongKeDoanhThu.cs" />
     <Compile Update="UCThongKeLoiNhuan.cs">
       <SubType>UserControl</SubType>
     </Compile>

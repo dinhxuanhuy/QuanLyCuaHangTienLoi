@@ -1,206 +1,101 @@
 ﻿using BusinessAccessLayer;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace QuanLyCuaHangTienLoi
 {
     public partial class UCThongKeChiPhi : UserControl
     {
-        // ----- BẮT ĐẦU THÊM MỚI -----
-        // 1. Định nghĩa khuôn mẫu (delegate) cho sự kiện
-        //    Sự kiện này sẽ gửi đi một UserControl
+        // Sự kiện chuyển trang
         public delegate void NavigateRequestEventHandler(UserControl uc);
-
-        // 2. Định nghĩa sự kiện (event) dựa trên khuôn mẫu đó
-        //    Form cha (frmTrangChu) sẽ "lắng nghe" sự kiện này
         public event NavigateRequestEventHandler NavigateRequest;
-        // ----- KẾT THÚC THÊM MỚI -----
-        BALThongKe dbtk;
+
+        // Khai báo lớp xử lý nghiệp vụ
+        private BALThongKe dbtk;
+
         public UCThongKeChiPhi()
         {
+            Dock = DockStyle.Fill;
             InitializeComponent();
             dbtk = new BALThongKe();
+
+            // Cấu hình giao diện và tải dữ liệu
+            CauHinhGiaoDien();
+            LoadDuLieuTuDatabase();
         }
 
+        // Cấu hình giao diện TextBox hiển thị báo cáo
+        private void CauHinhGiaoDien()
+        {
+            txt_thongKe.Multiline = true;
+            txt_thongKe.ScrollBars = ScrollBars.Both;
+            txt_thongKe.WordWrap = false;
+            txt_thongKe.ReadOnly = true;
+
+            txt_thongKe.BackColor = Color.White;
+            txt_thongKe.ForeColor = Color.Black;
+            txt_thongKe.Font = new Font("Consolas", 11, FontStyle.Regular);
+
+            txt_timKiem.Text = "Nhập thời gian bắt đầu (dd/mm/yyyy)";
+            txt_timKiem.ForeColor = Color.Gray;
+        }
+
+        // Tải dữ liệu từ database lên lưới và tạo báo cáo
+        private void LoadDuLieuTuDatabase()
+        {
+            try
+            {
+                DataTable dt = dbtk.DoanhThuTheoThang();
+                dgv_doanhThuTheoThang.DataSource = dt;
+                txt_thongKe.Text = PhanTichChiPhiTheoThang(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi tải dữ liệu: " + ex.Message);
+            }
+        }
+
+        // Sự kiện nút Quay lại
         private void btn_quayLai_Click(object sender, EventArgs e)
         {
-            // Lấy UserControl Doanh Thu mà bạn đã tạo sẵn trong Program.cs
             UserControl ucCanChuyenToi = Program.ucThongKe;
-
-            // 4. Kích hoạt sự kiện và gửi UserControl đi
-            //    Dấu ? (null-conditional operator) để kiểm tra xem có ai (frmTrangChu)
-            //    đang lắng nghe sự kiện này không. Nếu có, nó sẽ gọi Invoke.
             NavigateRequest?.Invoke(ucCanChuyenToi);
         }
 
+        // Sự kiện nút Làm mới dữ liệu
         private void btn_chiPhiTheoThang_Click(object sender, EventArgs e)
         {
-            DataTable dt = dbtk.DoanhThuTheoThang();
-            dgv_doanhThuTheoThang.DataSource = dt;
+            LoadDuLieuTuDatabase();
             dgv_doanhThuTheoThang.Visible = true;
-            chart2.Visible = false;
             txt_thongKe.Visible = false;
+
             txt_timKiem.Text = "Nhập thời gian bắt đầu (dd/mm/yyyy)";
             txt_timKiem.ForeColor = Color.Gray;
-            // Đã sửa: chart1 -> chart2
-            chart2.Visible = false;
-            txt_thongKe.Visible = false;
-
-            // ----- BẮT ĐẦU CẤU HÌNH BIỂU ĐỒ (PHẦN 3) -----
-            // Đã sửa: chart1 -> chart2
-            chart2.Series.Clear();
-
-            // Đã sửa: chart1 -> chart2
-            if (chart2.Series.Count == 0)
-            {
-                // Đã sửa: chart1 -> chart2
-                chart2.Series.Add(new System.Windows.Forms.DataVisualization.Charting.Series());
-            }
-            var series = chart2.Series[0];
-            series.Name = "Doanh thu theo tháng";
-
-            series.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
-
-            // 1. CỐ ĐỊNH CHIỀU RỘNG: Chuyển sang kiểu Auto (Rời rạc/Categorical)
-            series.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Auto;
-
-            // Cố định chiều rộng cột (tương đối)
-            series.CustomProperties = "PointWidth=0.8";
-
-            // 2. GÁN DỮ LIỆU: Chỉ gán giá trị Y, giá trị X là Index
-            series.Points.DataBindY(dt.DefaultView, "ChiPhiNhapHang");
-
-            // Lặp qua các điểm dữ liệu để đặt nhãn X thủ công
-            for (int i = 0; i < series.Points.Count; i++)
-            {
-                DateTime date = dt.Rows[i].Field<DateTime>("ThoiGianBatDau");
-                series.Points[i].AxisLabel = date.ToString("MM-yyyy");
-            }
-
-            // 3. Cấu hình ChartArea
-            // Đã sửa: chart1 -> chart2
-            if (chart2.ChartAreas.Count > 0)
-            {
-                // Đã sửa: chart1 -> chart2
-                var chartArea = chart2.ChartAreas[0];
-
-                // 🌟 KHẮC PHỤC LỖI NHÃN ĐIỂM ĐẦU (Ngăn Chart tự động cắt/thay đổi nhãn)
-                chartArea.AxisX.LabelAutoFitStyle = System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.None;
-
-                // CỐ ĐỊNH TỶ LỆ TRỤC X: Đặt Minimum/Maximum dựa trên Index
-                // 🌟 ĐIỀU CHỈNH: Đặt Minimum về 0 (thay vì 0.5) và thêm cột đệm +1 ở cuối.
-                chartArea.AxisX.Minimum = 0;
-                chartArea.AxisX.Maximum = dt.Rows.Count + 1; // Thêm 1 đơn vị đệm ảo ở cuối
-
-                // CỐ ĐỊNH TRỤC Y (Chống giật khi trượt)
-                decimal maxDoanhThuDecimal = dt.AsEnumerable().Max(row => row.Field<decimal>("ChiPhiNhapHang"));
-                double maxDoanhThu = (double)maxDoanhThuDecimal * 1.1;
-                chartArea.AxisY.Minimum = 0;
-                chartArea.AxisY.Maximum = maxDoanhThu;
-
-                // Tắt TOÀN BỘ CẤU HÌNH LIÊN QUAN ĐẾN SCROLL/ZOOM (trên chuột)
-                chartArea.CursorX.IsUserEnabled = false;
-                chartArea.CursorX.IsUserSelectionEnabled = false;
-
-                // Cấu hình SÁT MÉP TRÁI (Margin)
-                // 🌟 TẮT Margin để cột đầu sát mép trái
-                chartArea.AxisX.IsMarginVisible = false;
-
-                // Yêu cầu 1: Chỉ giữ lưới ngang, bỏ lưới dọc
-                chartArea.AxisX.MajorGrid.Enabled = false;
-                chartArea.AxisY.MajorGrid.Enabled = true;
-
-                // Yêu cầu 2: Các nhãn để dọc (xoay nhãn 90 độ)
-                chartArea.AxisX.LabelStyle.Angle = -90;
-
-                // Buộc nhãn ở điểm đầu/cuối của phạm vi cuộn phải hiển thị
-                chartArea.AxisX.LabelStyle.IsEndLabelVisible = true;
-
-                // Cố định Interval là 1 (cho mỗi điểm dữ liệu/cột)
-                chartArea.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto;
-                chartArea.AxisX.Interval = 1;
-
-                // CẤU HÌNH THANH TRƯỢT
-                int maxMonthsDisplay = 8; // Số cột tối đa hiển thị cùng lúc
-
-                chartArea.AxisX.ScaleView.Zoomable = true;
-                chartArea.AxisX.ScrollBar.Enabled = true;
-
-                chartArea.AxisX.ScaleView.Size = maxMonthsDisplay;
-
-                // Đảm bảo thanh cuộn bắt đầu từ đầu
-                chartArea.AxisX.ScaleView.Position = 0;
-
-                // Thiết lập tiêu đề trục
-                chartArea.AxisX.Title = "Tháng";
-                chartArea.AxisY.Title = "Chi Phí";
-            }
-
-            // Kích hoạt Legend
-            // Đã sửa: chart1 -> chart2
-            chart2.Legends[0].Enabled = true;
-            // ----- KẾT THÚC CẤU HÌNH BIỂU ĐỒ (PHẦN 3) -----
-            txt_thongKe.Text = PhanTichChiPhiTheoThang(dt);
         }
-        private string PhanTichChiPhiTheoThang(DataTable dt)
+
+        // Sự kiện nút Xem Thống kê
+        private void btn_thongKe_Click(object sender, EventArgs e)
         {
-            if (dt == null || dt.Rows.Count == 0)
+            dgv_doanhThuTheoThang.Visible = false;
+            txt_thongKe.Visible = true;
+            txt_thongKe.BringToFront();
+
+            if (string.IsNullOrWhiteSpace(txt_thongKe.Text))
             {
-                return "Không có dữ liệu doanh thu để thống kê.";
+                DataTable dt = (DataTable)dgv_doanhThuTheoThang.DataSource;
+                if (dt != null)
+                {
+                    txt_thongKe.Text = PhanTichChiPhiTheoThang(dt);
+                }
             }
-
-            // 1. Tính Tổng Chi Phí
-            decimal tongChiPhi = dt.AsEnumerable()
-                                     .Sum(row => row.Field<decimal>("ChiPhiNhapHang"));
-
-            // 2. Tìm Ngày có Chi Phí Cao nhất
-            DataRow rowMax = dt.AsEnumerable()
-                               .OrderByDescending(row => row.Field<decimal>("ChiPhiNhapHang"))
-                               .FirstOrDefault();
-
-            // 3. Tìm Ngày có Chí Phí Thấp nhất
-            DataRow rowMin = dt.AsEnumerable()
-                               .OrderBy(row => row.Field<decimal>("ChiPhiNhapHang"))
-                               .FirstOrDefault();
-
-            // 4. Định dạng Chuỗi Kết Quả
-            StringBuilder sb = new StringBuilder();
-
-            // Loại bỏ '\n' thừa và chỉ dùng AppendLine để đảm bảo xuống dòng
-            sb.AppendLine("📈 BÁO CÁO THỐNG KÊ CHI PHÍ THEO THÁNG");
-            sb.AppendLine("---------------------------------------");
-            sb.AppendLine($"Tổng số tháng có giao dịch: {dt.Rows.Count}");
-            sb.AppendLine($"Tổng Chi Phí trong kỳ: {tongChiPhi:N0} VNĐ");
-            sb.AppendLine(); // Thêm một dòng trống cho đẹp
-
-            if (rowMax != null)
-            {
-                DateTime ngayMax = rowMax.Field<DateTime>("ThoiGianBatDau");
-                decimal tienMax = rowMax.Field<decimal>("ChiPhiNhapHang");
-                sb.AppendLine($"Tháng có Chi Phí CAO NHẤT: {ngayMax:MM/yyyy} ({tienMax:N0} VNĐ)");
-            }
-
-            if (rowMin != null && rowMin != rowMax)
-            {
-                DateTime ngayMin = rowMin.Field<DateTime>("ThoiGianBatDau");
-                decimal tienMin = rowMin.Field<decimal>("ChiPhiNhapHang");
-                sb.AppendLine($"Tháng có Chi Phí THẤP NHẤT: {ngayMin:MM/yyyy} ({tienMin:N0} VNĐ)");
-            }
-            sb.AppendLine("---------------------------------------");
-            sb.AppendLine("Tiếp tục làm việc...");
-
-            return sb.ToString();
         }
 
+        // Xử lý sự kiện click ô tìm kiếm
         private void txt_timKiem_MouseClick(object sender, MouseEventArgs e)
         {
             if (txt_timKiem.Text == "Nhập thời gian bắt đầu (dd/mm/yyyy)")
@@ -210,29 +105,135 @@ namespace QuanLyCuaHangTienLoi
             }
         }
 
+        // Xử lý sự kiện nhập liệu ô tìm kiếm
         private void txt_timKiem_TextChanged(object sender, EventArgs e)
         {
             if (dgv_doanhThuTheoThang.DataSource != null)
             {
                 DataTable dt = (DataTable)dgv_doanhThuTheoThang.DataSource;
                 string timkiem = txt_timKiem.Text.Trim();
-                if (timkiem == "")
+
+                try
                 {
-                    dt.DefaultView.RowFilter = "";
+                    if (timkiem == "" || timkiem == "Nhập thời gian bắt đầu (dd/mm/yyyy)")
+                    {
+                        dt.DefaultView.RowFilter = "";
+                    }
+                    else
+                    {
+                        string filterExpression = string.Format("CONVERT(ThoiGianBatDau, 'System.String') LIKE '%{0}%'", timkiem);
+                        dt.DefaultView.RowFilter = filterExpression;
+                    }
                 }
-                else
+                catch
                 {
-                    string filterExpression = string.Format("CONVERT(ThoiGianBatDau, 'System.String') LIKE '%{0}%'", timkiem);
-                    dt.DefaultView.RowFilter = filterExpression;
+                    // Bỏ qua lỗi cú pháp
                 }
             }
         }
 
-        private void btn_thongKe_Click(object sender, EventArgs e)
+        // Hàm tạo báo cáo phân tích chi phí
+        private string PhanTichChiPhiTheoThang(DataTable dt)
         {
-            dgv_doanhThuTheoThang.Visible = false;
-            chart2.Visible = true;
-            txt_thongKe.Visible = true;
+            if (dt == null || dt.Rows.Count == 0)
+                return "⚠️ Không có dữ liệu chi phí để lập báo cáo.";
+
+            var dataSorted = dt.AsEnumerable()
+                               .Select(row => new
+                               {
+                                   ThoiGian = row.Field<DateTime>("ThoiGianBatDau"),
+                                   ChiPhi = row.Field<decimal>("ChiPhiNhapHang")
+                               })
+                               .OrderBy(x => x.ThoiGian)
+                               .ToList();
+
+            decimal tongChiPhi = dataSorted.Sum(x => x.ChiPhi);
+            decimal trungBinh = tongChiPhi / dataSorted.Count;
+
+            var maxItem = dataSorted.OrderByDescending(x => x.ChiPhi).First();
+            var minItem = dataSorted.OrderBy(x => x.ChiPhi).First();
+
+            int totalWidth = 100;
+            string lineTop = "╔" + new string('═', totalWidth) + "╗";
+            string lineMiddle = "╟" + new string('─', totalWidth) + "╢";
+            string lineBottom = "╚" + new string('═', totalWidth) + "╝";
+            string sep = "│";
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(lineTop);
+            sb.AppendLine("║" + CenterString("BÁO CÁO QUẢN TRỊ CHI PHÍ NHẬP HÀNG", totalWidth) + "║");
+            sb.AppendLine("║" + CenterString($"Kỳ báo cáo: {dataSorted.First().ThoiGian:MM/yyyy} - {dataSorted.Last().ThoiGian:MM/yyyy}", totalWidth) + "║");
+            sb.AppendLine(lineMiddle);
+
+            sb.AppendLine("║  1. TỔNG HỢP CHI PHÍ" + new string(' ', totalWidth - 21) + "║");
+            sb.AppendLine(lineMiddle);
+
+            sb.AppendLine(FormatTwoColumnRow("• TỔNG CHI PHÍ TOÀN KỲ", $"{tongChiPhi:N0} VNĐ", totalWidth));
+            sb.AppendLine(FormatTwoColumnRow("• Trung bình mỗi tháng", $"{trungBinh:N0} VNĐ", totalWidth));
+            sb.AppendLine(FormatTwoColumnRow("• Tháng chi nhiều nhất", $"{maxItem.ChiPhi:N0} VNĐ (T{maxItem.ThoiGian:MM})", totalWidth));
+            sb.AppendLine(FormatTwoColumnRow("• Tháng chi ít nhất", $"{minItem.ChiPhi:N0} VNĐ (T{minItem.ThoiGian:MM})", totalWidth));
+
+            sb.AppendLine(lineMiddle);
+
+            sb.AppendLine("║  2. BIỂU ĐỒ CHI TIẾT" + new string(' ', totalWidth - 21) + "║");
+            sb.AppendLine(lineMiddle);
+
+            string headerTable = string.Format("║ {0,-15} {1} {2,25} {3} {4,-52} ║",
+                "THÁNG", sep, "SỐ TIỀN (VNĐ)", sep, "   MỨC ĐỘ CHI TIÊU"); // Thêm khoảng trắng đầu tiêu đề
+
+            sb.AppendLine(headerTable);
+
+            string lineTable = string.Format("║{0}┼{1}┼{2}║",
+                new string('─', 17), new string('─', 27), new string('─', 54));
+            sb.AppendLine(lineTable);
+
+            foreach (var item in dataSorted)
+            {
+                int maxBarLen = 48; // Giảm độ dài tối đa để chừa chỗ cho spacing
+                double tyle = (double)item.ChiPhi / (double)maxItem.ChiPhi;
+                int barLen = (int)(tyle * maxBarLen);
+                if (barLen <= 0) barLen = 1;
+
+                // Thêm 3 khoảng trắng vào trước thanh biểu đồ để tạo spacing bên trái
+                string bar = "   " + new string('█', barLen);
+
+                string row = string.Format("║ {0,-15} {1} {2,25:N0} {3} {4} ║",
+                    "Tháng " + item.ThoiGian.ToString("MM/yyyy"),
+                    sep,
+                    item.ChiPhi,
+                    sep,
+                    bar.PadRight(52) // PadRight với độ rộng cột là 52
+                    );
+
+                if (row.Length < lineTop.Length) row += " ";
+
+                sb.AppendLine(row);
+            }
+
+            sb.AppendLine(lineBottom);
+            sb.AppendLine(" Ghi chú: Thanh biểu đồ thể hiện tỷ lệ chi phí so với tháng cao nhất.");
+
+            return sb.ToString();
+        }
+
+        // Hàm căn giữa chuỗi
+        private string CenterString(string text, int width)
+        {
+            if (text.Length >= width) return text;
+            int leftPadding = (width - text.Length) / 2;
+            int rightPadding = width - text.Length - leftPadding;
+            return new string(' ', leftPadding) + text + new string(' ', rightPadding);
+        }
+
+        // Hàm định dạng dòng 2 cột
+        private string FormatTwoColumnRow(string label, string value, int width)
+        {
+            int contentWidth = width - 4;
+            int labelWidth = 40;
+            int valueWidth = contentWidth - labelWidth;
+
+            return "║ " + label.PadRight(labelWidth) + value.PadLeft(valueWidth) + " ║";
         }
     }
 }
